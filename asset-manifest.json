@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/aigiriLive/static/css/main.52f4f658.chunk.css",
+    "main.js": "/aigiriLive/static/js/main.703cc13c.chunk.js",
+    "main.js.map": "/aigiriLive/static/js/main.703cc13c.chunk.js.map",
+    "runtime-main.js": "/aigiriLive/static/js/runtime-main.5a4b4e89.js",
+    "runtime-main.js.map": "/aigiriLive/static/js/runtime-main.5a4b4e89.js.map",
+    "static/js/2.cfe61f47.chunk.js": "/aigiriLive/static/js/2.cfe61f47.chunk.js",
+    "static/js/2.cfe61f47.chunk.js.map": "/aigiriLive/static/js/2.cfe61f47.chunk.js.map",
+    "static/js/3.0a90cc14.chunk.js": "/aigiriLive/static/js/3.0a90cc14.chunk.js",
+    "static/js/3.0a90cc14.chunk.js.map": "/aigiriLive/static/js/3.0a90cc14.chunk.js.map",
+    "index.html": "/aigiriLive/index.html",
+    "static/css/main.52f4f658.chunk.css.map": "/aigiriLive/static/css/main.52f4f658.chunk.css.map",
+    "static/js/2.cfe61f47.chunk.js.LICENSE.txt": "/aigiriLive/static/js/2.cfe61f47.chunk.js.LICENSE.txt",
+    "static/media/aigiri_logo_cropped.ed88c8bd.png": "/aigiriLive/static/media/aigiri_logo_cropped.ed88c8bd.png",
+    "static/media/group-family3.7914e854.jpg": "/aigiriLive/static/media/group-family3.7914e854.jpg",
+    "static/media/img5.ee091894.jpg": "/aigiriLive/static/media/img5.ee091894.jpg",
+    "static/media/img6.df4a7688.jpg": "/aigiriLive/static/media/img6.df4a7688.jpg",
+    "static/media/img7.e319d388.jpg": "/aigiriLive/static/media/img7.e319d388.jpg",
+    "static/media/img8.cc6b2138.jpg": "/aigiriLive/static/media/img8.cc6b2138.jpg",
+    "static/media/img9.5844f2f9.jpg": "/aigiriLive/static/media/img9.5844f2f9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a4b4e89.js",
+    "static/js/2.cfe61f47.chunk.js",
+    "static/css/main.52f4f658.chunk.css",
+    "static/js/main.703cc13c.chunk.js"
+  ]
+}
