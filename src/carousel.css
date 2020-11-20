@@ -1,0 +1,47 @@
+.carousel-item {
+  height: 400px;
+}
+
+.carousel img {
+  height: 450px;
+}
+
+#img2 {
+  height: 750px;
+}
+
+#img3 {
+  height: 650px;
+}
+
+#img1 {
+  height: 600px;
+}
+
+.carousel {
+  margin-top: 65px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    height: 200px;
+  }
+
+  .carousel img {
+    height: 250px;
+  }
+
+  #img2,
+  #img3,
+  #img1 {
+    height: 250px;
+  }
+
+  #img4 {
+    height: 200px;
+  }
+
+  .carousel {
+    margin-top: 65px;
+  }
+}

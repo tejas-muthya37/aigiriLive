@@ -1,0 +1,35 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.products_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.products_title {
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .products_row {
+    flex-wrap: wrap;
+  }
+
+  .row_product {
+    width: 200px;
+    padding: 10px;
+  }
+}
