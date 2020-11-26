@@ -37,7 +37,7 @@ function NavBar() {
                 <ul id="nav-links" className="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="/">Contact Us</a></li>
                 <li><a href="/">Our Products</a></li>
 
                 </ul>
