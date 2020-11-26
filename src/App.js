@@ -13,14 +13,14 @@ import Recipe from "./Recipe";
 function App() {
 
   return (
-    <Router basename={`${process.env.PUBLIC_URL}/`}>
+    <Router>
       <div className="App">
       <NavBar />
       <Switch>
       <Route path="/recipe/:id">
         <Recipe />
       </Route>
-        <Route path="/about">
+      <Route path={process.env.about + '/'}>
           <About />
         </Route>
         <Route path="/">
