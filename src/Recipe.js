@@ -1,28 +1,40 @@
 import React from 'react';
-import "./recipe.css"
+import "./recipe.css";
+import {useParams} from "react-router-dom";
+import productsArray from "./productArray";
 
 function Recipe() {
+
+    const {id} = useParams();
+
+    let newProduct;
+
+    productsArray.forEach(function(matchedProduct) {
+            if(matchedProduct.id === id) {
+                newProduct = matchedProduct;
+              }
+              
+    });
+
     return (
         <div className="recipe">
             <div className="recipe_left">
-                <h3 className="recipe_left_header">Sambar Powder</h3>
-                <div className="recipe_left_content">
-                    <h5 className="price"><small>₹</small> 199.99</h5>
-                    <div className="quantity_div">
-                        <h3 className="recipe_left_quantity">Quantity</h3>
-                        <h5 className="quantity">1</h5>
+                <h3 id="recipe_left_header" className="recipe_left_header">{newProduct.title}</h3>
+                    <h5 className="price">₹ {newProduct.price}.99</h5>
+                    <div className="recipe_left_quantity">
+                        <h3>QUANTITY</h3>
+                        <h5>1</h5>
                     </div>
-                    <button>Add to Cart</button>
-                </div>
+                    <button className="recipe_button">ADD TO CART</button>
             </div>
             <div className="recipe_mid">
-                <img alt="" src="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"></img>
+                <img alt={newProduct.id} src={newProduct.image}></img>
             </div>
             <div className="recipe_right">
-                <h4>Product Description</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <h4 className="best_results">Best Results</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h4 className="recipe_right_header"><span className="header_first_child">P</span>RODUCT <span className="header_first_child">D</span>ESCRIPTION</h4>
+                <p className="recipe_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h4 className="best_results"><span className="header_first_child">B</span>EST <span className="header_first_child">R</span>ESULTS</h4>
+                <p className="recipe_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </div>
     )

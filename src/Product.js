@@ -14,7 +14,7 @@ function Product(props) {
             <div className="product_rating">
             </div>
           </div>
-          <img alt={props.id} src={props.image}></img>
+          <a href= {"/recipe/" + props.id} ><img alt={props.id} src={props.image}></img></a>
           <button>Add to Cart</button>
         </div>
       );

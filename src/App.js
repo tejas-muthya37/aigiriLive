@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import NavBar from "./NavBar";
 import BestSeller from "./BestSeller";
@@ -9,16 +10,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Recipe from "./Recipe";
 
-
 function App() {
+
   return (
     <Router>
       <div className="App">
       <NavBar />
       <Switch>
-      <Route path="/recipe">
-          <Recipe />
-        </Route>
+      <Route path="/recipe/:id">
+        <Recipe />
+      </Route>
         <Route path="/about">
           <About />
         </Route>
@@ -26,7 +27,7 @@ function App() {
           <Carousel />
           <BestSeller />
           <Feature />
-          <Products />
+          <Products/>
         </Route>
       </Switch>
       <Footer />

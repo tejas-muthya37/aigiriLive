@@ -8,3 +8,12 @@
 [1113/002013.178:ERROR:exception_snapshot_win.cc(99)] thread ID 8556 not found in process
 [1117/100657.977:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1119/131718.300:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1121/170646.951:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1122/163255.892:ERROR:process_info.cc(118)] ReadProcessMemory bool __cdecl crashpad::(anonymous namespace)::ReadStruct(HANDLE, crashpad::WinVMAddress, T *) [T = crashpad::process_types::LDR_DATA_TABLE_ENTRY<crashpad::process_types::internal::Traits64>]: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1122/163256.137:ERROR:process_reader_win.cc(108)] process 10400 not found
+[1122/163256.156:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1122/163256.156:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1122/163256.156:ERROR:exception_snapshot_win.cc(99)] thread ID 11952 not found in process
+[1122/163256.137:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1122/163256.168:ERROR:exception_snapshot_win.cc(99)] thread ID 15648 not found in process
+[1122/165924.525:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

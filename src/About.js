@@ -8,7 +8,7 @@ function About() {
 
             <img className="family_img" src={familyimg} alt=""></img>
             <div className="about_content">
-                <h3>ABOUT US</h3>
+                <h2><span className="header_first_child">A</span>BOUT <span className="header_first_child">U</span>S</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
