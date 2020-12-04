@@ -5,7 +5,6 @@ import img6 from "./img6.jpg";
 import img7 from "./img7.jpg";
 import img8 from "./img8.jpg";
 
-
 function Carousel() {
     return (
 
@@ -15,16 +14,16 @@ function Carousel() {
             <div className="carousel-inner">
 
             <div className="carousel-item active">
-                <img className="d-block w-100" id="img2" src={img5} alt="..." />
+                <img className="d-block w-100" id="img4" src={img8} alt="..." />
             </div>
             <div className="carousel-item">
                 <img className="d-block w-100" id="img3" src={img6} alt="..." />
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" id="img1" src={img7} alt="..." />
+                <img className="d-block w-100" id="img2" src={img5} alt="..." />
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" id="img4" src={img8} alt="..." />
+                <img className="d-block w-100" id="img1" src={img7} alt="..." />
             </div>
             </div>
             {/* <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

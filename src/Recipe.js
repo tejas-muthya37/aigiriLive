@@ -2,8 +2,13 @@ import React from 'react';
 import "./recipe.css";
 import {useParams} from "react-router-dom";
 import productsArray from "./productArray";
+import { useStateValue } from "./StateProvider";
 
 function Recipe() {
+
+    const [{ basket }, dispatch] = useStateValue();
+
+    console.log(basket);
 
     const {id} = useParams();
 
@@ -16,16 +21,38 @@ function Recipe() {
               
     });
 
+    const addToBasket = () => {
+        // dispatch the item into the data layer
+        dispatch({
+          type: "ADD_TO_BASKET",
+          item: {
+            id: newProduct.id,
+            title: newProduct.title,
+            image: newProduct.image,
+            price: newProduct.price,
+            quantity: document.getElementById("quantity").value
+          },
+        });
+      };
+
+    
     return (
         <div className="recipe">
             <div className="recipe_left">
-                <h3 id="recipe_left_header" className="recipe_left_header">{newProduct.title}</h3>
+                <h4 id="recipe_left_header" className="recipe_left_header">{newProduct.title}</h4>
                     <h5 className="price">₹ {newProduct.price}.99</h5>
                     <div className="recipe_left_quantity">
-                        <h3>QUANTITY</h3>
-                        <h5>1</h5>
+                        <form>
+                            <label htmlFor="quantity">QUANTITY</label>
+                            <select id="quantity" name="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </form>
                     </div>
-                    <button className="recipe_button">ADD TO CART</button>
+                    <button onClick={addToBasket} className="recipe_button">ADD TO CART</button>
             </div>
             <div className="recipe_mid">
                 <img alt={newProduct.id} src={newProduct.image}></img>
@@ -41,4 +68,3 @@ function Recipe() {
 }
 
 export default Recipe;
-

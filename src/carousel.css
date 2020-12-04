@@ -15,7 +15,7 @@
 }
 
 #img1 {
-  height: 600px;
+  height: 650px;
 }
 
 .carousel {
@@ -27,14 +27,16 @@
     height: 200px;
   }
 
-  .carousel img {
+  #img3 {
     height: 250px;
   }
 
-  #img2,
-  #img3,
+  #img2 {
+    height: 210px;
+  }
+
   #img1 {
-    height: 250px;
+    height: 200px;
   }
 
   #img4 {

@@ -9,6 +9,9 @@ import Feature from "./Feature";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Recipe from "./Recipe";
+import Cart from "./Cart";
+import Checkout from "./Checkout";
+
 
 function App() {
 
@@ -20,15 +23,21 @@ function App() {
       <Route path="/recipe/:id">
         <Recipe />
       </Route>
-      <Route path={process.env.about + '/'}>
+      <Route path="/about">
           <About />
-        </Route>
-        <Route path="/">
+      </Route>
+      <Route path="/checkout">
+          <Checkout />
+      </Route>
+      <Route path="/cart">
+          <Cart />
+      </Route>
+      <Route path="/">
           <Carousel />
           <BestSeller />
           <Feature />
           <Products/>
-        </Route>
+      </Route>
       </Switch>
       <Footer />
     </div>

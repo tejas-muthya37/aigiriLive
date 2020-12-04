@@ -1,10 +1,14 @@
 import React from 'react';
 import "./navbar.css";
 import logo from "./aigiri_logo_cropped.png";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 
 function NavBar() {
+
+    const [{ basket }] = useStateValue();
 
     function handleClick() {
 
@@ -27,25 +31,32 @@ function NavBar() {
             burger.classList.toggle("toggle");
     }
 
+    const scrollTop = () => {
+        window.scroll({
+          top: 0, 
+          left: 0, 
+        });
+      }
+
     return (
 
         <div className="header">
             <nav>
-                <div className="logo">
-                    <a href="/"><img alt="" src={logo}></img></a>
+                <div className="logo" onClick={scrollTop}>
+                    <Link to="/"><img alt="" src={logo}></img></Link>
                 </div>
                 <ul id="nav-links" className="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/">Contact Us</a></li>
-                <li><a href="/">Our Products</a></li>
+                <li onClick={scrollTop}><Link to="/">Home</Link></li>
+                <li onClick={scrollTop}><Link to="/about">About Us</Link></li>
+                <li onClick={scrollTop}><Link to="/">Contact</Link></li>
+                <li onClick={scrollTop}><Link to="/">Our Products</Link></li>
 
                 </ul>
 
                 <div className="nav-basket">
-                <ShoppingBasketIcon />
+                <div onClick={scrollTop}><Link to="/cart"><ShoppingCartIcon /></Link></div>
                 <span className="nav-basketCount">
-                0
+                {basket?.length}
                 </span>
                 </div>
 

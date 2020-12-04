@@ -1,0 +1,59 @@
+.contact {
+  margin-top: 150px;
+  width: 60%;
+  padding: 20px;
+  border: 2px solid silver;
+  border-radius: 3px;
+}
+
+.contact-btn {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.contact-btn:hover {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.contact-btn:active {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.contact-btn:visited {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.contact input {
+  border: 2px solid silver;
+}
+
+.contact a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+.contact h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 90%;
+    margin-top: 125px;
+    margin-bottom: 200px;
+  }
+}
