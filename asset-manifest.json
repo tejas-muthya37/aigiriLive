@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aigiriLive/static/css/main.4eda4213.chunk.css",
-    "main.js": "/aigiriLive/static/js/main.28b6af19.chunk.js",
-    "main.js.map": "/aigiriLive/static/js/main.28b6af19.chunk.js.map",
+    "main.js": "/aigiriLive/static/js/main.b852d605.chunk.js",
+    "main.js.map": "/aigiriLive/static/js/main.b852d605.chunk.js.map",
     "runtime-main.js": "/aigiriLive/static/js/runtime-main.8dabedc6.js",
     "runtime-main.js.map": "/aigiriLive/static/js/runtime-main.8dabedc6.js.map",
     "static/js/2.2cd3a684.chunk.js": "/aigiriLive/static/js/2.2cd3a684.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.8dabedc6.js",
     "static/js/2.2cd3a684.chunk.js",
     "static/css/main.4eda4213.chunk.css",
-    "static/js/main.28b6af19.chunk.js"
+    "static/js/main.b852d605.chunk.js"
   ]
 }
