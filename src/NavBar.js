@@ -23,7 +23,7 @@ function NavBar() {
             if(link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7 + 0.1}s`;
+                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7 + 0.15}s`;
             }
                     
             });
