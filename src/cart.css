@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .cart_right {
-    margin-left: -380px;
+    margin-left: -94%;
     margin-top: -30px;
     height: 50px;
   }
