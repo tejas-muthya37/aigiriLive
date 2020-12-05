@@ -3,6 +3,7 @@ import CartProduct from "./CartProduct";
 import "./cart.css";
 import { useStateValue } from "./StateProvider";
 import {getBasketTotal} from "./reducer";
+import { Link } from "react-router-dom";
 
 function Cart() {
 
@@ -29,7 +30,9 @@ function Cart() {
             </div>
             <div className="cart_right">
                 {basket.length > 0 && <h4>Subtotal ({basket?.length} items) : ₹ {getBasketTotal(basket)}</h4>}
-                {basket.length > 0 && <button className="cart_button">Proceed to Checkout</button>}
+                {basket.length > 0 && <div className="checkout_div">
+                    <Link to="/checkout"><button className="cart_button">Proceed to Checkout</button></Link>
+                </div>}
             </div>
         </div>
     )
