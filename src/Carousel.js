@@ -7,9 +7,7 @@ import img8 from "./img8.jpg";
 
 function Carousel() {
     return (
-
-     
-
+    
         <div id="carouselExampleIndicators" className="carousel carousel-fade carousel_laptop slide" data-ride="carousel">
             <div className="carousel-inner">
 

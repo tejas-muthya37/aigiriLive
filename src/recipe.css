@@ -105,6 +105,9 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  select {
+    font-size: 16px;
+  }
   .recipe {
     display: flex;
     flex-direction: column;
@@ -142,23 +145,25 @@ h4 {
   }
 
   #recipe_left_header {
-    margin-left: -140px;
+    margin-left: -150px;
     margin-top: -100px;
     font-size: 20px;
     font-weight: bold;
   }
 
   .price {
-    margin-left: -160px;
+    margin-left: -168px;
     color: #505050;
   }
 
   .recipe_left_quantity {
     position: absolute;
-    top: 50px;
-    left: 50%;
-    font-size: 15px;
-    font-weight: 500;
+    top: 47.5px;
+    right: 15px;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 
   .recipe_right_header {
@@ -176,7 +181,7 @@ h4 {
   .recipe_mid img {
     height: 400px;
     margin-top: 10px;
-    margin-left: 0%;
+    margin-left: 7.5%;
   }
 
   .recipe_right {

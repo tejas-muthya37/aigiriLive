@@ -36,14 +36,14 @@
 @media screen and (max-width: 768px) {
   .cart_product {
     display: flex;
-    width: 300px;
+    width: 500px;
     padding: 0;
     padding-top: 25px;
     padding-bottom: 25px;
   }
 
   .cart_product img {
-    margin-left: 10px;
+    margin-left: 20px;
     height: 150px;
     margin-top: 6px;
   }

@@ -52,7 +52,7 @@ function Recipe() {
                             </select>
                         </form>
                     </div>
-                    <button onClick={addToBasket} className="recipe_button">ADD TO CART</button>
+                    <button onClick={addToBasket} className="recipe_button">Add to Cart</button>
             </div>
             <div className="recipe_mid">
                 <img alt={newProduct.id} src={newProduct.image}></img>
