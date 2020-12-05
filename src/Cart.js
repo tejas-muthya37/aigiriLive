@@ -11,7 +11,9 @@ function Cart() {
     return (
         <div className="cart">
             <div className="cart_left">
-                <h3>Your Shopping Cart</h3>
+                {basket.length === 0 && <h3 id="empty_cart">Your Shopping Cart is empty! :(</h3>}
+
+                {basket.length > 0 && <h3>Your Shopping Cart</h3>}
 
                 {basket.map((item) => (
                 <CartProduct
@@ -26,8 +28,8 @@ function Cart() {
 
             </div>
             <div className="cart_right">
-                <h4>Subtotal ({basket?.length} items) : ₹ {getBasketTotal(basket)}</h4>
-                <button className="cart_button">Proceed to Checkout</button>
+                {basket.length > 0 && <h4>Subtotal ({basket?.length} items) : ₹ {getBasketTotal(basket)}</h4>}
+                {basket.length > 0 && <button className="cart_button">Proceed to Checkout</button>}
             </div>
         </div>
     )

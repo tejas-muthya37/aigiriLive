@@ -23,7 +23,7 @@ function NavBar() {
             if(link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`;
+                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7 + 0.15}s`;
             }
                     
             });
@@ -47,7 +47,7 @@ function NavBar() {
                 </div>
                 <ul id="nav-links" className="nav-links">
                 <li onClick={scrollTop}><Link to="/">Home</Link></li>
-                <li onClick={scrollTop}><Link to="/about">About Us</Link></li>
+                <li onClick={scrollTop}><a href="/about">About Us</a></li>
                 <li onClick={scrollTop}><Link to="/">Contact</Link></li>
                 <li onClick={scrollTop}><Link to="/">Our Products</Link></li>
 
