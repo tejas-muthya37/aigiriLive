@@ -23,8 +23,8 @@
   max-height: 200px;
   width: 100%;
   object-fit: contain;
-  margin-bottom: 15px;
-  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .product-price {
@@ -35,17 +35,4 @@
   margin-bottom: 15px;
   text-align: center;
   height: 50px;
-}
-
-.product button {
-  background: #f0c14b;
-  border: 1px solid;
-  margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 20px;
 }

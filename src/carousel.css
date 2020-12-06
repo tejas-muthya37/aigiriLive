@@ -19,7 +19,7 @@
 }
 
 .carousel {
-  margin-top: 65px;
+  margin-top: 8vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -44,6 +44,6 @@
   }
 
   .carousel {
-    margin-top: 60px;
+    margin-top: 7vh;
   }
 }

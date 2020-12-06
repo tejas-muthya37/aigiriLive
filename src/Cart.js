@@ -19,6 +19,7 @@ function Cart() {
                 {basket.map((item) => (
                 <CartProduct
                 id={item.id}
+                key={basket.indexOf(item)}
                 title={item.title}
                 price={item.price}
                 image={item.image}
