@@ -126,7 +126,7 @@ h4 {
   #recipe_left_header {
     min-width: 170px;
     text-transform: uppercase;
-    margin-left: -135px;
+    margin-left: -145px;
     margin-top: -50px;
     font-size: 16px;
     font-weight: bold;
@@ -134,13 +134,13 @@ h4 {
   }
 
   .price {
-    margin-left: -180px;
+    margin-left: -190px;
     color: #505050;
   }
 
   .recipe_left_quantity {
     position: absolute;
-    top: 46px;
+    top: 45px;
     right: 5px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
