@@ -39,11 +39,11 @@ function Recipe() {
     return (
         <div className="recipe">
             <div className="recipe_left">
-                <h5 id="recipe_left_header" className="recipe_left_header">{newProduct.title}</h5>
-                    <h5 className="price">₹ {newProduct.price}.99</h5>
+                <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
+                    <h5 id="price" className="price">₹ {newProduct.price}.99</h5>
                     <div className="recipe_left_quantity">
                         <form>
-                            <label htmlFor="quantity"><h5>QUANTITY</h5></label>
+                            <label htmlFor="quantity"><h5 className="font_alike">QUANTITY</h5></label>
                             <select id="quantity" name="quantity">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
