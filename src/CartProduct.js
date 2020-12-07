@@ -16,6 +16,22 @@ function CartProduct(props) {
         });
       };
 
+    let quantityVariable;
+
+    if (props.title === "Sambar Powder" || props.title === "Rasam Powder") {
+        if(props.quantity === "0.25") {
+            quantityVariable = "250 GRAMS"
+        }
+
+        else if (props.quantity === "0.5") {
+            quantityVariable = "500 GRAMS"
+        }
+
+        else {
+            quantityVariable = "1 KG"
+        }
+    }
+
     return (
         <div className="cart_product">
             <div className="cart_product_left">
@@ -23,8 +39,9 @@ function CartProduct(props) {
             </div>
             <div className="cart_product_right">
                 <p>{props.title}</p>
-                <p className="price">₹ {props.price}</p>
-                <p>Quantity - {props.quantity}</p>
+                <p className="price">₹ {props.price * props.quantity}</p>
+                {(props.title === "Sambar Powder" || props.title === "Rasam Powder") && <p>Quantity - {quantityVariable}</p>} 
+                {(props.title === "Besan Laddoo" || props.title === "Gulab Jamun") && <p>Quantity - {props.quantity}</p>}
                 
                 <button onClick={removeFromBasket} id="cart_product_button" className="cart_product_button">Remove From Cart</button>
             </div>

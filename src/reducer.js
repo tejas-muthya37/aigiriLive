@@ -4,6 +4,7 @@ export const initialState = {
   };
   
   export const getBasketTotal = (basket) =>
+
     basket?.reduce((amount, item) => amount + (Number(item.price) * item.quantity), 0);
   
   const reducer = (state, action) => {

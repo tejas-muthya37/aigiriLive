@@ -40,16 +40,22 @@ function Recipe() {
         <div className="recipe">
             <div className="recipe_left">
                 <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
-                    <h5 id="price" className="price">₹ {newProduct.price}.99</h5>
+                {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <h5 id="price" className="price">₹ {newProduct.price}.99 / KG</h5>}
+                {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <h5 id="price" className="price">₹ {newProduct.price}.99 / Box</h5>}
                     <div className="recipe_left_quantity">
                         <form>
-                            <label htmlFor="quantity"><h5 className="font_alike">QUANTITY</h5></label>
-                            <select id="quantity" name="quantity">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                            <label htmlFor="quantity"><h5 className="quantity font_alike">QUANTITY</h5></label>
+                            {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <select id="quantity" name="quantity">
+                                <option value={1}>1</option>
+                                <option value={2}>2</option>
+                                <option value={3}>3</option>
+                                <option value={4}>4</option>
+                            </select>}
+                            {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <select id="quantity" name="quantity">
+                                <option value={1/4}>250 GRAMS</option>
+                                <option value={1/2}>500 GRAMS</option>
+                                <option value={1}>1 KG</option>
+                            </select>}
                         </form>
                     </div>
                     <button onClick={addToBasket} className="recipe_button">ADD TO CART</button>
