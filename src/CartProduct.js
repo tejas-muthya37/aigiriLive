@@ -20,11 +20,11 @@ function CartProduct(props) {
 
     if (props.title === "Sambar Powder" || props.title === "Rasam Powder") {
         if(props.quantity === "0.25") {
-            quantityVariable = "250 GRAMS"
+            quantityVariable = "250 grams"
         }
 
         else if (props.quantity === "0.5") {
-            quantityVariable = "500 GRAMS"
+            quantityVariable = "500 grams"
         }
 
         else {
@@ -39,7 +39,7 @@ function CartProduct(props) {
             </div>
             <div className="cart_product_right">
                 <p>{props.title}</p>
-                <p className="price">₹ {props.price * props.quantity}</p>
+                <p className="cart_product_price">₹ {props.price * props.quantity}</p>
                 {(props.title === "Sambar Powder" || props.title === "Rasam Powder") && <p>Quantity - {quantityVariable}</p>} 
                 {(props.title === "Besan Laddoo" || props.title === "Gulab Jamun") && <p>Quantity - {props.quantity}</p>}
                 
