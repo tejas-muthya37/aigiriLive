@@ -105,17 +105,17 @@ h4 {
   }
 
   select {
-    margin-left: -35px;
-    margin-right: 0;
+    margin-left: -37.5px;
+    margin-right: -1px;
     padding-right: 0;
   }
 
   .price {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     min-width: 80px;
-    margin-left: -155px;
+    margin-left: -145px;
     color: #505050;
     font-size: 15px;
   }
@@ -142,7 +142,7 @@ h4 {
 
   .recipe_left_quantity {
     position: absolute;
-    top: 45px;
+    top: 44.5px;
     right: 5%;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
