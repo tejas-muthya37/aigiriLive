@@ -93,7 +93,7 @@ function Checkout() {
                 
                 <div className="locationInput">
 
-                <select onClick={handleClick} id="countrySelect" className="locationInputs">
+                <select onChange={handleClick} id="countrySelect" className="locationInputs">
                     <option value="India" selected>India</option>
                     <option value="Other">Other</option>
                     
