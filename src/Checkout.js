@@ -41,25 +41,53 @@ function Checkout() {
         }
 
         var citiesByState = {
-            "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Kakinada", "Rajamahendravaram", "Kadapa", 
-                                "Tirupati", "Anantapuram", "Vizianagaram", "Eluru", "Chirala", "Ongole", "Adoni", "Madanapalle",
-                                "Machilipatnam", "Tenali", "Proddatur", "Chittoor", "Hindupur", "Srikakulam", "Bhimavaram", "Guntakal",
-                                "Dharmavaram", "Gudivada", "Narasaraopet", "Tadipatri", "Mangalagiri", "Tadepalligudem", "Amaravati", "Chilakaluripet"],
+                "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Kakinada", "Rajamahendravaram", "Kadapa", 
+                                    "Tirupati", "Anantapuram", "Vizianagaram", "Eluru", "Chirala", "Ongole", "Adoni", "Madanapalle",
+                                    "Machilipatnam", "Tenali", "Proddatur", "Chittoor", "Hindupur", "Srikakulam", "Bhimavaram", "Guntakal",
+                                    "Dharmavaram", "Gudivada", "Narasaraopet", "Tadipatri", "Mangalagiri", "Tadepalligudem", "Amaravati", "Chilakaluripet"],
             
                 "Goa": ["Bicholim", "Canacona", "Cuncolim", "Curchorem", "Mapusa", "Margao", "Mormugao", "Panaji", "Pernem", "Ponda", "Quepem",
                         "Sanguem", "Sanquelim", "Valpoi"],
             
-                "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Junagadh", "Gandhinagar", "Gandhidham", "Anand", "Navsari", "Morbi", "Nadiad", "Surendranagar", "Bharuch", "Mehsana", "Bhuj", "Daman", "Porbandar", "Palanpur", "Valsad", "Vapi", "Gondal", "Veraval", "Godhara", "Patan", "Kalol, Gandhinagar", "Dahod", "Botad", "Amreli", "Deesa", "Jetpur"]
+                "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Junagadh", "Gandhinagar", "Gandhidham", "Anand", "Navsari",
+                            "Morbi", "Nadiad", "Surendranagar", "Bharuch", "Mehsana", "Bhuj", "Daman", "Porbandar", "Palanpur", "Valsad", "Vapi", "Gondal", 
+                            "Veraval", "Godhara", "Patan", "Kalol, Gandhinagar", "Dahod", "Botad", "Amreli", "Deesa", "Jetpur"],
             
-                // Karnataka: [""]
-                // Kerala: [""]
-                // Maharashtra: [""]
-                // Punjab: [""]
-                // Rajasthan: [""]
-                // Tamil Nadu: [""]
-                // Telangana: [""]
-                // West Bengal: [""]
-            }
+                "Karnataka": ["Bengaluru", "Hubli-Dharwad", "Mysuru", "Kalaburagi", "Mangaluru", "Belagavi", "Davanagere", "Ballari", "Vijayapura", "Shivamogga",
+                            "Tumakuru", "Raichur", "Bidar", "Hosapete", "Gadag-Betageri", "Robertsonpete", "Hassan", "Bhadravati", "Chitradurga", "Udupi", "Kolara", 
+                            "Mandya", "Chikkamagaluru", "Gangavati", "Bagalkote", "Ranebennuru"],
+                
+                "Kerala": ["Alleppey", "Ernakulam", "Idukki", "Kannur", "Kasaragod", "Kollam", "Kottayam", "Kozhikode", "Malappuram", "Munnar", "Palakkad",
+                            "Thekkady", "Thiruvananthapuram", "Thrissur", "Wayanad", "Varkala"],
+
+                "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Nashik", "Thane", "Aurangabad", "Solapur", "Dhule", "Amaravati", "Malegoan", "Kolhapur",
+                                "Nanded-Waghela", "Sangli", "Bhiwandi-Nizampur", "Akola", "Latur", "Jalgaon", "Ahmednagar", "Miraj", "Ichalkaranji",
+                                "Chandrapur", "Parbhani", "Jalna", "Bhusawal", "Navi Mumbai Panvel Raigad", "Panvel City", "Satara", "Beed", "Yavatmal",
+                                "Kamptee", "Gondia", "Barshi", "Achalpur", "Osmanabad", "Nandurbar", "Wardha", "Udgir", "Hinganghat"],
+
+                "Punjab": ["Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Hoshiarpur",
+                            "Hoshiarpur", "Mohali", "Batala", "Pathankot", "Moga", "Abohar", "Malerkotla",
+                            "Khanna", "Phagwara", "Muktsar", "Barnala", "Rajpura", "Firozpur", "Kapurthala", "Sunam"],
+
+                "Rajasthan": ["Jaipur", "Jodhpur", "Ajmer", "Udaipur", "Kota", "Bikaner", "Bhilwara",
+                                "Alwar", "Bharatpur", "Sri Ganganagar", "Sikar", "Pali", "Hanumangarh"],
+
+                "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Tiruppur", "Salem", 
+                                "Erode", "Tirunelveli", "Vellore", "Thoothukkudi", "Dindigul", "Thanjavur",
+                                "Ranipet", "Sivakasi", "Karur", "Udhagamandalam", "Hosur", "Nagercoil", 
+                                "Kancheepuram", "Kumarapalayam", "Karaikkudi", "Neyveli", "Cuddalore", "Kumbakonam", 
+                                "Tiruvannamalai", "Pollachi", "Rajapalayam", "Gudiyatham", "Pudukkottai", "Vaniyambadi", 
+                                "Ambur", "Nagapattinam"],
+
+                "Telangana": ["Hyderabad", "Warangal", "Mahabubnagar", "Khammam", "Ramagundam", "Nizamabad",
+                            "Suryapet", "Nalgonda", "Miryalaguda", "Karimnagar", "Adilabad", "Jagityal", "Nirmal"],
+                            
+                "West Bengal": ["Kolkata", "Asansol", "Siliguri", "Durgapur", "Bardhaman", "English Bazar", 
+                                "Baharampur", "Habra", "Kharagpur", "Shantipur", "Dankuni", "Dhulian", 
+                                "Ranaghat", "Haldia", "Raiganj", "Krishnanagar", "Nabadwip", "Medinipur", 
+                                "Jalpaiguri", "Balurghat", "Basirhat", "Bankura", "Chakdaha", "Darjeeling", 
+                                "Alipurduar", "Purulia", "Jangipur", "Bangaon", "Cooch Behar"]
+                            }
             function makeSubmenu(value) {
             
                 if(value.length===0) document.getElementById("citySelect").innerHTML = "<option></option>";
@@ -104,6 +132,14 @@ function Checkout() {
                     <option className="states">Andhra Pradesh</option>
                     <option className="states">Goa</option>
                     <option className="states">Gujarat</option>
+                    <option className="states">Karnataka</option>
+                    <option className="states">Kerala</option>
+                    <option className="states">Maharashtra</option>
+                    <option className="states">Punjab</option>
+                    <option className="states">Rajasthan</option>
+                    <option className="states">Tamil Nadu</option>
+                    <option className="states">Telangana</option>
+                    <option className="states">West Bengal</option>
                 </select>}
                 
                 {country === "India" && <select className="locationInputs" id="citySelect" size="1" >
