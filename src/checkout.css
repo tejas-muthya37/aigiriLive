@@ -3,7 +3,7 @@
   width: 60%;
   padding: 20px;
   border: 2px solid silver;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .contact-btn {
@@ -35,8 +35,21 @@
   color: #111;
 }
 
+.locationInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationInputs {
+  width: 33%;
+  margin-bottom: 20px;
+  border: 2px solid silver;
+  border-radius: 2px;
+}
+
 .contact input {
   border: 2px solid silver;
+  border-radius: 2px;
 }
 
 .contact a:hover {
@@ -48,6 +61,10 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.international_shipping_note {
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {

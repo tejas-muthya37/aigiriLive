@@ -32,4 +32,8 @@
     width: 180px;
     padding: 10px;
   }
+
+  .products_title {
+    font-size: 25px;
+  }
 }

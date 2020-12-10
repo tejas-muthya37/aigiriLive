@@ -14,28 +14,28 @@ function Products() {
             id="1" 
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="449"
+            price="450"
             
           /></div>
         <div id="2" className="row_product"><Product
             id="2"
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="79"
+            price="80"
             
           /></div>
         <div id="3" className="row_product"><Product
             id="3"
             title="Besan Laddoo"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="299"
+            price="300"
           /></div>
         <div id="4" className="row_product"><Product
             id="4"
             title="Gulab Jamun"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
             
-            price="169"
+            price="170"
           /></div>
         </div>
         <div className="products_row">
@@ -43,25 +43,25 @@ function Products() {
             id="5"
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="449"
+            price="450"
           /></div>
         <div id="6" className="row_product"><Product
             id="6"
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"           
-            price="79"
+            price="80"
           /></div>
         <div id="7" className="row_product"><Product
             id="7"
             title="Besan Laddoo"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="299"
+            price="300"
           /></div>
         <div id="8" className="row_product"><Product
             id="8"
             title="Gulab Jamun"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="169"
+            price="170"
           /></div>
         </div>
         <div className="products_row">
@@ -69,25 +69,25 @@ function Products() {
             id="9"
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"           
-            price="449"
+            price="450"
           /></div>
         <div id="10" className="row_product"><Product
             id="10"
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="79"
+            price="80"
           /></div>
         <div id="11" className="row_product"><Product
             id="11"
             title="Besan Laddoo"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="299"
+            price="300"
           /></div>
         <div id="12" className="row_product"><Product
             id="12"
             title="Gulab Jamun"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="169"
+            price="170"
           /></div>
         </div>
         <div className="products_row">
@@ -95,25 +95,25 @@ function Products() {
             id="13"
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="449"
+            price="450"
           /></div>
         <div id="14" className="row_product"><Product
             id="14"
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="79"
+            price="80"
           /></div>
         <div id="15" className="row_product"><Product
             id="15"
             title="Besan Laddoo"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="299"
+            price="300"
           /></div>
         <div id="16" className="row_product"><Product
             id="16"
             title="Gulab Jamun"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"            
-            price="169"
+            price="170"
           /></div>
         </div>
       </div>

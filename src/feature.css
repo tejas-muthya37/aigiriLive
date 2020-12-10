@@ -4,7 +4,7 @@
   background-color: #b5d0ec;
   color: black;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 75px;
 }
 
@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     height: 350px;
-    margin-top: 75px;
+    margin-top: 50px;
   }
 
   .feature img {
@@ -31,7 +31,7 @@
   }
 
   .feature h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 25px;
   }
 }

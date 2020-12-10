@@ -28,8 +28,8 @@
   margin-top: 15px;
 }
 
-.cart_product .price {
-  margin-top: -15px;
+.cart_product_price {
+  margin-top: -14px;
   margin-left: 0;
 }
 
@@ -45,7 +45,6 @@
   .cart_product img {
     margin-left: 20px;
     height: 150px;
-    margin-top: 6px;
   }
 
   #cart_product_button {
@@ -56,7 +55,7 @@
     margin-left: 0;
     margin-right: 2px;
     width: 145px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
 
   .cart_product_right {

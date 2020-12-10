@@ -40,8 +40,8 @@ function Recipe() {
         <div className="recipe">
             <div className="recipe_left">
                 <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
-                {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <h5 id="price" className="price">₹ {newProduct.price}.99 / KG</h5>}
-                {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <h5 id="price" className="price">₹ {newProduct.price}.99 / Box</h5>}
+                {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <h5 id="price" className="price">₹ {newProduct.price} / KG</h5>}
+                {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <h5 id="price" className="price">₹ {newProduct.price} / Box of 6</h5>}
                     <div className="recipe_left_quantity">
                         <form>
                             <label htmlFor="quantity"><h5 className="quantity font_alike">QUANTITY</h5></label>

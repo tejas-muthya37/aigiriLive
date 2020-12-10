@@ -13,7 +13,7 @@ function BestSeller() {
             id="1"
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="449"
+            price="450"
           />
           </div>
 
@@ -22,7 +22,7 @@ function BestSeller() {
             id="2"
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="79"
+            price="80"
             />
           </div>
 
@@ -31,7 +31,7 @@ function BestSeller() {
             id="3"
             title="Besan Laddoo"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="299"
+            price="300"
             />
           </div>
             
@@ -40,7 +40,7 @@ function BestSeller() {
             id="4"
             title="Gulab Jamun"
             image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="169"
+            price="170"
             />   
           </div>
 
