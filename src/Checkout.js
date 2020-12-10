@@ -114,7 +114,7 @@ function Checkout() {
 
                 <input type="text" id="defaultContactFormAddress" className="form-control mb-4" placeholder="Your Residential Address" />
 
-                {country === "Other" && <p className="international_shipping_note">Note: Please mention the country, state and city in the address field in case you want the product to shipped out of India.</p>}
+                {country === "Other" && <p className="international_shipping_note">Note : Please mention the country, state and city in the address field in case you want the product to shipped out of India.</p>}
 
                 <Link to="/"><button onClick={addOrder} className="contact-btn">Place Order</button></Link>
 
