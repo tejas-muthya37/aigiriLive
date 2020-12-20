@@ -14,6 +14,7 @@ h6 {
 .recipe select {
   margin-left: 15px;
   font-size: 16px;
+  height: 25px;
 }
 
 .recipe h5 {
@@ -37,13 +38,15 @@ h4 {
 #recipe_left_header {
   margin-bottom: 50px;
   margin-left: 50px;
-  font-size: 21px;
+  font-size: 24px;
+  letter-spacing: 1px;
 }
 
 .recipe_left_quantity {
   font-size: 20px;
   font-weight: 500;
   text-align: left;
+  letter-spacing: 1px;
 }
 
 .recipe_left {
@@ -81,12 +84,13 @@ h4 {
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 61px;
+  padding-right: 61px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 50px;
   margin-left: 50px;
+  font-weight: 500;
 }
 
 .price {
@@ -167,7 +171,8 @@ h4 {
     top: 500px;
     height: 50px;
     width: 90%;
-    margin-left: -37%;
+    margin-left: 0;
+    left: 5%;
   }
 
   .recipe_mid img {

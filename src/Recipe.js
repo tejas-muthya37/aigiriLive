@@ -28,9 +28,11 @@ function Recipe() {
           item: {
             id: newProduct.id,
             title: newProduct.title,
+            category: newProduct.category,
             image: newProduct.image,
             price: newProduct.price,
-            quantity: document.getElementById("quantity").value
+            quantity: document.getElementById("quantity").value,
+            quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML
           },
         });
       };
@@ -46,15 +48,15 @@ function Recipe() {
                         <form>
                             <label htmlFor="quantity"><h5 className="quantity font_alike">QUANTITY</h5></label>
                             {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <select id="quantity" name="quantity">
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
+                                <option id="1" value={1}>1</option>
+                                <option id="2" value={2}>2</option>
+                                <option id="3" value={3}>3</option>
+                                <option id="4" value={4}>4</option>
                             </select>}
                             {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <select id="quantity" name="quantity">
-                                <option value={1/4}>250 GRAMS</option>
-                                <option value={1/2}>500 GRAMS</option>
-                                <option value={1}>1 KG</option>
+                                <option id={1} value={1}>1 KG</option>
+                                <option id={1/2} value={1/2}>500 GRAMS</option>
+                                <option id={1/4} value={1/4}>250 GRAMS</option>
                             </select>}
                         </form>
                     </div>

@@ -1,0 +1,267 @@
+.invoice_temp {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  height: max-content;
+  margin-left: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  object-fit: contain;
+}
+
+.generate_invoice_button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  margin-left: -2px;
+  margin-right: 0;
+  margin-bottom: 50px;
+  width: 25%;
+}
+
+@media print {
+  .generate_invoice_button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    margin-bottom: 50px;
+    width: 25%;
+  }
+}
+
+.invoice_temp_mid {
+  background-color: #b5d0ec;
+  width: 100%;
+}
+
+.invoice_temp_top {
+  background-color: #dadada;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.temp_top_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 2px;
+}
+
+.invoice_temp_bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dadada;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.name_phone {
+  margin-top: -7px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.invoice_temp_mid {
+  text-align: left;
+}
+
+.invoice_title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+  margin-bottom: 0;
+}
+
+.invoice_header {
+  letter-spacing: 3px;
+  margin-top: -5px;
+}
+
+.aigiri_logo {
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.aigiri_address {
+  width: 300px;
+}
+
+.temp_top_right {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.item_table {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+
+.item_table th {
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+}
+
+.item_table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.temp_mid_total {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 19.5%;
+  padding-bottom: 10px;
+}
+
+.total_mid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.total_left {
+  font-weight: bold;
+}
+
+.grand_total {
+  font-size: 23px;
+  margin-top: -5px;
+}
+
+.total_last_child {
+  padding-top: 20px;
+}
+
+.payable_to {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.temp_bottom_left {
+  width: 40%;
+}
+
+.temp_bottom_right {
+  width: 40%;
+  padding-right: 50px;
+}
+
+.continue_shopping {
+  margin-top: 50px;
+}
+
+.customer_name {
+  padding-bottom: 37.5px;
+}
+
+.quantity_table {
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .invoice_temp {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .invoice_temp_top {
+    padding-left: 5%;
+  }
+
+  .temp_top_right {
+    width: 45%;
+    padding-right: 5%;
+  }
+
+  .invoice_title {
+    font-size: 21px;
+  }
+
+  .invoice_no {
+    font-size: 15px;
+  }
+
+  .invoice_header {
+    font-size: 21px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .item_table {
+    font-size: 15px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .quantity_table {
+    padding-left: 13%;
+  }
+
+  .temp_mid_total {
+    font-size: 15px;
+    padding-right: 9.5%;
+    padding-left: 5%;
+  }
+
+  .grand_total_rupee {
+    padding-top: 38.5px;
+    min-width: 54px;
+  }
+
+  .last_dash {
+    margin-top: 15px;
+  }
+
+  .total_mid {
+    padding-right: 16.5%;
+    padding-left: 0;
+  }
+
+  .total_left {
+    min-width: 42%;
+    padding-right: 17%;
+  }
+
+  .grand_total {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .payment_method {
+    height: 43px;
+  }
+
+  .invoice_temp_bottom {
+    padding-left: 5%;
+  }
+
+  .temp_bottom_left {
+    width: 45%;
+  }
+
+  .temp_bottom_right {
+    padding-right: 5%;
+    width: 45%;
+  }
+
+  .generate_invoice_button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    margin-bottom: 50px;
+    width: 55%;
+  }
+}

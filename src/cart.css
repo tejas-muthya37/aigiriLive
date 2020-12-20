@@ -7,17 +7,19 @@
 #empty_cart {
   position: absolute;
   top: 30%;
-  left: 60%;
+  width: 90%;
+  left: 5%;
+  text-align: center;
 }
 
 .checkout_div {
   width: 100%;
 }
 
-.cart h3 {
+.cart_title {
   margin-bottom: 50px;
   margin-left: -355px;
-  font-size: 27.5px;
+  font-size: 23px;
 }
 
 .cart_left {
@@ -63,8 +65,11 @@
 
   #empty_cart {
     position: absolute;
+    font-size: 23px;
+    text-align: center;
     top: 200px;
-    left: 395px;
+    width: 90%;
+    left: 5%;
   }
 
   .cart_right h4 {
@@ -81,14 +86,14 @@
     width: 100%;
   }
 
-  .cart h3 {
-    font-size: 23px;
+  .cart_title {
+    font-size: 22px;
     position: absolute;
-    top: 220px;
+    top: 240px;
     left: 377px;
   }
 
   .cart_left {
-    margin-top: 150px;
+    margin-top: 180px;
   }
 }

@@ -1,9 +1,47 @@
 .contact {
-  margin-top: 150px;
+  margin-top: 130px;
   width: 60%;
   padding: 20px;
   border: 2px solid silver;
   border-radius: 2px;
+}
+
+.gpay_order {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.payment_options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.payment_left {
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+
+.payment_option {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.check_input {
+  transform: scale(1.25);
+}
+
+.input_label {
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
+.phone {
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  height: 35px;
 }
 
 .contact-btn {
@@ -15,24 +53,8 @@
   width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.contact-btn:hover {
-  background: #f0c14b;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
-}
-
-.contact-btn:active {
-  background: #f0c14b;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
-}
-
-.contact-btn:visited {
-  background: #f0c14b;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  font-weight: 500;
+  text-align: center;
 }
 
 .locationInput {
@@ -41,13 +63,14 @@
 }
 
 .locationInputs {
-  width: 33%;
+  width: 48%;
   margin-bottom: 20px;
   border: 2px solid silver;
   border-radius: 2px;
+  padding-left: 10px;
 }
 
-.contact input {
+.border-required {
   border: 2px solid silver;
   border-radius: 2px;
 }
@@ -67,7 +90,25 @@
   text-align: left;
 }
 
+select {
+  height: 40px;
+}
+
+.phone,
+.address {
+  height: 40px;
+}
+
 @media screen and (max-width: 768px) {
+  select {
+    height: 40px;
+  }
+
+  .phone,
+  .address {
+    height: 40px;
+  }
+
   .contact {
     width: 90%;
     margin-top: 125px;

@@ -11,35 +11,47 @@ import About from "./About";
 import Recipe from "./Recipe";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
-
+import InvoiceTemp from "./InvoiceTemp";
 
 function App() {
 
   return (
     <Router>
       <div className="App">
-      <NavBar />
+      
       <Switch>
       <Route path="/recipe/:id">
+        <NavBar />
         <Recipe />
+        <Footer />
       </Route>
       <Route path="/about">
-          <About />
+        <NavBar />
+        <About />
+        <Footer />
       </Route>
       <Route path="/checkout">
-          <Checkout />
+        <NavBar />
+        <Checkout />
+        <Footer />
       </Route>
       <Route path="/cart">
-          <Cart />
+        <NavBar />
+        <Cart />
+        <Footer />
+      </Route>
+      <Route path="/invoice">
+        <InvoiceTemp />
       </Route>
       <Route path="/">
-          <Carousel />
-          <BestSeller />
-          <Feature />
-          <Products/>
+        <NavBar />
+        <Carousel />
+        <BestSeller />
+        <Feature />
+        <Products />
+        <Footer />
       </Route>
       </Switch>
-      <Footer />
     </div>
     </Router>
     

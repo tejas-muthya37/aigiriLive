@@ -12,18 +12,20 @@ function Cart() {
     return (
         <div className="cart">
             <div className="cart_left">
-                {basket.length === 0 && <h3 id="empty_cart">Your Shopping Cart is empty! :(</h3>}
+                {basket.length === 0 && <h3 id="empty_cart">Your shopping cart is empty.</h3>}
 
-                {basket.length > 0 && <h3>Your Shopping Cart</h3>}
+                {basket.length > 0 && <h3 className="cart_title">YOUR SHOPPING CART</h3>}
 
                 {basket.map((item) => (
                 <CartProduct
                 id={item.id}
                 key={basket.indexOf(item)}
                 title={item.title}
+                category={item.category}
                 price={item.price}
                 image={item.image}
                 quantity={item.quantity}
+                quantityValue={item.quantityValue}
                 ></CartProduct>
                 ))}
 

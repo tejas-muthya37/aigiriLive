@@ -21,11 +21,12 @@
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 0;
   margin-right: 1px;
   margin-top: 15px;
+  font-size: 15px;
 }
 
 .cart_product_price {
@@ -54,8 +55,11 @@
     color: #111;
     margin-left: 0;
     margin-right: 2px;
-    width: 145px;
+    width: 150px;
     margin-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
   }
 
   .cart_product_right {
