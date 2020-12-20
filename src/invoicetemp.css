@@ -22,17 +22,6 @@
   width: 25%;
 }
 
-@media print {
-  .generate_invoice_button {
-    background: #f0c14b;
-    border: 1px solid;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-    margin-bottom: 50px;
-    width: 25%;
-  }
-}
-
 .invoice_temp_mid {
   background-color: #b5d0ec;
   width: 100%;
@@ -69,6 +58,7 @@
   margin-top: -7px;
   margin-bottom: 20px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .invoice_temp_mid {
@@ -84,10 +74,6 @@
 .aigiri_logo {
   height: 50px;
   margin-bottom: 50px;
-}
-
-.aigiri_address {
-  width: 300px;
 }
 
 .temp_top_right {
@@ -117,7 +103,7 @@
 .temp_mid_total {
   display: flex;
   justify-content: flex-end;
-  padding-right: 18.25%;
+  padding-right: 180px;
   padding-bottom: 10px;
 }
 
@@ -133,6 +119,10 @@
 .grand_total {
   font-size: 23px;
   margin-top: -5px;
+}
+
+.grand_total_rupee {
+  font-weight: bold;
 }
 
 .total_last_child {
@@ -207,12 +197,14 @@
   .temp_mid_total {
     font-size: 15px;
     padding-right: 9.5%;
-    padding-left: 5%;
+    padding-left: 0;
+    margin-left: 5%;
   }
 
   .grand_total_rupee {
-    padding-top: 38.5px;
+    padding-top: 20px;
     min-width: 54px;
+    font-weight: bold;
   }
 
   .last_dash {
@@ -220,21 +212,23 @@
   }
 
   .total_mid {
-    padding-right: 19%;
-    padding-left: 19%;
+    padding-right: 5%;
+    padding-left: 14%;
   }
 
   .total_left {
-    min-width: 42%;
+    min-width: 55%;
   }
 
   .total_right {
-    margin-right: -10px;
+    padding-right: 0;
+    text-align: right;
+    width: 100%;
   }
 
   .grand_total {
     font-size: 18px;
-    margin-top: -20px;
+    margin-top: -22px;
   }
 
   .payment_method {
@@ -243,6 +237,7 @@
 
   .invoice_temp_bottom {
     padding-left: 2.5%;
+    padding-bottom: 100px;
   }
 
   .temp_bottom_left {
@@ -261,5 +256,9 @@
     color: #111;
     margin-bottom: 50px;
     width: 55%;
+  }
+
+  .address {
+    padding-top: 15px;
   }
 }

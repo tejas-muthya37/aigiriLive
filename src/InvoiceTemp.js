@@ -75,7 +75,7 @@ function InvoiceTemp() {
                             <p>₹ {getBasketTotal(basket)}</p>
                             <p>₹ 200</p>
                             <p>Prepaid</p>
-                            <p className="total_last_child grand_total grand_total_rupee">₹ {getBasketTotal(basket) + 200}</p>
+                            <p className="total_last_child grand_total_rupee">₹ {getBasketTotal(basket) + 200}</p>
                             
                         </div>
                     </div>
@@ -85,13 +85,13 @@ function InvoiceTemp() {
                 <p className="payable_to">PAYABLE TO</p>
                 <p className="name_phone">AIGIRI FOODS</p>
                 <p className="name_phone">+91 9164187714 </p>
-                <p>#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
+                <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
                 </div>
 
                 <div className="temp_bottom_right">
                 <p className="payable_to">SHIPPED TO</p>
                 <p className="name_phone customer_name">PAWAN MUTHYA</p>
-                <p>#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
+                <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
                 </div>
             </div>
             <a className="continue_shopping" href="/">Click here to continue shopping</a>
