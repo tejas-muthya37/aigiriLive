@@ -19,14 +19,14 @@ function InvoiceTemp() {
 
             <div className="invoice_temp_top">
                 <div className="temp_top_left">
-                    <h2 className="invoice_title">AIGIRI FOODS</h2>
-                    <hr></hr>
-                    <h2 className="invoice_header">INVOICE</h2>
+                <h2 className="invoice_header">INVOICE</h2>
                     <p className="invoice_no">No. 343434</p>
-                    <p className="invoice_no">12-11-2020</p>
+                    
                 </div>
                 <div className="temp_top_right">
-                    <img className="aigiri_logo" alt="" src={logo}></img>                    
+                <img alt="" className="aigiri_logo" src={logo}></img>
+                <p className="invoice_no">12-11-2020</p> 
+
                 </div>
             </div>
             <div className="invoice_temp_mid">
@@ -44,7 +44,7 @@ function InvoiceTemp() {
                         <tr className="item_data">
                         <td>{item.title}</td>
                         <td className="quantity_table">{item.quantityValue}</td>
-                        <td>₹ {item.price}</td>
+                        <td>₹ {item.price * item.quantity}</td>
                     </tr>
                     ))}
                     </tbody>

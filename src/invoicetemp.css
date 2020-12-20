@@ -75,15 +75,10 @@
   text-align: left;
 }
 
-.invoice_title {
-  padding-bottom: 10px;
-  border-bottom: 3px solid black;
-  margin-bottom: 0;
-}
-
 .invoice_header {
   letter-spacing: 3px;
-  margin-top: -5px;
+  border-bottom: 3px solid black;
+  margin-bottom: 50px;
 }
 
 .aigiri_logo {
@@ -122,7 +117,7 @@
 .temp_mid_total {
   display: flex;
   justify-content: flex-end;
-  padding-right: 19.5%;
+  padding-right: 18.25%;
   padding-bottom: 10px;
 }
 
@@ -185,17 +180,17 @@
     padding-right: 5%;
   }
 
-  .invoice_title {
-    font-size: 21px;
+  .temp_top_right p {
+    margin-top: -7.5px;
   }
 
   .invoice_no {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .invoice_header {
     font-size: 21px;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 10px;
   }
 
@@ -225,13 +220,16 @@
   }
 
   .total_mid {
-    padding-right: 16.5%;
-    padding-left: 0;
+    padding-right: 19%;
+    padding-left: 19%;
   }
 
   .total_left {
     min-width: 42%;
-    padding-right: 17%;
+  }
+
+  .total_right {
+    margin-right: -10px;
   }
 
   .grand_total {
@@ -244,7 +242,7 @@
   }
 
   .invoice_temp_bottom {
-    padding-left: 5%;
+    padding-left: 2.5%;
   }
 
   .temp_bottom_left {
@@ -252,7 +250,7 @@
   }
 
   .temp_bottom_right {
-    padding-right: 5%;
+    padding-right: 0;
     width: 45%;
   }
 
