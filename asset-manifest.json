@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/aigiriLive/static/css/main.f7789ed9.chunk.css",
-    "main.js": "/aigiriLive/static/js/main.ef1dd9d6.chunk.js",
-    "main.js.map": "/aigiriLive/static/js/main.ef1dd9d6.chunk.js.map",
+    "main.css": "/aigiriLive/static/css/main.ecfa3f80.chunk.css",
+    "main.js": "/aigiriLive/static/js/main.b9e363b4.chunk.js",
+    "main.js.map": "/aigiriLive/static/js/main.b9e363b4.chunk.js.map",
     "runtime-main.js": "/aigiriLive/static/js/runtime-main.8dabedc6.js",
     "runtime-main.js.map": "/aigiriLive/static/js/runtime-main.8dabedc6.js.map",
     "static/js/2.b2c847e0.chunk.js": "/aigiriLive/static/js/2.b2c847e0.chunk.js",
     "static/js/2.b2c847e0.chunk.js.map": "/aigiriLive/static/js/2.b2c847e0.chunk.js.map",
     "index.html": "/aigiriLive/index.html",
-    "static/css/main.f7789ed9.chunk.css.map": "/aigiriLive/static/css/main.f7789ed9.chunk.css.map",
+    "static/css/main.ecfa3f80.chunk.css.map": "/aigiriLive/static/css/main.ecfa3f80.chunk.css.map",
     "static/js/2.b2c847e0.chunk.js.LICENSE.txt": "/aigiriLive/static/js/2.b2c847e0.chunk.js.LICENSE.txt",
     "static/media/aigiri_logo_cropped.ed88c8bd.png": "/aigiriLive/static/media/aigiri_logo_cropped.ed88c8bd.png",
     "static/media/group-family3.7914e854.jpg": "/aigiriLive/static/media/group-family3.7914e854.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.8dabedc6.js",
     "static/js/2.b2c847e0.chunk.js",
-    "static/css/main.f7789ed9.chunk.css",
-    "static/js/main.ef1dd9d6.chunk.js"
+    "static/css/main.ecfa3f80.chunk.css",
+    "static/js/main.b9e363b4.chunk.js"
   ]
 }
