@@ -3,6 +3,7 @@ import "./invoicetemp.css";
 import logo from "./aigiri_logo_cropped.png";
 import { useStateValue } from "./StateProvider";
 import {getBasketTotal} from "./reducer";
+import { Link } from 'react-router-dom';
 
 function InvoiceTemp() {
 
@@ -12,6 +13,12 @@ function InvoiceTemp() {
         window.print();
     }
 
+    const scrollTop = () => {
+        window.scroll({
+          top: 0,
+          left: 0,
+        });
+      }
 
     var todayDate = new Date().toLocaleDateString('en-CA');
 
@@ -98,7 +105,7 @@ function InvoiceTemp() {
                 <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
                 </div>
             </div>
-            <a className="continue_shopping" href="/">Click here to continue shopping</a>
+            <Link onClick={scrollTop} className="continue_shopping" to="/">Click here to continue shopping!</Link>
         </div>
     )
 }
