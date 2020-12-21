@@ -56,9 +56,6 @@ function Checkout() {
 
     }
 
-    function invoiceAlert() {
-        alert("We have successfully received your order! Please download a copy of the invoice for future reference.");
-    }
 
     // function addOrder(event) {
 
@@ -318,7 +315,7 @@ function Checkout() {
                 
                 </div>
 
-                <Link onClick={scrollTop} to="/invoice"><input readOnly={true} onClick={invoiceAlert} ref={submitRef} type="submit" value="Confirm Order" className="contact-btn" /></Link>
+                <Link onClick={scrollTop} to="/invoice"><input readOnly={true} ref={submitRef} type="submit" value="Confirm Order" className="contact-btn" /></Link>
 
             </form>
 
