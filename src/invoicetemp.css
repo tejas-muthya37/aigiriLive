@@ -19,6 +19,7 @@
   margin-left: -2px;
   margin-right: 0;
   margin-bottom: 50px;
+  margin-top: 30px;
   width: 25%;
 }
 
@@ -51,7 +52,7 @@
   width: 100%;
   padding-left: 50px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .name_phone {
@@ -66,6 +67,8 @@
 }
 
 .invoice_header {
+  font-family: "Audiowide", cursive;
+
   letter-spacing: 3px;
   border-bottom: 3px solid black;
   margin-bottom: 50px;
@@ -185,9 +188,12 @@
   }
 
   .item_table {
-    font-size: 15px;
     width: 90%;
     margin-left: 5%;
+  }
+
+  .item_table td {
+    font-size: 15px;
   }
 
   .quantity_table {
@@ -202,7 +208,7 @@
   }
 
   .grand_total_rupee {
-    padding-top: 20px;
+    padding-top: 15px;
     min-width: 54px;
     font-weight: bold;
   }
@@ -221,9 +227,10 @@
   }
 
   .total_right {
-    padding-right: 0;
+    padding-right: 3%;
     text-align: right;
     width: 100%;
+    font-size: 16px;
   }
 
   .grand_total {
@@ -237,7 +244,7 @@
 
   .invoice_temp_bottom {
     padding-left: 2.5%;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   .temp_bottom_left {

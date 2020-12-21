@@ -12,10 +12,14 @@ function InvoiceTemp() {
         window.print();
     }
 
+
+    var todayDate = new Date().toLocaleDateString('en-CA');
+
     return (
         <div className="invoice_temp">
         
-        <button className="generate_invoice_button" onClick={genPDF}>Download a copy</button>
+        <p>We have successfully received your order. Please download a copy of the invoice for future reference.</p>
+        <button className="generate_invoice_button" onClick={genPDF}>Download</button>
 
             <div className="invoice_temp_top">
                 <div className="temp_top_left">
@@ -25,7 +29,7 @@ function InvoiceTemp() {
                 </div>
                 <div className="temp_top_right">
                 <img alt="" className="aigiri_logo" src={logo}></img>
-                <p className="invoice_no">12-11-2020</p> 
+                <p className="invoice_no">{todayDate}</p> 
 
                 </div>
             </div>
@@ -85,12 +89,12 @@ function InvoiceTemp() {
                 <p className="payable_to">PAYABLE TO</p>
                 <p className="name_phone">AIGIRI FOODS</p>
                 <p className="name_phone">+91 9164187714 </p>
-                <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
+                <p className="address">Girinagar, Bangalore - 560085, Karnataka</p>
                 </div>
 
                 <div className="temp_bottom_right">
                 <p className="payable_to">SHIPPED TO</p>
-                <p className="name_phone customer_name">PAWAN MUTHYA</p>
+                <p className="name_phone customer_name">TEJAS MUTHYA</p>
                 <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
                 </div>
             </div>
