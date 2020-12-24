@@ -89,7 +89,7 @@ function InvoiceTemp() {
             let srPhone = localStorage.getItem("srPhone");
             let srTotal = getBasketTotal(basket);
 
-            var raw = JSON.stringify({"order_id":"123-999","order_date":srDate,"pickup_location":"Primary",
+            var raw = JSON.stringify({"order_id":"123-143","order_date":srDate,"pickup_location":"Primary",
                                     "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
                                     "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
                                     "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
