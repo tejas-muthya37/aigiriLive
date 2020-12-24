@@ -3,30 +3,146 @@ import "./invoicetemp.css";
 import logo from "./aigiri_logo_cropped.png";
 import { useStateValue } from "./StateProvider";
 import {getBasketTotal} from "./reducer";
-import { Link } from 'react-router-dom';
 
 function InvoiceTemp() {
 
     const [{ basket }] = useStateValue();
 
-    function genPDF() {
-        window.print();
-    }
+    let newString = "";
+    basket?.map((item) => (
+        newString += "\n" + item.title + "\t|\t" + item.quantityValue + "\t|\t" + String(item.quantity * item.price)
+        ))
 
-    const scrollTop = () => {
-        window.scroll({
-          top: 0,
-          left: 0,
-        });
-      }
+    var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({"email":"foodsaigiri@gmail.com","password":"foodsaigirifoods"});
+
+        var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+
+        fetch("https://apiv2.shiprocket.in/v1/external/auth/login", requestOptions)
+        .then(response => response.text())
+        .then(function(result) {
+            let newData = JSON.parse(result);
+            let newToken = newData.token;
+            localStorage.setItem("TOKEN", newToken);
+
+        })
+        .catch(error => console.log('error', error));
 
     var todayDate = new Date().toLocaleDateString('en-CA');
 
+    let userName = localStorage.getItem("srName");
+            let userAddress = localStorage.getItem("srAddress");
+            let userCity = localStorage.getItem("srCity");
+            let userState = localStorage.getItem("srState");
+            let userCountry = localStorage.getItem("srCountry");
+            let userPincode = localStorage.getItem("srPincode");
+            let userEmail = localStorage.getItem("srEmail");
+            let userPhone = localStorage.getItem("srPhone");
+            let userTotal = getBasketTotal(basket);
+            let userPayment = localStorage.getItem("srPayment")
+
+    let shippingCost;
+
+    switch(userState) {
+        case "Karnataka":
+          shippingCost = 100;
+          break;
+          case "Andhra Pradesh":
+            shippingCost = 100;
+            break;
+        default:
+            shippingCost = 100;
+      } 
+
+      let newArray = basket.map((item) => (
+        {
+            "name": item.title,
+            "sku": item.id + item.id + item.id + item.id,
+            "units": 1,
+            "selling_price": item.price
+        })
+    )
+
+      function addOrder(event) {
+
+        var myHeaders = new Headers();
+            let newToken = localStorage.getItem("TOKEN");
+            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Authorization", "Bearer " + newToken);
+
+            let srDate = new Date().toLocaleDateString('en-CA') + " " + new Date().toLocaleTimeString('en-US', { hour12: false }).slice(0,5);
+
+            let srName = localStorage.getItem("srName");
+            let srAddress = localStorage.getItem("srAddress");
+            let srCity = localStorage.getItem("srCity");
+            let srState = localStorage.getItem("srState");
+            let srCountry = localStorage.getItem("srCountry");
+            let srPincode = localStorage.getItem("srPincode");
+            let srEmail = localStorage.getItem("srEmail");
+            let srPhone = localStorage.getItem("srPhone");
+            let srTotal = getBasketTotal(basket);
+
+            var raw = JSON.stringify({"order_id":"123-999","order_date":srDate,"pickup_location":"Primary",
+                                    "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
+                                    "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
+                                    "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
+                                    "billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
+                                    "shipping_is_billing":true,"order_items":[...newArray],
+                                    "payment_method":"Prepaid","sub_total":srTotal,"length":10,"breadth":15,"height":20,"weight":2.5});
+
+            var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+            };
+
+            fetch("https://apiv2.shiprocket.in/v1/external/orders/create/adhoc", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+
+            event.preventDefault();
+      }
+
+      function genPDF() {
+          window.print();
+      }
+
     return (
         <div className="invoice_temp">
-        
-        <p>We have successfully received your order. Please download a copy of the invoice for future reference.</p>
-        <button className="generate_invoice_button" onClick={genPDF}>Download</button>
+
+            <form className="invisible_form" method="POST" action="https://formsubmit.co/tejas.muthya37@gmail.com">
+            
+            <div className="buttons">
+                <button onClick={genPDF} className="generate_invoice_button">Download A Copy</button>
+                <button type="submit" className="confirm_order_button" onMouseDown={addOrder}>Confirm Order</button>
+            </div>
+            
+                <input name="NAME" type="hidden" value={userName}/>
+                <input name="EMAIL" type="hidden" value={userEmail}/>
+                <input name="CONTACT" type="hidden" value={userPhone}/>
+                <input name="COUNTRY" type="hidden" value={userCountry}/>
+                <input name="STATE" type="hidden" value={userState}/>               
+                <input name="CITY" type="hidden" value={userCity}/>
+                <input name="PINCODE" type="hidden" value={userPincode}/>
+                <input name="ADDRESS" type="hidden" value={userAddress}/>
+                <input type="hidden" name="YOUR-ORDER" value={newString} />
+                <input type="hidden" name="PAYMENT-METHOD" value={userPayment} />
+                <input type="hidden" name="CART-TOTAL" value={userTotal} />
+                <input type="hidden" name="SHIPPING-COST" value={shippingCost} />
+                <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
+                {userPayment === "Online" && <input type="hidden" name="NOTICE" value={"Your order will be dispatched once you complete your online payment of ₹ " + (userTotal+shippingCost) + " towards AIGIRI FOODS - +91 9164197714"} />}
+                <input type="hidden" name="_subject" value="Your order from Aigiri Foods" />
+                <input type="hidden" name="_autoresponse" value="Thank you for shopping with Aigiri Foods. This is a confirmation mail that we have successfully received your order." />
+            </form>
 
             <div className="invoice_temp_top">
                 <div className="temp_top_left">
@@ -58,6 +174,7 @@ function InvoiceTemp() {
                         <td>₹ {item.price * item.quantity}</td>
                     </tr>
                     ))}
+                    
                     </tbody>
                     
                     </table>
@@ -84,9 +201,9 @@ function InvoiceTemp() {
                         <div className="total_right">
                             
                             <p>₹ {getBasketTotal(basket)}</p>
-                            <p>₹ 200</p>
-                            <p>Prepaid</p>
-                            <p className="total_last_child grand_total_rupee">₹ {getBasketTotal(basket) + 200}</p>
+                            <p>₹ {shippingCost}</p>
+                            <p>{userPayment}</p>
+                            <p className="total_last_child grand_total_rupee">₹ {getBasketTotal(basket) + 100}</p>
                             
                         </div>
                     </div>
@@ -101,11 +218,11 @@ function InvoiceTemp() {
 
                 <div className="temp_bottom_right">
                 <p className="payable_to">SHIPPED TO</p>
-                <p className="name_phone customer_name">TEJAS MUTHYA</p>
-                <p className="address">#34, 7th Cross, 5th Main, Srinidhi Layout, Konanakunte, JP Nagar, Bangalore 062</p>
+                <p className="name_phone customer_name">{userName}</p>
+                <p className="address">{userAddress}</p>
                 </div>
             </div>
-            <Link onClick={scrollTop} className="continue_shopping" to="/">Click here to continue shopping!</Link>
+            
         </div>
     )
 }

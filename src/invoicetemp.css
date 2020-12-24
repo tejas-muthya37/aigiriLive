@@ -11,16 +11,39 @@
   object-fit: contain;
 }
 
+.invisible_form {
+  width: 100%;
+}
+
+.confirm_order_button {
+  background: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 35%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .generate_invoice_button {
   background: #f0c14b;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
-  margin-left: -2px;
   margin-right: 0;
   margin-bottom: 50px;
   margin-top: 30px;
   width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .invoice_temp_mid {
@@ -106,7 +129,7 @@
 .temp_mid_total {
   display: flex;
   justify-content: flex-end;
-  padding-right: 180px;
+  padding-right: 150px;
   padding-bottom: 10px;
 }
 
@@ -240,6 +263,7 @@
 
   .payment_method {
     height: 43px;
+    padding-top: 4px;
   }
 
   .invoice_temp_bottom {
@@ -262,7 +286,20 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
     margin-bottom: 50px;
-    width: 35%;
+    width: 40%;
+  }
+
+  .confirm_order_button {
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 40%;
   }
 
   .address {

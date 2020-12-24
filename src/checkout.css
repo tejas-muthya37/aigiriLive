@@ -109,6 +109,10 @@ select {
     height: 40px;
   }
 
+  .address {
+    padding-bottom: 15px;
+  }
+
   .contact {
     width: 90%;
     margin-top: 125px;

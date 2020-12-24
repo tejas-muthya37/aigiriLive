@@ -12,8 +12,12 @@ import Recipe from "./Recipe";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import InvoiceTemp from "./InvoiceTemp";
+import { useStateValue } from "./StateProvider";
 
 function App() {
+
+  let [{ basket }] = useStateValue();
+
 
   return (
     <Router>
@@ -30,19 +34,27 @@ function App() {
         <About />
         <Footer />
       </Route>
-      <Route path="/checkout">
+      {basket?.length>0 && <Route path="/checkout">
         <NavBar />
         <Checkout />
         <Footer />
-      </Route>
+      </Route>}
+      {basket?.length===0 && <Route path="/checkout">
+      <h3 id="empty_cart">Your shopping cart is empty.</h3>
+
+      </Route>}
       <Route path="/cart">
         <NavBar />
         <Cart />
         <Footer />
       </Route>
-      <Route path="/invoice">
+      {basket?.length>0 && <Route path="/invoice">
         <InvoiceTemp />
-      </Route>
+      </Route>}
+      {basket?.length===0 && <Route path="/invoice">
+      <h3 id="empty_cart">Your shopping cart is empty.</h3>
+
+      </Route>}
       <Route path="/">
         <NavBar />
         <Carousel />

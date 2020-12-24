@@ -5,9 +5,10 @@ import { useStateValue } from "./StateProvider";
 import {getBasketTotal} from "./reducer";
 import { Link } from "react-router-dom";
 
+
 function Cart() {
 
-    const [{ basket }] = useStateValue();
+    let [{ basket }] = useStateValue();
 
     return (
         <div className="cart">
@@ -16,7 +17,7 @@ function Cart() {
 
                 {basket.length > 0 && <h3 className="cart_title">YOUR SHOPPING CART</h3>}
 
-                {basket.map((item) => (
+                {basket?.map((item) => (
                 <CartProduct
                 id={item.id}
                 key={basket.indexOf(item)}
@@ -27,7 +28,7 @@ function Cart() {
                 quantity={item.quantity}
                 quantityValue={item.quantityValue}
                 ></CartProduct>
-                ))}
+                ))} 
 
 
             </div>

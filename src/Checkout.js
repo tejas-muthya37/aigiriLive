@@ -1,21 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 import "./checkout.css";
-import { getBasketTotal } from './reducer';
-import { useStateValue } from "./StateProvider";
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import { Link } from 'react-router-dom';
 
-function Checkout() {
-
-    function handleClick2(event) {
-        let newOption = event.target.value;
-        setOption(newOption);
-    }
-
-    const [{ basket }] = useStateValue();
-
-    const [option, setOption] = useState("option1")
+const Checkout = () => {
 
     const nameRef = useRef(null);
     const addressRef = useRef(null);
@@ -26,27 +15,23 @@ function Checkout() {
     const mailRef = useRef(null);
     const phoneRef = useRef(null);
     const submitRef = useRef(null);
-
+    
     useEffect(() => {
         nameRef.current.focus();
     }, [])
 
-    // const [{ basket }] = useStateValue();
-
     const [country, setCountry] = useState("India");
-
-    // let newArray = basket.map((item) => (
-    //     {
-    //         "name": item.title,
-    //         "sku": item.id + item.id + item.id + item.id,
-    //         "units": 1,
-    //         "selling_price": item.price
-    //     })
-    // )
 
     function handleClick1(event) {
         let newCountry = event.target.value;
         setCountry(newCountry);
+    }
+
+    const [payment, setPayment] = useState("COD");
+
+    function handleClick2(event) {
+        let newPayment = event.target.value;
+        setPayment(newPayment)
     }
 
     function onPageLoad() {
@@ -56,81 +41,56 @@ function Checkout() {
 
     }
 
-
-    // function addOrder(event) {
-
         // -------------------------------------------------- Create Order API --------------------------------------------------------------
 
-        // var myHeaders = new Headers();
-        // myHeaders.append("Content-Type", "application/json");
-        // myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwNTE1ODQsImlzcyI6Imh0dHBzOi8vYXBpdjIuc2hpcHJvY2tldC5pbi92MS9leHRlcm5hbC9hdXRoL2xvZ2luIiwiaWF0IjoxNjA3NDkwNzIyLCJleHAiOjE2MDgzNTQ3MjIsIm5iZiI6MTYwNzQ5MDcyMiwianRpIjoia0NtWnhNUWRDRDNYMkxFVyJ9.H0L1eb7nVGz5iHQUJszqEXQpE-MqmTYL5ujg_95b1lQ");
+        function addVars(event) {
 
-        // let srDate = new Date().toLocaleDateString('en-CA') + " " + new Date().toLocaleTimeString('en-US', { hour12: false }).slice(0,5);
-        // let srName = String(nameRef.current.value);
-        // let srAddress = String(addressRef.current.value);
-        // let srCity = String(cityRef.current.value);
-        // let srState = String(stateRef.current.value);
-        // let srCountry = String(country);
-        // let srPincode = Number(pincodeRef.current.value);
-        // let srEmail  = String(mailRef.current.value);
-        // let srPhone  = String(phoneRef.current.value);
-        // let srTotal = getBasketTotal(basket);
+            // var myHeaders = new Headers();
+            // let newToken = localStorage.getItem("TOKEN");
+            // myHeaders.append("Content-Type", "application/json");
+            // myHeaders.append("Authorization", "Bearer " + newToken);
 
-        // Channel ID = 1263945
+            let srName = String(nameRef.current.value);
+            let srAddress = String(addressRef.current.value);
+            let srCity = String(cityRef.current.value);
+            let srState = String(stateRef.current.value);
+            let srCountry = String(country);
+            let srPincode = Number(pincodeRef.current.value);
+            let srEmail  = String(mailRef.current.value);
+            let srPhone  = String(phoneRef.current.value);
 
-        // var raw = JSON.stringify({"order_id":"224-464","order_date":srDate,"pickup_location":"Primary",
-        //                         "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
-        //                         "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
-        //                         "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
-        //                         "billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
-        //                         "shipping_is_billing":true,"order_items":[...newArray],
-        //                         "payment_method":"Prepaid","sub_total":srTotal,"length":10,"breadth":15,"height":20,"weight":2.5});
+            localStorage.setItem("srName", srName);
+            localStorage.setItem("srAddress", srAddress);
+            localStorage.setItem("srCity", srCity);
+            localStorage.setItem("srState", srState);
+            localStorage.setItem("srCountry", srCountry);
+            localStorage.setItem("srPincode", srPincode);
+            localStorage.setItem("srEmail", srEmail);
+            localStorage.setItem("srPhone", srPhone);
+            localStorage.setItem("srPayment", payment);
 
-        // var requestOptions = {
-        // method: 'POST',
-        // headers: myHeaders,
-        // body: raw,
-        // redirect: 'follow'
-        // };
+            // var raw = JSON.stringify({"order_id":"123-141","order_date":srDate,"pickup_location":"Primary",
+            //                         "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
+            //                         "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
+            //                         "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
+            //                         "billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
+            //                         "shipping_is_billing":true,"order_items":[...newArray],
+            //                         "payment_method":"Prepaid","sub_total":srTotal,"length":10,"breadth":15,"height":20,"weight":2.5});
 
-        // fetch("https://apiv2.shiprocket.in/v1/external/orders/create/adhoc", requestOptions)
-        // .then(response => response.text())
-        // .then(result => console.log(result))
-        // .catch(error => console.log('error', error));
+            // var requestOptions = {
+            // method: 'POST',
+            // headers: myHeaders,
+            // body: raw,
+            // redirect: 'follow'
+            // };
 
-        // var myHeaders = new Headers();
-        // myHeaders.append("Content-Type", "application/json");
-        // myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEwNTE1ODQsImlzcyI6Imh0dHBzOi8vYXBpdjIuc2hpcHJvY2tldC5pbi92MS9leHRlcm5hbC9hdXRoL2xvZ2luIiwiaWF0IjoxNjA3NDkwNzIyLCJleHAiOjE2MDgzNTQ3MjIsIm5iZiI6MTYwNzQ5MDcyMiwianRpIjoia0NtWnhNUWRDRDNYMkxFVyJ9.H0L1eb7nVGz5iHQUJszqEXQpE-MqmTYL5ujg_95b1lQ");
+            // fetch("https://apiv2.shiprocket.in/v1/external/orders/create/adhoc", requestOptions)
+            // .then(response => response.text())
+            // .then(result => console.log(result))
+            // .catch(error => console.log('error', error));
 
-        // var raw = JSON.stringify({"order_id":"22114477","order_date":srDate,"channel_id":"1263945","billing_customer_name":srName,
-        //                         "billing_last_name":"","billing_address":srAddress,"billing_city":srCity,"billing_pincode":srPincode,
-        //                         "billing_state":srState,"billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
-        //                         "shipping_is_billing":true,"order_items":[...newArray],"payment_method":"Prepad","sub_total":srTotal,
-        //                         "length":100,"breadth":50,"height":10,"weight":0.5,"pickup_location":"Primary",
-        //                         "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","mode":"Surface",
-        //                         "request_pickup":false,"print_label":true,"generate_manifest":true,"company_name":"Aigiri Foods"});
-
-        // var requestOptions = {
-        // method: 'POST',
-        // headers: myHeaders,
-        // body: raw,
-        // redirect: 'follow'
-        // };
-
-        // fetch("https://apiv2.shiprocket.in/v1/external/shipments/create/forward-shipment", requestOptions)
-        // .then(response => response.text())
-        // .then(result => console.log(result))
-        // .catch(error => console.log('error', error));
-
-        // event.preventDefault();
-        // }
-
-        const scrollTop = () => {
-            window.scroll({
-              top: 0,
-              left: 0,
-            });
-          }
+            event.preventDefault();
+        }
 
         function keydown1(e) {
             if(e.key === "Enter") {
@@ -239,21 +199,18 @@ function Checkout() {
                     }
                     document.getElementById("citySelect").innerHTML = citiesOptions;
                 }
-                
-                
-            }
-        
+            };  
 
     return (
         <div onLoad={onPageLoad} className="container contact ss-item-required">
 
             <h4>Order Now</h4>
 
-            <form className="text-center" encType="text/plain">
+            <form className="text-center">
 
-                <input onKeyDown={keydown1} type="text" id="defaultContactFormName" ref={nameRef} className="form-control mb-4 border-required" placeholder="Name" />
+                <input name="name" onKeyDown={keydown1} type="text" id="defaultContactFormName" ref={nameRef} className="form-control mb-4 border-required" placeholder="Name" />
 
-                <input onKeyDown={keydown2} type="email" id="defaultContactFormEmail" ref={mailRef} className="form-control mb-4 border-required" placeholder="E-mail" />
+                <input name="email" onKeyDown={keydown2} type="email" id="defaultContactFormEmail" ref={mailRef} className="form-control mb-4 border-required" placeholder="E-mail" />
 
                 {country==="India" && <input onKeyDown={keydown3} placeholder="10-Digit Contact Number" id="defaultContactFormPhone" ref={phoneRef} className="border-required phone" type="" name="phone" pattern="[0-9]{10}" maxLength="10" />}
 
@@ -261,13 +218,13 @@ function Checkout() {
                 
                 <div className="locationInput">
 
-                <select onKeyDown={keydown4} onChange={handleClick1} ref={countryRef} id="countrySelect" className="locationInputs">
+                <select name="country" onKeyDown={keydown4} onChange={handleClick1} ref={countryRef} id="countrySelect" className="locationInputs">
                     <option value="India">India</option>
                     <option value="Other">Other</option>
                     
                 </select>
                 
-                {country === "India" && <select onKeyDown={keydown5} ref={stateRef} defaultValue="State" className="locationInputs" id="stateSelect" size="1" onChange={event => makeSubmenu(event.target.value)}>
+                {country === "India" && <select onKeyDown={keydown5} name="state" ref={stateRef} defaultValue="State" className="locationInputs" id="stateSelect" size="1" onChange={event => makeSubmenu(event.target.value)}>
                     <option className="states" disabled>State</option>
                     <option className="states">Andhra Pradesh</option>
                     <option className="states">Goa</option>
@@ -285,7 +242,7 @@ function Checkout() {
                 </div>
 
                 <div className="locationInput">
-                {country === "India" && <select onKeyDown={keydown6} defaultValue="City" className="locationInputs" ref={cityRef} id="citySelect" size="1" >
+                {country === "India" && <select name="city" onKeyDown={keydown6} defaultValue="City" className="locationInputs" ref={cityRef} id="citySelect" size="1" >
                     <option disabled>City</option>
                     <option></option>
                 </select>}
@@ -295,7 +252,7 @@ function Checkout() {
 
                 </div>
 
-                <input type="text" onKeyDown={keydown8} id="defaultContactFormAddress" ref={addressRef} className="form-control mb-4 border-required address" placeholder="Your Residential Address" />
+                <input type="text" name="address" onKeyDown={keydown8} id="defaultContactFormAddress" ref={addressRef} className="form-control mb-4 border-required address" placeholder="Your Residential Address" />
 
                 {country === "Other" && <p className="international_shipping_note">Note : Please mention the country, state and city in the address field in case you want the product to be shipped out of India.</p>}
 
@@ -303,20 +260,20 @@ function Checkout() {
                 
                     <div className="payment_options">
                     <div className="form-check form-check-inline payment_option">
-                    <input onChange={handleClick2} className="form-check-input check_input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                    <input className="form-check-input check_input" onChange={handleClick2} type="radio" name="payment" id="inlineRadio1" value="COD" />
                     <label className="form-check-label input_label" htmlFor="inlineRadio1"><AccountBalanceWalletIcon /> - Cash On Delivery</label>
                     </div>
                     <div className="form-check form-check-inline payment_option">
-                    <input onChange={handleClick2} className="form-check-input check_input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                    <input className="form-check-input check_input" onChange={handleClick2} type="radio" name="payment" id="inlineRadio2" value="Online" />
                     <label className="form-check-label input_label" htmlFor="inlineRadio2"><PhoneIphoneIcon /> - Google Pay / PhonePe / Paytm</label>
                     </div>
                     </div>
-                    {option === "option2" && <p className="gpay_order">Your order will be dispatched as soon as you transfer ₹ {getBasketTotal(basket)} to +91 9164187714 </p>}
+                    {payment === "Online" && <p className="gpay_order">Your order will be dispatched once you complete the online payment towards :-<br /><br /> AIGIRI FOODS - +91 9164187714<br /><br />GRAND TOTAL will be displayed in the invoice.</p>}
                 
                 </div>
 
-                <Link onClick={scrollTop} to="/invoice"><input readOnly={true} ref={submitRef} type="submit" value="Confirm Order" className="contact-btn" /></Link>
-
+                <Link to="/invoice"><button onMouseDown={addVars} ref={submitRef} type="submit" className="contact-btn">CONTINUE</button></Link>
+                 
             </form>
 
         </div>

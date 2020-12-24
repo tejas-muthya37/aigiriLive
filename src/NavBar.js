@@ -23,7 +23,7 @@ function NavBar() {
             if(link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animation = `navLinkFade 0.35s ease forwards ${index/7 + 0.25}s`;
+                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7 + 0.3}s`;
             }
                     
             });
@@ -31,12 +31,12 @@ function NavBar() {
             burger.classList.toggle("toggle");
     }
 
-    const scrollTop = () => {
+    function scrollTop() {
         window.scroll({
-          top: 0, 
-          left: 0, 
-        });
-      }
+            top: 0, 
+            left: 0, 
+          });
+    }
 
     return (
 
@@ -45,18 +45,20 @@ function NavBar() {
                 <div className="logo" onClick={scrollTop}>
                     <Link to="/"><img alt="" src={logo}></img></Link>
                 </div>
+                
                 <ul id="nav-links" className="nav-links">
-                <li onClick={scrollTop}><Link to="/">Home</Link></li>
-                <li onClick={scrollTop}><Link to="/about">About Us</Link></li>
-                <li onClick={scrollTop}><Link to="/">Contact</Link></li>
-                <li onClick={scrollTop}><Link to="/">Our Products</Link></li>
+                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Home</Link></li>
+                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/about">About Us</Link></li>
+                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Contact</Link></li>
+                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Our Products</Link></li>
 
                 </ul>
 
                 <div className="nav-basket">
-                <div onClick={scrollTop}><Link to="/cart"><ShoppingCartIcon /></Link></div>
+                <div><Link onClick={scrollTop} to="/cart"><ShoppingCartIcon /></Link></div>
                 <span className="nav-basketCount">
                 {basket?.length}
+                
                 </span>
                 </div>
 

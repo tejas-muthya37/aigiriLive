@@ -7,7 +7,7 @@ import { useStateValue } from "./StateProvider";
 function Recipe() {
 
     const [{ basket }, dispatch] = useStateValue();
-
+    
     console.log(basket);
 
     const {id} = useParams();
@@ -22,10 +22,11 @@ function Recipe() {
     });
 
     const addToBasket = () => {
-        // dispatch the item into the data layer
+
         dispatch({
           type: "ADD_TO_BASKET",
           item: {
+            key: newProduct.id,
             id: newProduct.id,
             title: newProduct.title,
             category: newProduct.category,
@@ -36,7 +37,6 @@ function Recipe() {
           },
         });
       };
-
     
     return (
         <div className="recipe">
@@ -76,3 +76,5 @@ function Recipe() {
 }
 
 export default Recipe;
+
+
