@@ -27,8 +27,16 @@
   margin-top: 10px;
 }
 
-.product-price {
+.product_price {
   margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.unit_price {
+  font-size: 17px;
+  padding: 0 2px 0 2px;
 }
 
 .product_info {

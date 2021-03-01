@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Cart() {
 
     let [{ basket }] = useStateValue();
-
+    
     return (
         <div className="cart">
             <div className="cart_left">

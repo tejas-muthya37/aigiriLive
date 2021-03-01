@@ -6,6 +6,10 @@
   border-radius: 2px;
 }
 
+.field_required {
+  border: 5px solid red;
+}
+
 .gpay_order {
   text-align: left;
   margin-top: 40px;

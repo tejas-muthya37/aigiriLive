@@ -128,7 +128,7 @@ function InvoiceTemp() {
             <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/tejas.muthya37@gmail.com">
             
             <div className="buttons">
-                <button onClick={genPDF} type="submit" className="generate_invoice_button">DOWNLOAD A COPY</button>
+                <button onClick={genPDF} type="submit" className="generate_invoice_button">DOWNLOAD</button>
                 <button type="submit" className="confirm_order_button">CONFIRM ORDER</button>
             </div>
             

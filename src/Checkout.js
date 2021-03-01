@@ -4,6 +4,7 @@ import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import { Link } from 'react-router-dom';
 import Payment from './Payment';
+// import { useStateValue } from './StateProvider';
 
 const Checkout = () => {
 
@@ -20,6 +21,8 @@ const Checkout = () => {
     useEffect(() => {
         nameRef.current.focus();
     }, [])
+
+    const [fields, setFields] = useState(true);
 
     const [country, setCountry] = useState("India");
 
@@ -101,21 +104,27 @@ const Checkout = () => {
             
 
             if(nameRef.current.value === "") {
+                setFields(false);
                 alert("Please enter your name!");
             }
             if(mailRef.current.value.includes("@") === false) {
+                setFields(false);
                 alert("Please enter a valid email ID!");
             }
             if(addressRef.current.value === "") {
+                setFields(false);
                 alert("Please specify the delivery location!");
             }
             if(pincodeRef.current.value.length !== 6) {
+                setFields(false);
                 alert("Please enter a valid 6-Digit PINCODE!");
             }
             if(stateRef.current.value === "State") {
+                setFields(false);
                 alert("'State' field required!");
             }
             if(phoneRef.current.value.length !== 10) {
+                setFields(false);
                 alert("Please enter a valid 10-Digit Phone Number!");
             }
             
@@ -303,7 +312,7 @@ const Checkout = () => {
                 
                     <div className="payment_options">
                     <div className="form-check form-check-inline payment_option">
-                    <input className="form-check-input check_input" onClick={handleClick2} type="radio" name="payment" id="inlineRadio1" value="COD" />
+                    <input className="form-check-input check_input" checked={payment === "COD"} onClick={handleClick2} type="radio" name="payment" id="inlineRadio1" value="COD" />
                     <label className="form-check-label input_label" htmlFor="inlineRadio1"><AccountBalanceWalletIcon /> - Cash On Delivery</label>
                     </div>
                     <div className="form-check form-check-inline payment_option">
@@ -316,7 +325,7 @@ const Checkout = () => {
                     </div>
                 
                 </div>
-                <Link to="/invoice"><button type="submit" onMouseDown={addVars} onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link>
+                {fields === true ? <Link to="/invoice"><button type="submit" onMouseDown={addVars} onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link> : <Link to="/checkout"><button type="submit" onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link>}
             </div>
 
         </div>

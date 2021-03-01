@@ -9,7 +9,7 @@ import { useStateValue } from "./StateProvider";
 function NavBar() {
 
     let [{ basket }] = useStateValue();
-
+    
     function handleClick() {
 
         const burger = document.querySelector(".burger");
