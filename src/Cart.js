@@ -13,9 +13,8 @@ function Cart() {
     return (
         <div className="cart">
             <div className="cart_left">
-                {basket.length === 0 && <h3 id="empty_cart">Your shopping cart is empty.</h3>}
 
-                {basket.length > 0 && <h3 className="cart_title">YOUR SHOPPING CART</h3>}
+                {basket.length > 0 && <h3 className="cart_title">MY SHOPPING CART</h3>}
 
                 {basket?.map((item) => (
                 <CartProduct
@@ -28,7 +27,7 @@ function Cart() {
                 quantity={item.quantity}
                 quantityValue={item.quantityValue}
                 ></CartProduct>
-                ))} 
+                ))}
 
 
             </div>

@@ -99,6 +99,10 @@ select {
   height: 40px;
 }
 
+.payment_part {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   select {
     height: 40px;

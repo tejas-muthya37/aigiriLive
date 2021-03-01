@@ -1,6 +1,8 @@
 import React from 'react';
 import Product from "./Product";
-import "./bestseller.css"
+import "./bestseller.css";
+import besanLaddoo from "./besan_laddoo.png";
+
 
 function BestSeller() {
     return (
@@ -10,37 +12,37 @@ function BestSeller() {
 
         <div className="best_seller_products">
             <Product
-            id="1"
-            title="Sambar Powder"
-            image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
+            id="15"
+            title="Peanut Chikki"
+            image="https://m.media-amazon.com/images/I/81mOejacmBL._AC_UL480_QL65_.jpg"
             price="450"
           />
           </div>
 
           <div className="best_seller_products">
             <Product
-            id="2"
-            title="Rasam Powder"
-            image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="80"
+            id="11"
+            title="Besan Laddoo"
+            image={besanLaddoo}
+            price="300"
             />
           </div>
 
           <div className="best_seller_products">
             <Product
-            id="3"
-            title="Besan Laddoo"
-            image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="300"
+            id="2"
+            title="Rasam Powder"
+            image="https://m.media-amazon.com/images/I/61SDjKCyjhL._AC_UL480_QL65_.jpg"
+            price="80"
             />
           </div>
             
           <div className="best_seller_products">
             <Product
-            id="4"
-            title="Gulab Jamun"
-            image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
-            price="170"
+            id="1"
+            title="Sambar Powder"
+            image="https://m.media-amazon.com/images/I/61DqQGdVUKL._AC_UL480_QL65_.jpg"
+            price="450"
             />   
           </div>
 

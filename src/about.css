@@ -6,30 +6,24 @@
 }
 
 .about_content p {
-  padding-left: 125px;
-  padding-right: 125px;
+  padding-left: 150px;
+  padding-right: 150px;
+
   text-align: left;
+  font-size: 18px;
+  line-height: 40px;
 }
 
-.about_content h2 {
-  padding-bottom: 50px;
-  text-align: center;
-  font-size: 25px;
-  letter-spacing: 1px;
-}
-
-.about_content span {
-  font-size: 30px;
+.bold {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .about_content p {
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-  }
-
-  .about_content h2 {
-    margin-top: 25px;
+    margin-top: 50px;
+    padding-right: 0;
+    padding-left: 10%;
+    max-width: 90%;
   }
 }

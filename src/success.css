@@ -1,0 +1,43 @@
+.success {
+  margin-top: 100px;
+  text-align: center;
+  height: 100vh;
+}
+
+.tick {
+  color: #0d7377;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left: -15px;
+}
+
+.success h1 {
+  color: #0d7377;
+  letter-spacing: 1px;
+}
+
+.success p {
+  margin-top: 50px;
+}
+
+.success button {
+  width: 32%;
+  left: 34%;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .success {
+    margin-top: 50px;
+  }
+
+  .success p {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .success button {
+    width: 80%;
+    left: 10%;
+    margin-top: 40px;
+  }
+}

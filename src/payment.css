@@ -1,0 +1,128 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  object-fit: contain;
+}
+
+.payment h1 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.payment_logos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+}
+
+.gpay {
+  margin-top: 40px;
+  width: 25%;
+  height: 50px;
+  margin-right: 14%;
+}
+
+.phonepe {
+  width: 25%;
+  height: 130px;
+}
+
+.paytm {
+  margin-top: 40px;
+  width: 20%;
+  height: 45px;
+  margin-right: 14%;
+}
+
+.step1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+.step2 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+.step3 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+.payment_instructions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.payment_instructions_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  text-align: left;
+}
+
+.payment_instructions p {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.qr {
+  height: 630px;
+}
+
+.payment_number {
+  font-weight: bold;
+}
+
+.payment_part {
+  display: none;
+}
+
+@media screen and (max-width: 1410px) {
+  .gpay {
+    width: 30%;
+    height: 5%;
+    margin-right: 9%;
+    margin-top: 7%;
+  }
+
+  .phonepe {
+    width: 30%;
+    height: 5%;
+    margin-right: 0;
+  }
+
+  .paytm {
+    width: 20%;
+    height: 5%;
+    margin-right: 11%;
+    margin-top: 7%;
+  }
+
+  .payment_instructions {
+    flex-direction: column;
+  }
+
+  .payment_instructions_left {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .payment p {
+    font-size: 16px;
+  }
+}

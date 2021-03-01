@@ -33,7 +33,11 @@ function Recipe() {
             image: newProduct.image,
             price: newProduct.price,
             quantity: document.getElementById("quantity").value,
-            quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML
+            quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML,
+            height: newProduct.height,
+            weight: newProduct.weight,
+            breadth: newProduct.breadth,
+            length: newProduct.length
           },
         });
       };
@@ -42,18 +46,24 @@ function Recipe() {
         <div className="recipe">
             <div className="recipe_left">
                 <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
-                {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <h5 id="price" className="price">₹ {newProduct.price} / KG</h5>}
-                {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <h5 id="price" className="price">₹ {newProduct.price} / Box of 6</h5>}
+                {(newProduct.category === "powder") && <h5 id="price" className="price">₹ {newProduct.price} / KG</h5>}
+                {(newProduct.category === "box") && <h5 id="price" className="price">₹ {newProduct.price} / Box of 6</h5>}
                     <div className="recipe_left_quantity">
                         <form>
                             <label htmlFor="quantity"><h5 className="quantity font_alike">QUANTITY</h5></label>
-                            {(newProduct.title === "Besan Laddoo" || newProduct.title === "Gulab Jamun") && <select id="quantity" name="quantity">
+                            {(newProduct.category === "box") && <select id="quantity" name="quantity">
                                 <option id="1" value={1}>1</option>
                                 <option id="2" value={2}>2</option>
                                 <option id="3" value={3}>3</option>
                                 <option id="4" value={4}>4</option>
                             </select>}
-                            {(newProduct.title === "Sambar Powder" || newProduct.title === "Rasam Powder") && <select id="quantity" name="quantity">
+                            {(newProduct.category === "powder") && <select id="quantity" name="quantity">
+                                
+                                {/* <option id={3} value={3}>3 KG</option>
+                                
+                                <option id={5/2} value={5/2}>2.5 KG</option>
+
+                                <option id={2} value={2}>2 KG</option> */}
                                 <option id={1} value={1}>1 KG</option>
                                 <option id={1/2} value={1/2}>500 GRAMS</option>
                                 <option id={1/4} value={1/4}>250 GRAMS</option>

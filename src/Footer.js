@@ -6,17 +6,18 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <div className="footer">
+        <div id="footer" className="footer">
 
             <div className="footer_left">
                 <p>© 2020 AFP - All Rights Reserved</p>
+                <p><a href="mailto:tejas.muthya37@gmail.com">aigirifoods@gmail.com</a></p>
+                <p>+91 9164187714</p>
             </div>
             <div className="footer_mid">
-                <a href="/">About Us</a>
-                <a href="/">Payment & Shipping Policy</a>
-                <a href="/">Contact</a>
-                <a href="/">FAQ</a>
-                <a href="/">Refund Policy</a>
+                <a href="/about">About Us</a>
+                <a href="/about/#about_shipping">Payment & Shipping Policy</a>
+                <a href="/about/#about_shipping">FAQ</a>
+                <a href="/about/#refund">Refund Policy</a>
             </div>
             <div className="footer_right">
             <div className="footer_icons"><FacebookIcon fontSize="large" /></div>

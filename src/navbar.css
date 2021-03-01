@@ -15,7 +15,7 @@ nav {
   left: 0;
   z-index: 999999;
   display: flex;
-  /* min-height: 9vh; */
+  min-height: 9vh;
   align-items: center;
   background-color: #0d7377;
 }
@@ -47,10 +47,6 @@ nav {
   padding-bottom: 5px;
 }
 
-.nav-links a:hover {
-  border-bottom: 2px solid #e6e6e6;
-}
-
 .burger {
   cursor: pointer;
   display: none;
@@ -76,7 +72,7 @@ nav {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   body {
     overflow-x: hidden;
   }
@@ -100,7 +96,7 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    top: 7vh;
+    top: 9vh;
     height: 93vh;
     background-color: #0d7377;
     display: flex;

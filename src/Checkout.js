@@ -3,6 +3,7 @@ import "./checkout.css";
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import { Link } from 'react-router-dom';
+import Payment from './Payment';
 
 const Checkout = () => {
 
@@ -31,19 +32,28 @@ const Checkout = () => {
 
     function handleClick2(event) {
         let newPayment = event.target.value;
-        setPayment(newPayment)
+        setPayment(newPayment);
+        document.getElementById("payments").classList.add("payment_part")
+    }
+
+    function handleClick3(event) {
+        let newPayment = event.target.value;
+        setPayment(newPayment);
+        document.getElementById("payments").classList.remove("payment_part")
+    
     }
 
     function onPageLoad() {
 
         document.getElementById("stateSelect").selectedIndex = 0;
         document.getElementById("citySelect").selectedIndex = 0;
-
     }
 
         // -------------------------------------------------- Create Order API --------------------------------------------------------------
 
-        function addVars(event) {
+        function addVars() {
+              
+            
 
             // var myHeaders = new Headers();
             // let newToken = localStorage.getItem("TOKEN");
@@ -88,54 +98,84 @@ const Checkout = () => {
             // .then(response => response.text())
             // .then(result => console.log(result))
             // .catch(error => console.log('error', error));
+            
 
-            event.preventDefault();
+            if(nameRef.current.value === "") {
+                alert("Please enter your name!");
+            }
+            if(mailRef.current.value.includes("@") === false) {
+                alert("Please enter a valid email ID!");
+            }
+            if(addressRef.current.value === "") {
+                alert("Please specify the delivery location!");
+            }
+            if(pincodeRef.current.value.length !== 6) {
+                alert("Please enter a valid 6-Digit PINCODE!");
+            }
+            if(stateRef.current.value === "State") {
+                alert("'State' field required!");
+            }
+            if(phoneRef.current.value.length !== 10) {
+                alert("Please enter a valid 10-Digit Phone Number!");
+            }
+            
+            
+        }
+
+        function scrollTop() {
+            
+              
+            window.scroll({
+                top: 0,
+                left: 0,
+              });
+            
         }
 
         function keydown1(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 mailRef.current.focus();
             }
         }
 
         function keydown2(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 phoneRef.current.focus();
             }
         }
 
         function keydown3(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 countryRef.current.focus();
             }
         }
 
         function keydown4(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 stateRef.current.focus();
             }
         }
 
         function keydown5(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 cityRef.current.focus();
             }
         }
 
         function keydown6(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 pincodeRef.current.focus();
             }
         }
 
         function keydown7(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 addressRef.current.focus();
             }
         }
 
         function keydown8(e) {
-            if(e.key === "Enter") {
+            if(e.keyCode === 13) {
                 submitRef.current.focus();
             }
         }
@@ -199,14 +239,17 @@ const Checkout = () => {
                     }
                     document.getElementById("citySelect").innerHTML = citiesOptions;
                 }
-            };  
+            }; 
+
+
+            
 
     return (
         <div onLoad={onPageLoad} className="container contact ss-item-required">
 
             <h4>Order Now</h4>
 
-            <form className="text-center">
+            <div className="text-center">
 
                 <input name="name" onKeyDown={keydown1} type="text" id="defaultContactFormName" ref={nameRef} className="form-control mb-4 border-required" placeholder="Name" />
 
@@ -260,21 +303,21 @@ const Checkout = () => {
                 
                     <div className="payment_options">
                     <div className="form-check form-check-inline payment_option">
-                    <input className="form-check-input check_input" onChange={handleClick2} type="radio" name="payment" id="inlineRadio1" value="COD" />
+                    <input className="form-check-input check_input" onClick={handleClick2} type="radio" name="payment" id="inlineRadio1" value="COD" />
                     <label className="form-check-label input_label" htmlFor="inlineRadio1"><AccountBalanceWalletIcon /> - Cash On Delivery</label>
                     </div>
                     <div className="form-check form-check-inline payment_option">
-                    <input className="form-check-input check_input" onChange={handleClick2} type="radio" name="payment" id="inlineRadio2" value="Online" />
-                    <label className="form-check-label input_label" htmlFor="inlineRadio2"><PhoneIphoneIcon /> - Google Pay / PhonePe / Paytm</label>
+                    <input className="form-check-input check_input" onClick={handleClick3} type="radio" name="payment" id="inlineRadio2" value="Online" />
+                    <label className="form-check-label input_label" htmlFor="inlineRadio2"><PhoneIphoneIcon /> - Online Payment</label>
                     </div>
                     </div>
-                    {payment === "Online" && <p className="gpay_order">Your order will be dispatched once you complete the online payment towards :-<br /><br /> AIGIRI FOODS - +91 9164187714<br /><br />GRAND TOTAL will be displayed in the invoice.</p>}
+                    <div id="payments" className="payment_part">
+                        <Payment/>
+                    </div>
                 
                 </div>
-
-                <Link to="/invoice"><button onMouseDown={addVars} ref={submitRef} type="submit" className="contact-btn">CONTINUE</button></Link>
-                 
-            </form>
+                <Link to="/invoice"><button type="submit" onMouseDown={addVars} onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link>
+            </div>
 
         </div>
     );

@@ -1,18 +1,24 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import './App.css';
 import NavBar from "./NavBar";
 import BestSeller from "./BestSeller";
 import Products from "./Products";
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 import Footer from "./Footer";
-import Feature from "./Feature";
+// import Feature from "./Feature";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./About";
+// import About from "./About";
 import Recipe from "./Recipe";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import InvoiceTemp from "./InvoiceTemp";
 import { useStateValue } from "./StateProvider";
+import Empty from "./Empty";
+import Success from "./Success";
+import Payment from "./Payment";
+const Feature = lazy(() => import("./Feature"));
+const Carousel = lazy(() => import("./Carousel"));
+const About = lazy(() => import("./About"));
 
 function App() {
 
@@ -29,37 +35,71 @@ function App() {
         <Recipe />
         <Footer />
       </Route>
+      <Route path="/pay">
+    
+        <Payment />
+
+      </Route>
       <Route path="/about">
         <NavBar />
+        <Suspense fallback={<div className="spinner-border text-success" role="status"><span className="sr-only">Loading...</span></div>}>
         <About />
+        </Suspense>
         <Footer />
       </Route>
+      <Route path="/products">
+        <NavBar />
+        <Products />
+        <Footer />
+      </Route>
+      <Route path="/success">
+        <NavBar />
+        <Success />
+        <Footer />
+      </Route>
+      
       {basket?.length>0 && <Route path="/checkout">
         <NavBar />
         <Checkout />
         <Footer />
       </Route>}
       {basket?.length===0 && <Route path="/checkout">
-      <h3 id="empty_cart">Your shopping cart is empty.</h3>
+        <NavBar />
+        <Empty />
+        <Footer />
 
       </Route>}
-      <Route path="/cart">
+      {basket?.length>0 && <Route path="/cart">
         <NavBar />
         <Cart />
         <Footer />
-      </Route>
+      </Route>}
+      {basket?.length===0 && <Route path="/cart">
+        <NavBar />
+        <Empty />
+        <Footer />
+
+      </Route>}
+
       {basket?.length>0 && <Route path="/invoice">
         <InvoiceTemp />
       </Route>}
       {basket?.length===0 && <Route path="/invoice">
-      <h3 id="empty_cart">Your shopping cart is empty.</h3>
+      <NavBar />
+        <Empty />
+        <Footer />
 
       </Route>}
       <Route path="/">
         <NavBar />
+        <Suspense fallback={<div className="spinner-border text-success" role="status"><span className="sr-only">Loading...</span></div>}>
         <Carousel />
+        </Suspense>
+        
         <BestSeller />
-        <Feature />
+        <Suspense fallback={<div className="spinner-border text-success" role="status"><span className="sr-only">Loading...</span></div>}>
+          <Feature />
+        </Suspense>
         <Products />
         <Footer />
       </Route>

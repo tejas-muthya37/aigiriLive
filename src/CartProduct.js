@@ -25,10 +25,10 @@ function CartProduct(props) {
             <div className="cart_product_right">
                 <p className="cart_product_title">{props.title}</p>
                 <p className="cart_product_price">₹ {props.price * props.quantity}</p>
-                {(props.title === "Sambar Powder" || props.title === "Rasam Powder") && <p>Quantity - {props.quantityValue}</p>} 
-                {(props.title === "Besan Laddoo" || props.title === "Gulab Jamun") && <p>Quantity - {props.quantity}</p>}
+                {(props.category === "powder") && <p>Quantity - {props.quantityValue}</p>} 
+                {(props.category === "box") && <p>Quantity - {props.quantity}</p>}
                 
-                <button onClick={removeFromBasket} id="cart_product_button" className="cart_product_button">Remove From Cart</button>
+                <button onClick={removeFromBasket} id="cart_product_button" className="cart_product_button">Remove</button>
             </div>
         </div>
     )

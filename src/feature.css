@@ -12,26 +12,30 @@
   width: 100%;
 }
 
-.feature h3 {
+.feature h2 {
   margin-top: 30%;
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 989px) {
   .feature {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 350px;
+    height: max-content;
     margin-top: 50px;
   }
 
   .feature img {
     margin-top: 18px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .feature h3 {
-    font-size: 18px;
-    margin-top: 25px;
+  .feature h2 {
+    font-size: 20px;
+    margin-top: 6%;
+    margin-bottom: 6%;
   }
 }

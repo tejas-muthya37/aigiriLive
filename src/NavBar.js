@@ -8,7 +8,7 @@ import { useStateValue } from "./StateProvider";
 
 function NavBar() {
 
-    const [{ basket }] = useStateValue();
+    let [{ basket }] = useStateValue();
 
     function handleClick() {
 
@@ -23,7 +23,7 @@ function NavBar() {
             if(link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7 + 0.3}s`;
+                link.style.animation = `navLinkFade 0.25s ease forwards ${index/7}s`;
             }
                     
             });
@@ -31,7 +31,63 @@ function NavBar() {
             burger.classList.toggle("toggle");
     }
 
-    function scrollTop() {
+    function scrollTop(event) {
+        
+          const burger = document.querySelector(".burger");
+          const nav = document.querySelector(".nav-links");
+          const links = document.querySelectorAll(".nav-links li");
+  
+          
+            if(burger.classList.contains("toggle")) {
+                nav.classList.toggle("navSlide");
+                  
+                links.forEach((link, index) => {
+                        
+                    if(link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.25s ease forwards ${index/7}s`;
+                    }
+                            
+                    });
+                        
+                    burger.classList.toggle("toggle");
+            }
+         
+
+              window.scroll({
+                top: 0, 
+                left: 0, 
+              });
+              event.preventDefault();
+    }
+
+    function scrollBottom() {
+          const burger = document.querySelector(".burger");
+          const nav = document.querySelector(".nav-links");
+          const links = document.querySelectorAll(".nav-links li");
+
+          if(burger.classList.contains("toggle")) {
+            nav.classList.toggle("navSlide");
+                  
+            links.forEach((link, index) => {
+                    
+                if(link.style.animation) {
+                    link.style.animation = "";
+                } else {
+                    link.style.animation = `navLinkFade 0.25s ease forwards ${index/7}s`;
+                }
+                        
+                });
+                    
+                burger.classList.toggle("toggle");
+            }
+  
+          
+              window.scrollTo(0,document.body.scrollHeight);
+    }
+
+    function scrollTop1() {
         window.scroll({
             top: 0, 
             left: 0, 
@@ -42,20 +98,20 @@ function NavBar() {
 
         <div className="header">
             <nav>
-                <div className="logo" onClick={scrollTop}>
+                <div className="logo" onClick={scrollTop1}>
                     <Link to="/"><img alt="" src={logo}></img></Link>
                 </div>
                 
                 <ul id="nav-links" className="nav-links">
-                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Home</Link></li>
-                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/about">About Us</Link></li>
-                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Contact</Link></li>
-                <li onMouseDown={scrollTop} onClick={handleClick}><Link to="/">Our Products</Link></li>
+                <li onMouseDown={scrollTop}><Link to="/">Home</Link></li>
+                <li onMouseDown={scrollTop}><Link to="/about">About Us</Link></li>
+                <li onMouseDown={scrollBottom}><Link to="/about">Contact</Link></li>
+                <li onMouseDown={scrollTop}><Link to="/products">Our Products</Link></li>
 
                 </ul>
 
                 <div className="nav-basket">
-                <div><Link onClick={scrollTop} to="/cart"><ShoppingCartIcon /></Link></div>
+                <div><Link onClick={scrollTop1} to="/cart"><ShoppingCartIcon /></Link></div>
                 <span className="nav-basketCount">
                 {basket?.length}
                 
