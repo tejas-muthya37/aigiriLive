@@ -149,7 +149,7 @@ function InvoiceTemp() {
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
                 <input type="hidden" name="_subject" value="Your order from Aigiri Foods" />
                 <input type="hidden" name="_autoresponse" value="Thank you for shopping with Aigiri Foods. This is a confirmation mail that we have successfully received your order." />
-                <input type="hidden" name="_next" value="https://www.google.com/" />
+                {/* <input type="hidden" name="_next" value="https://www.google.com/" /> */}
             </form>
 
             <div className="invoice_temp_top">
