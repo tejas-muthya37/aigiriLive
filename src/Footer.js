@@ -1,6 +1,5 @@
 import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import CallRoundedIcon from '@material-ui/icons/CallRounded';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailIcon from '@material-ui/icons/Mail';
 import "./footer.css";

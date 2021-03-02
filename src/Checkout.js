@@ -22,7 +22,7 @@ const Checkout = () => {
         nameRef.current.focus();
     }, [])
 
-    const [fields, setFields] = useState(true);
+    const [fields, setFields] = useState(false);
 
     const [country, setCountry] = useState("India");
 
@@ -106,35 +106,68 @@ const Checkout = () => {
             if(nameRef.current.value === "") {
                 setFields(false);
                 alert("Please enter your name!");
-                setFields(true);
+
             }
             if(mailRef.current.value.includes("@") === false) {
                 setFields(false);
                 alert("Please enter a valid email ID!");
-                setFields(true);
+
             }
             if(addressRef.current.value === "") {
                 setFields(false);
                 alert("Please specify the delivery location!");
-                setFields(true);
+
             }
             if(pincodeRef.current.value.length !== 6) {
                 setFields(false);
                 alert("Please enter a valid 6-Digit PINCODE!");
-                setFields(true);
+
             }
             if(stateRef.current.value === "State") {
                 setFields(false);
                 alert("'State' field required!");
-                setFields(true);
+
             }
             if(phoneRef.current.value.length !== 10) {
                 setFields(false);
                 alert("Please enter a valid 10-Digit Phone Number!");
-                setFields(true);
+
             }
             
             
+            
+        }
+
+        function lengthCheck1() {
+
+            if(nameRef.current.value.length > 0) {
+                setFields(true);
+            }
+
+        }
+
+        function lengthCheck2() {
+            if(mailRef.current.value.includes("@") === true) {
+                setFields(true);
+            }
+        }
+
+        function lengthCheck3() {
+            if(phoneRef.current.value.length === 10) {
+                setFields(true);
+            }
+        }
+
+        function lengthCheck5() {
+            if(pincodeRef.current.value.length === 6) {
+                setFields(true);
+            }
+        }
+
+        function lengthCheck6() {
+            if(addressRef.current.value.length > 10) {
+                setFields(true);
+            }
         }
 
         function scrollTop() {
@@ -254,6 +287,10 @@ const Checkout = () => {
                     }
                     document.getElementById("citySelect").innerHTML = citiesOptions;
                 }
+
+                if(stateRef.value ===! "State") {
+                    setFields(true);
+                }
             }; 
 
 
@@ -266,11 +303,11 @@ const Checkout = () => {
 
             <div className="text-center">
 
-                <input name="name" onKeyDown={keydown1} type="text" id="defaultContactFormName" ref={nameRef} className="form-control mb-4 border-required" placeholder="Name" />
+                <input name="name" onChange={lengthCheck1} onKeyDown={keydown1} type="text" id="defaultContactFormName" ref={nameRef} className="form-control mb-4 border-required" placeholder="Name" />
 
-                <input name="email" onKeyDown={keydown2} type="email" id="defaultContactFormEmail" ref={mailRef} className="form-control mb-4 border-required" placeholder="E-mail" />
+                <input name="email" onChange={lengthCheck2} onKeyDown={keydown2} type="email" id="defaultContactFormEmail" ref={mailRef} className="form-control mb-4 border-required" placeholder="E-mail" />
 
-                {country==="India" && <input onKeyDown={keydown3} placeholder="10-Digit Contact Number" id="defaultContactFormPhone" ref={phoneRef} className="border-required phone" type="" name="phone" pattern="[0-9]{10}" maxLength="10" />}
+                {country==="India" && <input onChange={lengthCheck3} onKeyDown={keydown3} placeholder="10-Digit Contact Number" id="defaultContactFormPhone" ref={phoneRef} className="border-required phone" type="" name="phone" pattern="[0-9]{10}" maxLength="10" />}
 
                 {country==="Other" && <input onKeyDown={keydown3} placeholder="Contact Number with Country Code" id="defaultContactFormPhone1" red={phoneRef} className="border-required phone" type="number" name="phone" />}
                 
@@ -305,12 +342,12 @@ const Checkout = () => {
                     <option></option>
                 </select>}
                
-                {country === "India" && <input onKeyDown={keydown7} placeholder="PINCODE" id="defaultContactFormPin" ref={pincodeRef} className="border-required pincode locationInputs" type="" name="pin" pattern="[0-9]{6}" maxLength="6" />}
+                {country === "India" && <input onChange={lengthCheck5} onKeyDown={keydown7} placeholder="PINCODE" id="defaultContactFormPin" ref={pincodeRef} className="border-required pincode locationInputs" type="" name="pin" pattern="[0-9]{6}" maxLength="6" />}
 
 
                 </div>
 
-                <input type="text" name="address" onKeyDown={keydown8} id="defaultContactFormAddress" ref={addressRef} className="form-control mb-4 border-required address" placeholder="Your Residential Address" />
+                <input onChange={lengthCheck6} type="text" name="address" onKeyDown={keydown8} id="defaultContactFormAddress" ref={addressRef} className="form-control mb-4 border-required address" placeholder="Your Residential Address" />
 
                 {country === "Other" && <p className="international_shipping_note">Note : Please mention the country, state and city in the address field in case you want the product to be shipped out of India.</p>}
 
@@ -331,7 +368,7 @@ const Checkout = () => {
                     </div>
                 
                 </div>
-                {fields === true ? <Link to="/invoice"><button type="submit" onMouseDown={addVars} onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link> : <Link to="/checkout"><button type="submit" onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link>}
+                {fields === true ? <Link className="link_button" to="/invoice"><button type="submit" onMouseDown={addVars} onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link> : <Link className="link_button" to="/checkout"><button type="submit" onClick={scrollTop} ref={submitRef} className="contact-btn">CONTINUE</button></Link>}
             </div>
 
         </div>
