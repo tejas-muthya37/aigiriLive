@@ -2,6 +2,7 @@ import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import CallRoundedIcon from '@material-ui/icons/CallRounded';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import MailIcon from '@material-ui/icons/Mail';
 import "./footer.css";
 
 function Footer() {
@@ -20,9 +21,9 @@ function Footer() {
                 <a href="/about/#refund">Refund Policy</a>
             </div>
             <div className="footer_right">
-            <div className="footer_icons"><FacebookIcon fontSize="large" /></div>
-            <div className="footer_icons"><CallRoundedIcon fontSize="large" /></div>
-            <div className="footer_icons"><InstagramIcon fontSize="large" /></div>
+            <div className="footer_icons"><a href="https://www.facebook.com/vijay.simha.73"><FacebookIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="mailto:tejas.muthya37@gmail.com"><MailIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="https://www.instagram.com/anupamaraghoo/"><InstagramIcon fontSize="large" /></a></div>
             </div>
             
             

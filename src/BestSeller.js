@@ -16,6 +16,7 @@ function BestSeller() {
             title="Peanut Chikki"
             image="https://m.media-amazon.com/images/I/81mOejacmBL._AC_UL480_QL65_.jpg"
             price="450"
+            category="box"
           />
           </div>
 
@@ -25,6 +26,7 @@ function BestSeller() {
             title="Besan Laddoo"
             image={besanLaddoo}
             price="300"
+            category="box"
             />
           </div>
 
@@ -34,6 +36,7 @@ function BestSeller() {
             title="Rasam Powder"
             image="https://m.media-amazon.com/images/I/61SDjKCyjhL._AC_UL480_QL65_.jpg"
             price="80"
+            category="powder"
             />
           </div>
             
@@ -43,6 +46,7 @@ function BestSeller() {
             title="Sambar Powder"
             image="https://m.media-amazon.com/images/I/61DqQGdVUKL._AC_UL480_QL65_.jpg"
             price="450"
+            category="powder"
             />   
           </div>
 
