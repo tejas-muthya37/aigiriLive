@@ -106,26 +106,32 @@ const Checkout = () => {
             if(nameRef.current.value === "") {
                 setFields(false);
                 alert("Please enter your name!");
+                setFields(true);
             }
             if(mailRef.current.value.includes("@") === false) {
                 setFields(false);
                 alert("Please enter a valid email ID!");
+                setFields(true);
             }
             if(addressRef.current.value === "") {
                 setFields(false);
                 alert("Please specify the delivery location!");
+                setFields(true);
             }
             if(pincodeRef.current.value.length !== 6) {
                 setFields(false);
                 alert("Please enter a valid 6-Digit PINCODE!");
+                setFields(true);
             }
             if(stateRef.current.value === "State") {
                 setFields(false);
                 alert("'State' field required!");
+                setFields(true);
             }
             if(phoneRef.current.value.length !== 10) {
                 setFields(false);
                 alert("Please enter a valid 10-Digit Phone Number!");
+                setFields(true);
             }
             
             
