@@ -123,11 +123,7 @@ const Checkout = () => {
                 alert("Please enter a valid 6-Digit PINCODE!");
 
             }
-            if(stateRef.current.value === "State") {
-                setFields(false);
-                alert("'State' field required!");
-
-            }
+            
             if(phoneRef.current.value.length !== 10) {
                 setFields(false);
                 alert("Please enter a valid 10-Digit Phone Number!");
@@ -169,6 +165,7 @@ const Checkout = () => {
                 setFields(true);
             }
         }
+
 
         function scrollTop() {
             
@@ -227,6 +224,7 @@ const Checkout = () => {
                 submitRef.current.focus();
             }
         }
+
 
         var citiesByState = {
                 "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Kakinada", "Rajamahendravaram", "Kadapa", 
@@ -287,11 +285,7 @@ const Checkout = () => {
                     }
                     document.getElementById("citySelect").innerHTML = citiesOptions;
                 }
-
-                if(stateRef.value ===! "State") {
-                    setFields(true);
-                }
-            }; 
+            };
 
 
             
@@ -320,7 +314,8 @@ const Checkout = () => {
                 </select>
                 
                 {country === "India" && <select onKeyDown={keydown5} name="state" ref={stateRef} defaultValue="State" className="locationInputs" id="stateSelect" size="1" onChange={event => makeSubmenu(event.target.value)}>
-                    <option className="states" disabled>State</option>
+                    {/* <option className="states" disabled>State</option> */}
+                    <option className="states">Karnataka</option>
                     <option className="states">Andhra Pradesh</option>
                     <option className="states">Goa</option>
                     <option className="states">Gujarat</option>
@@ -338,7 +333,7 @@ const Checkout = () => {
 
                 <div className="locationInput">
                 {country === "India" && <select name="city" onKeyDown={keydown6} defaultValue="City" className="locationInputs" ref={cityRef} id="citySelect" size="1" >
-                    <option disabled>City</option>
+                    <option>Bangalore</option>
                     <option></option>
                 </select>}
                
