@@ -12,7 +12,7 @@ import Recipe from "./Recipe";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import InvoiceTemp from "./InvoiceTemp";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "./StateProvider.js";
 import Empty from "./Empty";
 import Success from "./Success";
 import Payment from "./Payment";

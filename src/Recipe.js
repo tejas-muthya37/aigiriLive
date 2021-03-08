@@ -1,8 +1,8 @@
 import React from 'react';
 import "./recipe.css";
 import {useParams} from "react-router-dom";
-import productsArray from "./productArray";
-import { useStateValue } from "./StateProvider";
+import productsArray from "./productArray.js";
+import { useStateValue } from "./StateProvider.js";
 
 function Recipe() {
 

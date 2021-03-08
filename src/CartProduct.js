@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./cartproduct.css";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "./StateProvider.js";
 
 function CartProduct(props) {
 

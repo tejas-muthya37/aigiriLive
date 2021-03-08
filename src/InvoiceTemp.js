@@ -1,8 +1,8 @@
 import React from 'react';
 import "./invoicetemp.css";
 import logo from "./aigiri_logo_cropped.png";
-import { useStateValue } from "./StateProvider";
-import {getBasketTotal, getBasketLength, getBasketBreadth, getBasketHeight, getBasketWeight} from "./reducer";
+import { useStateValue } from "./StateProvider.js";
+import {getBasketTotal, getBasketLength, getBasketBreadth, getBasketHeight, getBasketWeight} from "./reducer.js";
 import uuid from "react-uuid";
 
 function InvoiceTemp() {

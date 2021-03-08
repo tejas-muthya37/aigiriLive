@@ -1,8 +1,8 @@
 import React from 'react';
 import CartProduct from "./CartProduct";
 import "./cart.css";
-import { useStateValue } from "./StateProvider";
-import {getBasketTotal} from "./reducer";
+import { useStateValue } from "./StateProvider.js";
+import {getBasketTotal} from "./reducer.js";
 import { Link } from "react-router-dom";
 
 
