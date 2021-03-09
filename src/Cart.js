@@ -8,7 +8,11 @@ import { Link } from "react-router-dom";
 
 function Cart() {
 
-    let [{ basket }] = useStateValue();
+    let localBasket1 = localStorage.getItem("localBasket")
+
+    let localBasket2 = JSON.parse(localBasket1)
+
+    let [{ basket }] = useStateValue(localBasket2);
     
     return (
         <div className="cart">

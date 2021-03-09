@@ -8,7 +8,10 @@ import { useStateValue } from "./StateProvider.js";
 
 function NavBar() {
 
-    let [{ basket }] = useStateValue();
+    let newBasket = localStorage.getItem("localBasket");
+    let newBasket1 = JSON.parse(newBasket);
+
+    let [{ basket }] = useStateValue(newBasket1);
     
     function handleClick() {
 

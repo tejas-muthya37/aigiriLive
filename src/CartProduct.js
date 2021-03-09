@@ -15,6 +15,8 @@ function CartProduct(props) {
           type: "REMOVE_FROM_BASKET",
           id: props.id,
         });
+        let stringBasketC = JSON.stringify(basket);
+        localStorage.setItem("localBasket", stringBasketC);
       };
 
     return (

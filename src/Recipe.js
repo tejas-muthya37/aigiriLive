@@ -40,6 +40,8 @@ function Recipe() {
             length: newProduct.length
           },
         });
+        let stringBasket = JSON.stringify(basket);
+        localStorage.setItem("localBasket", stringBasket);
       };
     
     return (
