@@ -2,7 +2,7 @@ import React from 'react';
 import "./invoicetemp.css";
 import logo from "./aigiri_logo_cropped.png";
 import { useStateValue } from "./StateProvider.js";
-import {getBasketTotal, getBasketLength, getBasketBreadth, getBasketHeight, getBasketWeight} from "./reducer.js";
+import {getBasketTotal} from "./reducer.js";
 import uuid from "react-uuid";
 
 function InvoiceTemp() {
@@ -17,6 +17,8 @@ function InvoiceTemp() {
 
     var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
+
+        // ********* SHIPROCKET ACCOUNT LINK *********
 
         var raw = JSON.stringify({"email":"foodsaigiri@gmail.com","password":"foodsaigirifoods"});
 
@@ -52,16 +54,49 @@ function InvoiceTemp() {
 
     let shippingCost;
 
+    // ********* SHIPPING COST FOR EACH STATE *********
+
     switch(userState) {
-        case "Karnataka":
-          shippingCost = 100;
-          break;
-          case "Andhra Pradesh":
-            shippingCost = 100;
-            break;
-        default:
-            shippingCost = 100;
-      } 
+            case "Delhi":
+                shippingCost = 165;
+                break;
+            case "Andhra Pradesh":
+                shippingCost = 245;
+                break;
+            case "Goa":
+                shippingCost = 175;
+                break;
+            case "Karnataka":
+                if(userCity === "Bengaluru") {
+                    shippingCost = 125;
+                } else {
+                    shippingCost = 210;
+                }
+                break;
+            case "Gujarat":
+                shippingCost = 175;
+                break;
+            case "Kerala":
+                shippingCost = 245;
+                break;
+            case "Maharashtra":
+                shippingCost = 175;
+                break; 
+            case "Punjab":
+                shippingCost = 245;
+                break; 
+            case "Rajasthan":
+                shippingCost = 175;
+                break;
+            case "Telangana":
+                shippingCost = 245;
+                break;
+            case "West Bengal":
+                shippingCost = 175;
+                break;
+            default:
+                shippingCost = 245;
+      }
 
       let newArray = basket.map((item) => (
         {
@@ -89,10 +124,11 @@ function InvoiceTemp() {
             let srPincode = localStorage.getItem("srPincode");
             let srEmail = localStorage.getItem("srEmail");
             let srPhone = localStorage.getItem("srPhone");
-            let srHeight = getBasketHeight(basket);
-            let srWeight = getBasketWeight(basket);
-            let srLength = getBasketLength(basket);
-            let srBreadth = getBasketBreadth(basket);
+            let srHeight = 20;
+            let srWeight = 5;
+            let srLength = 30; 
+            let srBreadth = 30; 
+            // 20 5 30 30
             let srTotal = getBasketTotal(basket) + shippingCost;
 
             var raw = JSON.stringify({"order_id":srOrderId,"order_date":srDate,"pickup_location":"Primary",

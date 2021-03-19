@@ -24,7 +24,7 @@ function BestSeller() {
             <Product
             id="11"
             title="Besan Laddoo"
-            image={besanLaddoo}
+            image="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/besan_laddoo.0ad2fe6e.png"
             price="300"
             category="box"
             />

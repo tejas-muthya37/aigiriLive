@@ -93,7 +93,7 @@ function Products() {
             id="11"
             title="Besan Laddoo"
             category= "box"
-            image={besanLaddoo}
+            image="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/besan_laddoo.0ad2fe6e.png"
             price="300"
           /></div>
         <div id="12" className="row_product"><Product

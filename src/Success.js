@@ -8,7 +8,7 @@ function Success() {
         <div className="success">
             <i className="tick">✓</i>
             <h1>Success</h1> 
-            <p><img alt="" src={shiprocket} /> <br /><br /> Your order will be shipped in 4-5 business days.<br /><br />
+            <p><img alt="" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/shiprocket.9cfad908.jpg" /> <br /><br /> Your order will be shipped in 4-5 business days.<br /><br />
 
             We received your purchase request! Check your mail for further details.</p>
             

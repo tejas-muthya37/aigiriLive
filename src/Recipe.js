@@ -75,7 +75,7 @@ function Recipe() {
                     <button onClick={addToBasket} className="recipe_button">ADD TO CART</button>
             </div>
             <div className="recipe_mid">
-                <img alt={newProduct.id} src={newProduct.image}></img>
+                <img loading="lazy" alt={newProduct.id} src={newProduct.image}></img>
             </div>
             <div className="recipe_right">
                 <h4 className="recipe_right_header">PRODUCT DESCRIPTION</h4>

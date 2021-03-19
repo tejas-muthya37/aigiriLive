@@ -12,16 +12,16 @@ function Carousel() {
             <div className="carousel-inner">
 
             <div className="carousel-item active">
-                <img className="d-block w-100" id="img4" src={img8} alt="..." />
+                <img loading="lazy" className="d-block w-100" id="img4" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/img8.cc6b2138.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" id="img3" src={img6} alt="..." />
+                <img loading="lazy" className="d-block w-100" id="img3" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/img6.df4a7688.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" id="img2" src={img5} alt="..." />
+                <img loading="lazy" className="d-block w-100" id="img2" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/img5.ee091894.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" id="img1" src={img7} alt="..." />
+                <img loading="lazy" className="d-block w-100" id="img1" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/img7.e319d388.jpg" alt="..." />
             </div>
             </div>
             {/* <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

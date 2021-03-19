@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="about">
 
-            <img className="family_img" src={familyimg} alt=""></img>
+            <img loading="lazy" className="family_img" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/group-family3.7914e854.jpg" alt=""></img>
             <div className="about_content">
                 <p>
                 <span className="bold">We are a humble Madhwa Brahmin family based out of Bengaluru. None of our products contain Onion, 

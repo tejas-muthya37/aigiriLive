@@ -102,7 +102,7 @@ function NavBar() {
         <div className="header">
             <nav>
                 <div className="logo" onClick={scrollTop1}>
-                    <Link to="/"><img alt="" src={logo}></img></Link>
+                    <Link to="/"><img alt="" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/aigiri_logo_cropped.ed88c8bd.png"></img></Link>
                 </div>
                 
                 <ul id="nav-links" className="nav-links">

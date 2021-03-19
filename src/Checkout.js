@@ -272,8 +272,20 @@ const Checkout = () => {
                                 "Baharampur", "Habra", "Kharagpur", "Shantipur", "Dankuni", "Dhulian", 
                                 "Ranaghat", "Haldia", "Raiganj", "Krishnanagar", "Nabadwip", "Medinipur", 
                                 "Jalpaiguri", "Balurghat", "Basirhat", "Bankura", "Chakdaha", "Darjeeling", 
-                                "Alipurduar", "Purulia", "Jangipur", "Bangaon", "Cooch Behar"]
+                                "Alipurduar", "Purulia", "Jangipur", "Bangaon", "Cooch Behar"],
+
+                "NCT Delhi": ["Delhi", "Najafgarh", "New Delhi|Narela", "Sultanpur Majra", "Kirari Suleman Nagar",
+                            "Bhalswa Jahangir Pur", "Nangloi", "Karawal Nagar", "Dallo Pura", "Delhi Cantonment", "Deoli"
+                            , "Gokal Pur", "Mustafabad", "Jaitpur, Delhi", "Burari", "Gharoli"
+                            , "Chilla Saroda Bangar", "Badarpur Delhi", "Jaffrabad", "Puth Kalan", "Mandoli"],
+
+                "Haryana": ["Faridabad", "Gurugram", "Panipat", "Ambala", "Yamunanagar", 
+                            "Rohtak", "Hisar", "Karnal", "Sonipat", "Panchkula", 
+                            "Bhiwani", "Sirsa", "Bahadurgarh", "Jind", "Thanesar", 
+                            "Kaithal", "Rewari", "Mahendergarh", "Pundri", "Kosli"]
                             }
+
+
             function makeSubmenu(value) {
             
                 if(value.length===0) document.getElementById("citySelect").innerHTML = "<option></option>";
@@ -316,25 +328,51 @@ const Checkout = () => {
                 {country === "India" && <select onKeyDown={keydown5} name="state" ref={stateRef} defaultValue="State" className="locationInputs" id="stateSelect" size="1" onChange={event => makeSubmenu(event.target.value)}>
                     {/* <option className="states" disabled>State</option> */}
                     <option className="states">Karnataka</option>
-                    <option className="states">Andhra Pradesh</option>
-                    <option className="states">Goa</option>
-                    <option className="states">Gujarat</option>
-                    <option className="states">Karnataka</option>
-                    <option className="states">Kerala</option>
                     <option className="states">Maharashtra</option>
-                    <option className="states">Punjab</option>
-                    <option className="states">Rajasthan</option>
+                    <option className="states">NCT Delhi</option>
+                    <option className="states">Andhra Pradesh</option>
                     <option className="states">Tamil Nadu</option>
                     <option className="states">Telangana</option>
-                    <option className="states">West Bengal</option>
+                    <option className="states">Gujarat</option>
+                    <option className="states">Kerala</option>
+                    <option className="states">Punjab</option>
+                    <option className="states">Rajasthan</option>
+                    <option className="states">West Bengal</option> 
+                    <option className="states">Haryana</option>
+                    <option className="states">Goa</option>
                 </select>}
             
                 </div>
 
                 <div className="locationInput">
                 {country === "India" && <select name="city" onKeyDown={keydown6} defaultValue="City" className="locationInputs" ref={cityRef} id="citySelect" size="1" >
-                    <option>Bangalore</option>
-                    <option></option>
+                <option className="cities">Bengaluru</option>
+                <option className="cities">Hubli-Dharwad</option>
+                <option className="cities">Mysuru</option>
+                <option className="cities">Kalaburagi</option>
+                <option className="cities">Mangaluru</option>
+                <option className="cities">Belagavi</option>
+                <option className="cities">Davanagere</option>
+                <option className="cities">Ballari</option>
+                <option className="cities">Vijayapura</option>
+                <option className="cities">Shivamogga</option>
+                <option className="cities">Tumakuru</option>
+                <option className="cities">Raichur</option>
+                <option className="cities">Bidar</option>
+                <option className="cities">Hosapete</option>
+                <option className="cities">Gadag-Betageri</option>
+                <option className="cities">Robertsonpete</option>
+                <option className="cities">Hassan</option>
+                <option className="cities">Bhadravati</option>
+                <option className="cities">Chitradurga</option>
+                <option className="cities">Udupi</option>
+                <option className="cities">Kolara</option>
+                <option className="cities">Mandya</option>
+                <option className="cities">Chikkamagaluru</option>
+                <option className="cities">Gangavati</option>
+                <option className="cities">Bagalkote</option>
+                <option className="cities">Ranebennuru</option>
+
                 </select>}
                
                 {country === "India" && <input onChange={lengthCheck5} onKeyDown={keydown7} placeholder="PINCODE" id="defaultContactFormPin" ref={pincodeRef} className="border-required pincode locationInputs" type="" name="pin" pattern="[0-9]{6}" maxLength="6" />}

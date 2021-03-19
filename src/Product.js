@@ -32,7 +32,7 @@ function Product(props) {
   return (
     <div className="product">
     <div onClick={scrollTop}>
-        <Link to={"/recipe/" + props.id}><img alt={props.id} src={props.image}></img></Link>
+        <Link to={"/recipe/" + props.id}><img loading="lazy" alt={props.id} src={props.image}></img></Link>
       </div>
       <div className="product_info">
         <p>{props.title}</p>

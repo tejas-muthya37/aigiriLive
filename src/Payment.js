@@ -10,16 +10,16 @@ function Payment() {
     return (
         <div className="payment">
             <div className="payment_logos">
-                <img className="paytm" alt="Paytm" src={paytm}/>
-                <img className="gpay" alt="Google Pay" src={gpay}/>
-                <img className="phonepe" alt="Phone Pe" src={phonepe}/>
+                <img loading="lazy" className="paytm" alt="Paytm" src={paytm}/>
+                <img loading="lazy" className="gpay" alt="Google Pay" src={gpay}/>
+                <img loading="lazy" className="phonepe" alt="Phone Pe" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/phonepe.6a5f7e9b.png"/>
                 
             </div>
             <div className="payment_instructions">
                 <div className="payment_instructions_left">
                 <div className="step1">
                     <h1>1</h1>
-                    <p>Scan our QR code using any UPI App.<br /><br /> <span className="payment_number">OR</span>  <br /><br /> Enter the number - <span className="payment_number">+91 9164187714<br /></span> on your UPI App.</p>
+                    <p>Scan our QR code using any UPI App.<br /><br /> <span className="payment_number">OR</span>  <br /><br /> Enter the number - <span className="payment_number">+91 9980284000<br /></span> on your UPI App.</p>
                 </div>
                 <div className="step2">
                 <h1>2</h1>
@@ -31,7 +31,7 @@ function Payment() {
                 </div>
                 </div>
                 <div className="payment_instructions_right">
-                <img className="qr" alt="+91 9164187714" src={qr} />
+                <img loading="lazy" className="qr" alt="+91 9980284000" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/qr_code.c4260cb3.jpg" />
                 </div>
             </div>
             
