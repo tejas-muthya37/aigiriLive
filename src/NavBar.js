@@ -1,6 +1,5 @@
 import React from 'react';
 import "./navbar.css";
-// import logo from "./aigiri_logo_cropped.png";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider.js";

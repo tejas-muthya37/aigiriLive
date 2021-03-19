@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./empty.css";
-// import empty from "./empty_cart.png"
 
 function Empty() {
     return (

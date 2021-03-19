@@ -1,7 +1,6 @@
 import React from 'react';
 import Product from "./Product";
 import "./bestseller.css";
-// import besanLaddoo from "./besan_laddoo.png";
 
 
 function BestSeller() {

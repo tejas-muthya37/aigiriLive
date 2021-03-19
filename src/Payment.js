@@ -1,9 +1,5 @@
 import React from 'react';
 import "./payment.css";
-// import phonepe from "./phonepe.png";
-// import gpay from "./gpay.png";
-// import paytm from "./paytm.png";
-// import qr from "./qr_code.jpg";
 
 
 function Payment() {
