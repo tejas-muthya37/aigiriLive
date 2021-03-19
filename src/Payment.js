@@ -1,14 +1,18 @@
 import React from 'react';
 import "./payment.css";
+import phonepe from "./phonepe.png";
+import gpay from "./gpay.png";
+import paytm from "./paytm.png";
+import qr from "./qr_code.jpg";
 
 
 function Payment() {
     return (
         <div className="payment">
             <div className="payment_logos">
-                <img loading="lazy" className="paytm" alt="Paytm" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/paytm.png"/>
-                <img loading="lazy" className="gpay" alt="Google Pay" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/gpay.png"/>
-                <img loading="lazy" className="phonepe" alt="Phone Pe" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/phonepe.6a5f7e9b.png"/>
+                <img loading="lazy" className="paytm" alt="Paytm" src={paytm}/>
+                <img loading="lazy" className="gpay" alt="Google Pay" src={gpay}/>
+                <img loading="lazy" className="phonepe" alt="Phone Pe" src={phonepe}/>
                 
             </div>
             <div className="payment_instructions">
@@ -27,7 +31,7 @@ function Payment() {
                 </div>
                 </div>
                 <div className="payment_instructions_right">
-                <img loading="lazy" className="qr" alt="+91 9980284000" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/qr_code.c4260cb3.jpg" />
+                <img loading="lazy" className="qr" alt="+91 9980284000" src={qr} />
                 </div>
             </div>
             

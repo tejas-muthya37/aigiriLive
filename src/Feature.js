@@ -1,4 +1,5 @@
 import React from 'react';
+import img9 from "./img9.jpg";
 import "./feature.css";
 
 function Feature() {
@@ -9,7 +10,7 @@ function Feature() {
 
             <div className="col-lg-6">
 
-                    <img loading="lazy" className="feature_img" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/img9.5844f2f9.jpg" alt=""></img>
+                    <img loading="lazy" className="feature_img" src={img9} alt=""></img>
 
                 </div>
 

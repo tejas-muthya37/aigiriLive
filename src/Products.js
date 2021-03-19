@@ -1,6 +1,8 @@
 import React from 'react';
 import "./products.css";
 import Product from "./Product";
+import besanLaddoo from "./besan_laddoo.png";
+
 
 function Products() {
   
@@ -91,7 +93,7 @@ function Products() {
             id="11"
             title="Besan Laddoo"
             category= "box"
-            image="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/besan_laddoo.0ad2fe6e.png"
+            image={besanLaddoo}
             price="300"
           /></div>
         <div id="12" className="row_product"><Product
