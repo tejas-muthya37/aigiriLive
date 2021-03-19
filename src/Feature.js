@@ -1,5 +1,5 @@
 import React from 'react';
-import img9 from "./img9.jpg";
+// import img9 from "./img9.jpg";
 import "./feature.css";
 
 function Feature() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import familyimg from "./group-family3.jpg";
+// import familyimg from "./group-family3.jpg";
 import "./about.css";
 
 function About() {

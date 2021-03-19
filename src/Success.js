@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./success.css";
-import shiprocket from "./shiprocket.jpg";
+// import shiprocket from "./shiprocket.jpg";
 
 function Success() {
     return (
