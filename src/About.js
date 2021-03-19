@@ -1,12 +1,12 @@
 import React from 'react';
-// import familyimg from "./group-family3.jpg";
+import familyimg from "./group-family3.jpg";
 import "./about.css";
 
 function About() {
     return (
         <div className="about">
 
-            <img loading="lazy" className="family_img" src="https://raw.githubusercontent.com/tejas-muthya37/aigiriLive/gh-pages/static/media/group-family3.jpg" alt=""></img>
+            <img loading="lazy" className="family_img" src={familyimg} alt=""></img>
             <div className="about_content">
                 <p>
                 <span className="bold">We are a humble Madhwa Brahmin family based out of Bengaluru. None of our products contain Onion, 
