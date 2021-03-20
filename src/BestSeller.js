@@ -7,7 +7,7 @@ import besanLaddoo from "./besan_laddoo.png";
 function BestSeller() {
     return (
         <div className="best_seller">
-            <h3 className="best_seller_title">BEST SELLERS TEST CHANGES</h3>
+            <h3 className="best_seller_title">BEST SELLERS</h3>
             <div className="best_seller_list">
 
         <div className="best_seller_products">
