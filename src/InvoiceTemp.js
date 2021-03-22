@@ -255,7 +255,7 @@ function InvoiceTemp() {
             <div className="invoice_temp_bottom">
                 <div className="temp_bottom_left">
                 <p className="payable_to">PAYABLE TO</p>
-                <p className="name_phone">SRIHARI FOODS</p>
+                <p className="name_phone">Srihari Foods</p>
                 <p className="name_phone">+91 9980284000</p>
                 <p className="address">Shimoga, Karnataka</p>
                 </div>
@@ -263,6 +263,7 @@ function InvoiceTemp() {
                 <div className="temp_bottom_right">
                 <p className="payable_to">SHIPPED TO</p>
                 <p className="name_phone customer_name">{userName}</p>
+                <p className="name_phone">{userPhone}</p>
                 <p className="address">{userAddress}</p>
                 </div>
             </div>
