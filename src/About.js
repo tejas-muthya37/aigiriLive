@@ -12,10 +12,10 @@ function About() {
                 <span className="bold">We are a humble Madhwa Brahmin family based out of Bengaluru. None of our products contain Onion, 
                 Garlic or any preservatives. </span><br /><br />
                 All our products are prepared in a hygienic and homely environment. All of our family members have stood strong and tested
-                negative in these challenging times. We are slowly expanding our menu as we scale up the venture. We highly appreciate
+                negative for COVID in these challenging times. We are slowly expanding our menu as we scale up the venture. We highly appreciate
                 your support and patience.<br /><br />
                 When the lockdown hit us, it forced us to find parallel sources of income to stay prepared for what may come!
-                My mother has always been an excellent cook. We setup Aigiri Food Products from the comfort of our home. Since then, people
+                My mother has always been an excellent cook. With the added experience of running a hotel, we setup Srihari Food Products from the comfort of our home. Since then, people
                 have loved the taste of all our products, especially the sweets. We have delivered happiness in the form of homemade food products
                 across the world! <br /><br />
                 Our experts have penned down their ancestral recipes under the Best Results section of every product. Follow those recipes to yield

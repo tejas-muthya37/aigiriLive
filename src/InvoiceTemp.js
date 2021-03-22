@@ -1,6 +1,6 @@
 import React from 'react';
 import "./invoicetemp.css";
-import logo from "./aigiri_logo_cropped.png";
+import logo from "./srihari_logo.png";
 import { useStateValue } from "./StateProvider.js";
 import {getBasketTotal} from "./reducer.js";
 import uuid from "react-uuid";
@@ -183,8 +183,8 @@ function InvoiceTemp() {
                 <input type="hidden" name="CART-TOTAL" value={userTotal} />
                 <input type="hidden" name="SHIPPING-COST" value={shippingCost} />
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
-                <input type="hidden" name="_subject" value="Your order from Aigiri Foods" />
-                <input type="hidden" name="_autoresponse" value="Thank you for shopping with Aigiri Foods. This is a confirmation mail that we have successfully received your order." />
+                <input type="hidden" name="_subject" value="Your order from Srihari Foods" />
+                <input type="hidden" name="_autoresponse" value="Thank you for shopping with Srihari Foods. This is a confirmation mail that we have successfully received your order." />
                 <input type="hidden" name="_next" value="https://aigiri-foods.herokuapp.com/success"/>
             </form>
 
@@ -255,9 +255,9 @@ function InvoiceTemp() {
             <div className="invoice_temp_bottom">
                 <div className="temp_bottom_left">
                 <p className="payable_to">PAYABLE TO</p>
-                <p className="name_phone">AIGIRI FOODS</p>
-                <p className="name_phone">+91 9740733878, +91 9980284000</p>
-                <p className="address">Girinagar, Bangalore - 560085, Karnataka</p>
+                <p className="name_phone">SRIHARI FOODS</p>
+                <p className="name_phone">+91 9980284000</p>
+                <p className="address">Shimoga, Karnataka</p>
                 </div>
 
                 <div className="temp_bottom_right">

@@ -11,9 +11,9 @@ function Footer() {
             {/* ********* CONTACT NUMBER **********/}
 
             <div className="footer_left">
-                <p>© 2020 AFP - All Rights Reserved</p>
-                <p><a href="mailto:foodsaigiri@gmail.com">foodsaigiri@gmail.com</a></p>
-                <p>+91 9740733878, +91 9980284000</p>
+                <p>© 2020 SFP - All Rights Reserved</p>
+                <p><a href="mailto:sriharifoods@gmail.com">sriharifoods@gmail.com</a></p>
+                <p>+91 9980284000</p>
             </div>
             <div className="footer_mid">
                 <a href="/about">About Us</a>
@@ -22,10 +22,10 @@ function Footer() {
                 <a href="/about/#refund">Refund Policy</a>
             </div>
             <div className="footer_right">
-            <div className="footer_icons"><a href="https://www.facebook.com/vijay.simha.73"><FacebookIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="https://www.facebook.com/nayana.vadiraj"><FacebookIcon fontSize="large" /></a></div>
             {/* MAIL ID */}
-            <div className="footer_icons"><a href="mailto:aigirifoods@gmail.com"><MailIcon fontSize="large" /></a></div>
-            <div className="footer_icons"><a href="https://www.instagram.com/anupamaraghoo/"><InstagramIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="mailto:sriharifoods@gmail.com"><MailIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="https://www.instagram.com/nayanavadiraj/"><InstagramIcon fontSize="large" /></a></div>
             </div>
             
             
