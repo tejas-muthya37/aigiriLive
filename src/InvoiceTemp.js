@@ -185,7 +185,7 @@ function InvoiceTemp() {
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
                 <input type="hidden" name="_subject" value="Your order from Srihari Foods" />
                 <input type="hidden" name="_autoresponse" value="Thank you for shopping with Srihari Foods. This is a confirmation mail that we have successfully received your order." />
-                <input type="hidden" name="_next" value="https://aigiri-foods.herokuapp.com/success"/>
+                <input type="hidden" name="_next" value="https://srihari-foods.herokuapp.com/success"/>
             </form>
 
             <div className="invoice_temp_top">
