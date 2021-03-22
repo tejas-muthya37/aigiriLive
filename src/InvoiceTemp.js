@@ -247,7 +247,7 @@ function InvoiceTemp() {
                             <p>₹ {getBasketTotal(basket)}</p>
                             <p>₹ {shippingCost}</p>
                             <p>{userPayment}</p>
-                            <p className="total_last_child grand_total_rupee">₹ {getBasketTotal(basket) + 100}</p>
+                            <p className="total_last_child grand_total_rupee">₹ {getBasketTotal(basket) + shippingCost}</p>
                             
                         </div>
                     </div>
