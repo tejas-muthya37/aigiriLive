@@ -9,7 +9,7 @@ function About() {
             <img loading="lazy" className="family_img" src={familyimg} alt=""></img>
             <div className="about_content">
                 <p>
-                <span className="bold">We are a humble Madhwa Brahmin family based out of Bengaluru. None of our products contain Onion, 
+                <span className="bold">We are a humble Madhwa Brahmin family based out of Shimoga. None of our products contain Onion, 
                 Garlic or any preservatives. </span><br /><br />
                 All our products are prepared in a hygienic and homely environment. All of our family members have stood strong and tested
                 negative for COVID in these challenging times. We are slowly expanding our menu as we scale up the venture. We highly appreciate
