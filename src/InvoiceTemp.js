@@ -185,7 +185,7 @@ function InvoiceTemp() {
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
                 <input type="hidden" name="_subject" value="Your order from Aigiri Foods" />
                 <input type="hidden" name="_autoresponse" value="Thank you for shopping with Aigiri Foods. This is a confirmation mail that we have successfully received your order." />
-                <input type="hidden" name="_next" value="https://tejas-muthya37.github.io/aigiriLive/" />
+                <input type="hidden" name="_next" value="https://aigiri-foods.herokuapp.com/success"/>
             </form>
 
             <div className="invoice_temp_top">
@@ -256,7 +256,7 @@ function InvoiceTemp() {
                 <div className="temp_bottom_left">
                 <p className="payable_to">PAYABLE TO</p>
                 <p className="name_phone">AIGIRI FOODS</p>
-                <p className="name_phone">+91 9164187714 </p>
+                <p className="name_phone">+91 9740733878, +91 9980284000</p>
                 <p className="address">Girinagar, Bangalore - 560085, Karnataka</p>
                 </div>
 
