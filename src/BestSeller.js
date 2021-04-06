@@ -15,7 +15,7 @@ function BestSeller() {
             id="15"
             title="Peanut Chikki"
             image="https://m.media-amazon.com/images/I/81mOejacmBL._AC_UL480_QL65_.jpg"
-            price="450"
+            price="300"
             category="box"
           />
           </div>
