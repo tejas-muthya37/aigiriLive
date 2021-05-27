@@ -1,6 +1,6 @@
 import React from 'react';
 import "./invoicetemp.css";
-import logo from "./srihari_logo.png";
+import logo from "./logo_invoice.png";
 import { useStateValue } from "./StateProvider.js";
 import {getBasketTotal} from "./reducer.js";
 import uuid from "react-uuid";
@@ -164,7 +164,7 @@ function InvoiceTemp() {
             <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/tejas.muthya37@gmail.com">
             
             <div className="buttons">
-                <button onClick={genPDF} type="submit" className="generate_invoice_button">DOWNLOAD</button>
+                <button onClick={genPDF} type="submit" className="generate_invoice_button">PRINT</button>
                 <button type="submit" className="confirm_order_button">CONFIRM ORDER</button>
             </div>
             
@@ -255,7 +255,7 @@ function InvoiceTemp() {
             <div className="invoice_temp_bottom">
                 <div className="temp_bottom_left">
                 <p className="payable_to">PAYABLE TO</p>
-                <p className="name_phone">Srihari Foods</p>
+                <p className="name_phone">Madhwa Paaka</p>
                 <p className="name_phone">+91 9980284000</p>
                 <p className="address">Shimoga, Karnataka</p>
                 </div>

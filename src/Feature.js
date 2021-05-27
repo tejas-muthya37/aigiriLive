@@ -17,7 +17,7 @@ function Feature() {
             <div className="col-lg-6">
 
                     {/* <div className="feature_right"> */}
-                        <h2>LIP SMACKING RECIPES!</h2>
+                        <h2>ಬಾಯಿ ಚಪ್ಪರಿಸುವಿರಿ !</h2>
                    
                     {/* </div> */}
 

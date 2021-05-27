@@ -1,7 +1,6 @@
 import React from 'react';
 import Product from "./Product";
 import "./bestseller.css";
-import besanLaddoo from "./besan_laddoo.png";
 
 
 function BestSeller() {
@@ -11,43 +10,44 @@ function BestSeller() {
             <div className="best_seller_list">
 
         <div className="best_seller_products">
-            <Product
-            id="15"
-            title="Peanut Chikki"
-            image="https://m.media-amazon.com/images/I/81mOejacmBL._AC_UL480_QL65_.jpg"
-            price="300"
-            category="box"
+        <Product
+            id="4"
+            title="ಚಕ್ಕುಲಿ"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/51oJb+Kz2TS._AC_UL480_QL65_.jpg"
+            price="36"
           />
           </div>
 
           <div className="best_seller_products">
-            <Product
-            id="11"
-            title="Besan Laddoo"
-            image={besanLaddoo}
-            price="300"
-            category="box"
-            />
+          <Product
+            id="2"
+            title="ಪುರಿ ಉಂಡೆ"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/41hzY651KAL._AC_UL480_QL65_.jpg"
+            price="78"
+            
+          />
           </div>
 
           <div className="best_seller_products">
-            <Product
-            id="2"
-            title="Rasam Powder"
-            image="https://m.media-amazon.com/images/I/61SDjKCyjhL._AC_UL480_QL65_.jpg"
-            price="80"
-            category="powder"
-            />
+          <Product
+            id="10"
+            title="ತೆಂಗೊಳಲು"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
+            price="60"
+          />
           </div>
             
           <div className="best_seller_products">
-            <Product
-            id="1"
-            title="Sambar Powder"
-            image="https://m.media-amazon.com/images/I/61DqQGdVUKL._AC_UL480_QL65_.jpg"
-            price="450"
-            category="powder"
-            />   
+          <Product
+            id="8"
+            title="ನಿಪ್ಪಟ್ಟು"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/61IJJ+JrXXL._AC_UL480_QL65_.jpg"
+            price="36"
+          />
           </div>
 
           </div>

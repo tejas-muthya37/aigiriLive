@@ -11,8 +11,8 @@ function Footer() {
             {/* ********* CONTACT NUMBER **********/}
 
             <div className="footer_left">
-                <p>© 2020 SFP - All Rights Reserved</p>
-                <p><a href="mailto:sriharifoods@gmail.com">sriharifoods@gmail.com</a></p>
+                <p>© {new Date().getFullYear()} MPK - All Rights Reserved</p>
+                <p><a href="mailto:sriharifoods@gmail.com">madhwapaaka@gmail.com</a></p>
                 <p>+91 9980284000</p>
             </div>
             <div className="footer_mid">
@@ -24,7 +24,7 @@ function Footer() {
             <div className="footer_right">
             <div className="footer_icons"><a href="https://www.facebook.com/nayana.vadiraj"><FacebookIcon fontSize="large" /></a></div>
             {/* MAIL ID */}
-            <div className="footer_icons"><a href="mailto:sriharifoods@gmail.com"><MailIcon fontSize="large" /></a></div>
+            <div className="footer_icons"><a href="mailto:madhwapaaka@gmail.com"><MailIcon fontSize="large" /></a></div>
             <div className="footer_icons"><a href="https://www.instagram.com/nayanavadiraj/"><InstagramIcon fontSize="large" /></a></div>
             </div>
             
