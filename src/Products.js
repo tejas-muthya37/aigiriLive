@@ -28,13 +28,7 @@ function Products() {
             price="78"
             
           /></div>
-        <div id="3" className="row_product"><Product
-            id="3"
-            title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chivda"
-            category= "powder"
-            image="https://m.media-amazon.com/images/I/81uhr5oRiXL._AC_UL480_QL65_.jpg"
-            price="250"
-          /></div>
+        
         <div id="6" className="row_product"><Product
             id="6"
             title="ಕಜ್ಜಾಯ | Kajjaya"
@@ -42,6 +36,14 @@ function Products() {
             image="https://m.media-amazon.com/images/I/61+rTcDCIcL._AC_UL480_QL65_.jpg"
             price="60"
           /></div>
+          <div id="7" className="row_product"><Product
+            id="7"
+            title="ಕರ್ಜಿಕಾಯಿ | Karjikayi"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/61VchkEyO2L._AC_UL480_QL65_.jpg"
+            price="60"
+          /></div>
+          
         </div>
         <div className="products_row">
         <div id="5" className="row_product"><Product
@@ -58,14 +60,14 @@ function Products() {
             image="https://m.media-amazon.com/images/I/51oJb+Kz2TS._AC_UL480_QL65_.jpg"
             price="36"
           /></div>
-        
-        <div id="7" className="row_product"><Product
-            id="7"
-            title="ಕರ್ಜಿಕಾಯಿ | Karjikayi"
-            category= "box"
-            image="https://m.media-amazon.com/images/I/61VchkEyO2L._AC_UL480_QL65_.jpg"
-            price="60"
+        <div id="3" className="row_product"><Product
+            id="3"
+            title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chivda"
+            category= "powder"
+            image="https://m.media-amazon.com/images/I/81uhr5oRiXL._AC_UL480_QL65_.jpg"
+            price="250"
           /></div>
+        
         <div id="8" className="row_product"><Product
             id="8"
             title="ನಿಪ್ಪಟ್ಟು | Nippattu"
@@ -82,12 +84,12 @@ function Products() {
             image="https://m.media-amazon.com/images/I/81kUEe8MpxL._AC_UL480_QL65_.jpg"
             price="50"
           /></div>
-        <div id="13" className="row_product"><Product
-            id="13"
-            title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
+        <div id="10" className="row_product"><Product
+            id="10"
+            title="ತೆಂಗೊಳಲು | Tengolu"
             category= "box"
-            image="https://images-na.ssl-images-amazon.com/images/I/61-OsjuJACL._SL1000_.jpg"
-            price="120"
+            image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
+            price="60"
           /></div>
         <div id="11" className="row_product"><Product
             id="11"
@@ -105,14 +107,14 @@ function Products() {
           /></div>
         </div>
         <div className="products_row">
-        <div id="10" className="row_product"><Product
-            id="10"
-            title="ತೆಂಗೊಳಲು | Tengolu"
-            category= "box"
-            image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
-            price="60"
-          /></div>
         
+        <div id="13" className="row_product"><Product
+            id="13"
+            title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
+            category= "box"
+            image="https://images-na.ssl-images-amazon.com/images/I/61-OsjuJACL._SL1000_.jpg"
+            price="120"
+          /></div>
         <div id="14" className="row_product"><Product
             id="14"
             title="ಸಾರಿನ ಪುಡಿ | Rasam Powder"

@@ -35,7 +35,7 @@ function Product(props) {
         <Link to={"/recipe/" + props.id}><img loading="lazy" alt={props.id} src={props.image}></img></Link>
       </div>
       <div className="product_info">
-        <p>{props.title}</p>
+        <p className="product_title">{props.title}</p>
         <p className="product_price">
           
           ₹<strong className="unit_price">{props.price}</strong>

@@ -16,6 +16,15 @@
   .product {
     margin: 10px;
   }
+
+  .product_info {
+    min-height: 60px;
+  }
+
+  .product_title {
+    min-height: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .product img {

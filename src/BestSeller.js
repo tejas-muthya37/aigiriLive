@@ -11,11 +11,13 @@ function BestSeller() {
 
         <div className="best_seller_products">
         <Product
-            id="4"
-            title="ಚಕ್ಕುಲಿ | Chakkuli"
+
+            id="1"
+            title="ಬೇಸನ್ ಉಂಡೆ | Besan Laddoo"
             category= "box"
-            image="https://m.media-amazon.com/images/I/51oJb+Kz2TS._AC_UL480_QL65_.jpg"
-            price="36"
+            image="https://m.media-amazon.com/images/I/91d11fTwZBL._AC_UL480_QL65_.jpg"
+            price="72"
+            
           />
           </div>
 
