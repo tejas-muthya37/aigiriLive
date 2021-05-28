@@ -16,7 +16,7 @@ function Products() {
             id="1"
             title="ಬೇಸನ್ ಉಂಡೆ | Besan Laddoo"
             category= "box"
-            image="https://m.media-amazon.com/images/I/91d11fTwZBL._AC_UL480_QL65_.jpg"
+            image="https://cdn.shopify.com/s/files/1/0398/6545/0645/products/69724367_2483046198423304_3890100649064398848_o-removebg-preview_1024x1024.png?v=1593273118"
             price="72"
             
           /></div>
@@ -29,23 +29,6 @@ function Products() {
             
           /></div>
         
-        <div id="6" className="row_product"><Product
-            id="6"
-            title="ಕಜ್ಜಾಯ | Kajjaya"
-            category= "box"
-            image="https://m.media-amazon.com/images/I/61+rTcDCIcL._AC_UL480_QL65_.jpg"
-            price="60"
-          /></div>
-          <div id="7" className="row_product"><Product
-            id="7"
-            title="ಕರ್ಜಿಕಾಯಿ | Karjikayi"
-            category= "box"
-            image="https://m.media-amazon.com/images/I/61VchkEyO2L._AC_UL480_QL65_.jpg"
-            price="60"
-          /></div>
-          
-        </div>
-        <div className="products_row">
         <div id="5" className="row_product"><Product
             id="5"
             title="ಬೆಣ್ಣೆ ಮುರುಕ್ಕು | Benne Murukku"
@@ -53,6 +36,24 @@ function Products() {
             image="https://m.media-amazon.com/images/I/61Bhr+kmuUL._AC_UL480_QL65_.jpg"
             price="300"
           /></div>
+          <div id="7" className="row_product"><Product
+            id="7"
+            title="ಕರ್ಜಿಕಾಯಿ | Karjikayi"
+            category= "box"
+            image="https://cdn.shopify.com/s/files/1/0398/6545/0645/products/7-13-removebg-preview_1024x1024.png?v=1593120521"
+            price="60"
+          /></div>
+          
+        </div>
+        <div className="products_row">
+        <div id="6" className="row_product"><Product
+            id="6"
+            title="ಕಜ್ಜಾಯ | Kajjaya"
+            category= "box"
+            image="https://cdn.shopify.com/s/files/1/0398/6545/0645/products/4-12-removebg-preview_1024x1024.png?v=1593271672"
+            price="60"
+          /></div>
+        
           <div id="4" className="row_product"><Product
             id="4"
             title="ಚಕ್ಕುಲಿ | Chakkuli"
@@ -64,7 +65,7 @@ function Products() {
             id="3"
             title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chivda"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81uhr5oRiXL._AC_UL480_QL65_.jpg"
+            image="https://krushikendra.com/image/cache/catalog/Homemade%20food/farali-poha2-800x800.png"
             price="250"
           /></div>
         
