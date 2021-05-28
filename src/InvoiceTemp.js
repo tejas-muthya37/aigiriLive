@@ -1,6 +1,5 @@
 import React from 'react';
 import "./invoicetemp.css";
-import logo from "./logo_invoice.png";
 import { useStateValue } from "./StateProvider.js";
 import {getBasketTotal} from "./reducer.js";
 import uuid from "react-uuid";
@@ -196,8 +195,8 @@ function InvoiceTemp() {
                     
                 </div>
                 <div className="temp_top_right">
-                <img alt="" className="aigiri_logo" src={logo}></img>
-
+                {/* <img alt="" className="aigiri_logo" src={logo}></img> */}
+                <h2 className="logo_text">ಮಧ್ವಪಾಕ</h2>
                 </div>
             </div>
             <div className="invoice_temp_mid">

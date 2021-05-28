@@ -1,6 +1,5 @@
 import React from 'react';
 import "./navbar.css";
-import logo from "./aigiri_logo.png";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider.js";
@@ -102,7 +101,8 @@ function NavBar() {
         <div className="header">
             <nav>
                 <div className="logo" onClick={scrollTop1}>
-                    <Link to="/"><img alt="" src={logo}></img></Link>
+                    {/* <Link to="/"><img alt="" src={logo}></img></Link> */}
+                    <Link style={{textDecoration: "none"}} to="/"><h2 className="logo_text">ಮಧ್ವಪಾಕ</h2></Link>
                 </div>
                 
                 <ul id="nav-links" className="nav-links">
