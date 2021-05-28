@@ -30,7 +30,7 @@ function Products() {
           /></div>
         <div id="3" className="row_product"><Product
             id="3"
-            title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chooda Avalakki"
+            title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chivda"
             category= "powder"
             image="https://m.media-amazon.com/images/I/81uhr5oRiXL._AC_UL480_QL65_.jpg"
             price="250"
@@ -127,11 +127,11 @@ function Products() {
             image="https://m.media-amazon.com/images/I/51I4NPKCehL._AC_UL480_QL65_.jpg"
             price="600"
           /></div>
-          <div id="17" className="row_product"><Product
-            id="17"
-            title="ಚಟ್ನಿ ಪುಡಿ | Chutney Powder"
+          <div id="18" className="row_product"><Product
+            id="18"
+            title="ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ | Peanut Chutney Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81FRjV0WHrL._AC_UL480_QL65_.jpg"
+            image="https://m.media-amazon.com/images/I/710BDfrPbyS._AC_UL480_QL65_.jpg"
             price="400"
           /></div>
         </div>
@@ -139,7 +139,7 @@ function Products() {
         
         <div id="16" className="row_product"><Product
             id="16"
-            title="ಮೆಂತ್ಯದ ಹಿಟ್ಟು | Fenugreek Powder"
+            title="ಮೆಂತ್ಯದ ಹಿಟ್ಟು | Menthya Powder"
             category= "powder"
             image="https://m.media-amazon.com/images/I/61bcVzQJgBS._AC_UL480_QL65_.jpg"
             price="400"
@@ -175,11 +175,12 @@ function Products() {
             image="https://m.media-amazon.com/images/I/716ogHhwx-L._AC_UL480_QL65_.jpg"
             price="600"
           /></div>
-        <div id="18" className="row_product"><Product
-            id="18"
-            title="ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ | Groundnut Chutney Powder"
+        
+          <div id="17" className="row_product"><Product
+            id="17"
+            title="ಚಟ್ನಿ ಪುಡಿ | Chutney Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/710BDfrPbyS._AC_UL480_QL65_.jpg"
+            image="https://m.media-amazon.com/images/I/81FRjV0WHrL._AC_UL480_QL65_.jpg"
             price="400"
           /></div>
         </div>
