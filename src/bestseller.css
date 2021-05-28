@@ -2,7 +2,7 @@
   display: flex;
   z-index: -5;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .best_seller_list {
@@ -22,6 +22,7 @@
   margin-top: 75px;
   margin-bottom: 35px;
   color: black;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -36,6 +37,7 @@
 
   .best_seller_title {
     margin-top: 50px;
+    margin-bottom: 0;
     font-size: 25px;
   }
 }

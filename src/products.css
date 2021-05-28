@@ -1,7 +1,7 @@
 .products {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   overflow-x: hidden;
 }
 
@@ -21,6 +21,7 @@
 .products_title {
   margin-top: 0px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -35,5 +36,6 @@
 
   .products_title {
     font-size: 25px;
+    margin-bottom: 0;
   }
 }
