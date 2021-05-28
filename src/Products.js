@@ -37,7 +37,7 @@ function Products() {
           /></div>
         <div id="6" className="row_product"><Product
             id="6"
-            title="ಅನಾರಸ (ಕಜ್ಜಾಯ) | Anarasa (Kajjaya)"
+            title="ಕಜ್ಜಾಯ | Kajjaya"
             category= "box"
             image="https://m.media-amazon.com/images/I/61+rTcDCIcL._AC_UL480_QL65_.jpg"
             price="60"

@@ -38,4 +38,8 @@
     font-size: 25px;
     margin-bottom: 0;
   }
+
+  .products {
+    overflow-y: hidden;
+  }
 }
