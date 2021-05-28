@@ -23,11 +23,12 @@ function BestSeller() {
 
           <div className="best_seller_products">
           <Product
-            id="9"
-            title="ಮಂಡಕ್ಕಿ | Mandakki"
-            category= "powder"
-            image="https://m.media-amazon.com/images/I/81kUEe8MpxL._AC_UL480_QL65_.jpg"
-            price="50"
+            id="2"
+            title="ಪುರಿ ಉಂಡೆ | Puri Unde"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/41hzY651KAL._AC_UL480_QL65_.jpg"
+            price="78"
+            
           />
           </div>
           
