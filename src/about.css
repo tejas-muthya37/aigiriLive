@@ -1,10 +1,10 @@
-.family_img {
+/* .family_img {
   width: 80%;
   margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 50px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
+} */
 
 .about_content p {
   padding-left: 150px;
@@ -12,6 +12,10 @@
   text-align: left;
   font-size: 18px;
   line-height: 40px;
+}
+
+.about {
+  margin-top: 150px;
 }
 
 .bold {

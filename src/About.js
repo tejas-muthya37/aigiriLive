@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="about">
 
-            <img loading="lazy" className="family_img" src={familyimg} alt=""></img>
+            {/* <img loading="lazy" className="family_img" src={familyimg} alt=""></img> */}
             <div className="about_content">
                 <p>
                 <span class="bold">ಮಧ್ವಪಾಕ ಒಂದು ವಿಭಿನ್ನ ಪ್ರಯತ್ನ. ಅಜ್ಜಿ ಮುತ್ತಜ್ಜಿಯಿಂದ ಕಲಿತ ಅಡುಗೆ ಪರಂಪರೆಯೇ ನಮ್ಮ ಮಧ್ವಪಾಕದ ಬಲ.</span> 
