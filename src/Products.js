@@ -1,6 +1,17 @@
 import React from 'react';
 import "./products.css";
 import Product from "./Product";
+import rasam from "./rasam_powder.jpg";
+import vangi from "./vangi_powder.png";
+import methi from "./methi_powder.png";
+import pchutney from "./pchutney_powder.png";
+import chutney from "./chutney_powder.png";
+import bisi from "./bisi_powder.png";
+import mandakki from "./mandakki_puri.png";
+import holige from "./holige.png";
+import kayi_holige from "./kayi_holige.png";
+import sakkare_holige from "./sakkare_holige.png";
+import puliyogare from "./puliyogare_gojju.png";
 
 
 function Products() {
@@ -82,7 +93,7 @@ function Products() {
             id="9"
             title="ಮಂಡಕ್ಕಿ | Mandakki"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81kUEe8MpxL._AC_UL480_QL65_.jpg"
+            image={mandakki}
             price="50"
           /></div>
         <div id="10" className="row_product"><Product
@@ -96,14 +107,14 @@ function Products() {
             id="11"
             title="ಹೋಳಿಗೆ | Holige"
             category= "box"
-            image="https://images-na.ssl-images-amazon.com/images/I/517KTN9guqL.jpg"
+            image={holige}
             price="96"
           /></div>
         <div id="12" className="row_product"><Product
             id="12"
             title="ಕಾಯಿ ಹೋಳಿಗೆ | Coconut Holige"
             category= "box"
-            image="https://images-na.ssl-images-amazon.com/images/I/51aDku760fS._SL1100_.jpg"
+            image={kayi_holige}
             price="108"
           /></div>
         </div>
@@ -113,14 +124,14 @@ function Products() {
             id="13"
             title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
             category= "box"
-            image="https://images-na.ssl-images-amazon.com/images/I/61-OsjuJACL._SL1000_.jpg"
+            image={sakkare_holige}
             price="120"
           /></div>
         <div id="14" className="row_product"><Product
             id="14"
             title="ಸಾರಿನ ಪುಡಿ | Rasam Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/717Ak2hi0NL._AC_UL480_QL65_.jpg"
+            image={rasam}
             price="600"
           /></div>
         <div id="15" className="row_product"><Product
@@ -134,7 +145,7 @@ function Products() {
             id="18"
             title="ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ | Peanut Chutney Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/710BDfrPbyS._AC_UL480_QL65_.jpg"
+            image={pchutney}
             price="400"
           /></div>
         </div>
@@ -144,14 +155,14 @@ function Products() {
             id="16"
             title="ಮೆಂತ್ಯದ ಹಿಟ್ಟು | Menthya Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/61bcVzQJgBS._AC_UL480_QL65_.jpg"
+            image={methi}
             price="400"
           /></div>
           <div id="22" className="row_product"><Product
             id="22"
             title="ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು | Puliyogare Mix"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81btOJEEwNL._AC_UL480_QL65_.jpg"
+            image={puliyogare}
             price="400"
           /></div>
           
@@ -159,14 +170,14 @@ function Products() {
             id="19"
             title="ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಪುಡಿ | Bisi Bele Bath Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81iAuh4RJBL._AC_UL480_QL65_.jpg"
+            image={bisi}
             price="600"
           /></div>
           <div id="20" className="row_product"><Product
             id="20"
             title="ವಾಂಗಿ ಬಾತ್ ಪುಡಿ | Vangi Bath Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/71yvH0MUlnL._AC_UL480_QL65_.jpg"
+            image={vangi}
             price="600"
           /></div>
         </div>
@@ -175,7 +186,7 @@ function Products() {
             id="21"
             title="ಗೊಜ್ಜಿನ ಪುಡಿ | Gojju Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/716ogHhwx-L._AC_UL480_QL65_.jpg"
+            image={rasam}
             price="600"
           /></div>
         
@@ -183,7 +194,7 @@ function Products() {
             id="17"
             title="ಚಟ್ನಿ ಪುಡಿ | Chutney Powder"
             category= "powder"
-            image="https://m.media-amazon.com/images/I/81FRjV0WHrL._AC_UL480_QL65_.jpg"
+            image={chutney}
             price="400"
           /></div>
         </div>
