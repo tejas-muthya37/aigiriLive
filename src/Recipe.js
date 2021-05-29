@@ -79,9 +79,10 @@ function Recipe() {
             </div>
             <div className="recipe_right">
                 <h4 className="recipe_right_header">PRODUCT DESCRIPTION</h4>
-                <p className="recipe_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p className="recipe_p">{newProduct.desc}</p>
                 <h4 className="recipe_right_header best_results">BEST RESULTS</h4>
-                <p className="recipe_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p className="recipe_p">We are planning to pen down our ancestral recipes under the Best Results section of every product. 
+                Follow these recipes to yield the most authentic Brahmin Delicacies. We will be updating this shortly.</p>
             </div>
         </div>
     )
