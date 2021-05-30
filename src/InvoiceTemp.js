@@ -93,9 +93,12 @@ function InvoiceTemp() {
             case "West Bengal":
                 shippingCost = 175;
                 break;
+            case "Haryana":
+                shippingCost = 245;
+                break;
             default:
                 shippingCost = 245;
-      }
+    }
 
       let newArray = basket.map((item) => (
         {
@@ -127,7 +130,6 @@ function InvoiceTemp() {
             let srWeight = 5;
             let srLength = 30; 
             let srBreadth = 30; 
-            // 20 5 30 30
             let srTotal = getBasketTotal(basket) + shippingCost;
 
             var raw = JSON.stringify({"order_id":srOrderId,"order_date":srDate,"pickup_location":"Primary",
@@ -167,7 +169,7 @@ function InvoiceTemp() {
                 <button type="submit" className="confirm_order_button">CONFIRM ORDER</button>
             </div>
             
-                {userPayment === "Online" && <input type="hidden" name="NOTICE" value={"Your order will be dispatched once you complete your online payment of ₹ " + (userTotal+shippingCost) + " towards AIGIRI FOODS - +91 9164197714"} />}
+                {userPayment === "Online" && <input type="hidden" name="NOTICE" value={"Your order will be dispatched once you complete your online payment of ₹ " + (userTotal+shippingCost) + " towards Madhwa Paaka - +91 9980284000"} />}
 
                 <input name="NAME" type="hidden" value={userName}/>
                 <input name="email" type="hidden" value={userEmail}/>
@@ -182,8 +184,8 @@ function InvoiceTemp() {
                 <input type="hidden" name="CART-TOTAL" value={userTotal} />
                 <input type="hidden" name="SHIPPING-COST" value={shippingCost} />
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
-                <input type="hidden" name="_subject" value="Your order from Srihari Foods" />
-                <input type="hidden" name="_autoresponse" value="Thank you for shopping with Srihari Foods. This is a confirmation mail that we have successfully received your order." />
+                <input type="hidden" name="_subject" value="Your order from Madhwa Paaka" />
+                <input type="hidden" name="_autoresponse" value="Thank you for shopping with Madhwa Paaka. This is a confirmation mail that we have successfully received your order." />
                 <input type="hidden" name="_next" value="https://srihari-foods.herokuapp.com/success"/>
             </form>
 
