@@ -5,10 +5,11 @@ import pchutney from "./pchutney_powder.png";
 import chutney from "./chutney_powder.png";
 import bisi from "./bisi_powder.png";
 import mandakki from "./mandakki_puri.png";
-import holige from "./holige.png";
 import kayi_holige from "./kayi_holige.png";
 import sakkare_holige from "./sakkare_holige.png";
 import puliyogare from "./puliyogare_gojju.png";
+import tengol from "./tengol.jpg";
+
 
 const productsArray = [{id:"1",
     title:"ಬೇಸನ್ ಉಂಡೆ",
@@ -94,7 +95,7 @@ const productsArray = [{id:"1",
     weight: "2"}, {id:"10",
     title:"ತೆಂಗೊಳಲು",
     category: "box",
-    image:"https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg",
+    image:tengol,
     price:"60",
     desc: "Tengolu is a savory fried snack and a speciality of Karnataka. Just as good as Chakli / Murukku, this one is more popular in the region of Bangalore and Mysore. Delicious, golden brown, crispy, slightly tangy and salty!",
     length: "10",

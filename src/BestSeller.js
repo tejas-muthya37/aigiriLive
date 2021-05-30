@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from "./Product";
 import "./bestseller.css";
-
+import tengol from "./tengol.jpg";
 
 function BestSeller() {
     return (
@@ -38,7 +38,7 @@ function BestSeller() {
             id="10"
             title="ತೆಂಗೊಳಲು | Tengolu"
             category= "box"
-            image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
+            image={tengol}
             price="60"
           />
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import "./products.css";
 import Product from "./Product";
 import rasam from "./rasam_powder.jpg";
+import tengol from "./tengol.jpg";
 import vangi from "./vangi_powder.png";
 import methi from "./methi_powder.png";
 import pchutney from "./pchutney_powder.png";
@@ -100,7 +101,7 @@ function Products() {
             id="10"
             title="ತೆಂಗೊಳಲು | Tengolu"
             category= "box"
-            image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
+            image={tengol}
             price="60"
           /></div>
         <div id="13" className="row_product"><Product
