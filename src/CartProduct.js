@@ -29,6 +29,7 @@ function CartProduct(props) {
                 <p className="cart_product_price">₹ {props.price * props.quantity}</p>
                 {(props.category === "powder") && <p>Quantity - {props.quantityValue}</p>} 
                 {(props.category === "box") && <p>Quantity - {props.quantity}</p>}
+                {(props.category === "pack") && <p>Quantity - {props.quantityValue}</p>}
                 
                 <button onClick={removeFromBasket} id="cart_product_button" className="cart_product_button">Remove</button>
             </div>

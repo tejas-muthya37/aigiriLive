@@ -8,8 +8,8 @@
 }
 
 .cart_product_left {
-  min-width: 150px;
-  text-align: center;
+  min-width: 200px;
+  text-align: left;
 }
 
 .cart_product img {

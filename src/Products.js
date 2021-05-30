@@ -92,7 +92,7 @@ function Products() {
         <div id="9" className="row_product"><Product
             id="9"
             title="ಮಂಡಕ್ಕಿ | Mandakki"
-            category= "powder"
+            category= "pack"
             image={mandakki}
             price="50"
           /></div>
@@ -103,12 +103,12 @@ function Products() {
             image="https://m.media-amazon.com/images/I/71+fPkLGf5L._AC_UL480_QL65_.jpg"
             price="60"
           /></div>
-        <div id="11" className="row_product"><Product
-            id="11"
-            title="ಹೋಳಿಗೆ | Holige"
+        <div id="13" className="row_product"><Product
+            id="13"
+            title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
             category= "box"
-            image={holige}
-            price="96"
+            image={sakkare_holige}
+            price="120"
           /></div>
         <div id="12" className="row_product"><Product
             id="12"
@@ -120,12 +120,12 @@ function Products() {
         </div>
         <div className="products_row">
         
-        <div id="13" className="row_product"><Product
-            id="13"
-            title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
-            category= "box"
-            image={sakkare_holige}
-            price="120"
+        <div id="17" className="row_product"><Product
+            id="17"
+            title="ಚಟ್ನಿ ಪುಡಿ | Chutney Powder"
+            category= "powder"
+            image={chutney}
+            price="400"
           /></div>
         <div id="14" className="row_product"><Product
             id="14"
@@ -190,13 +190,7 @@ function Products() {
             price="600"
           /></div>
         
-          <div id="17" className="row_product"><Product
-            id="17"
-            title="ಚಟ್ನಿ ಪುಡಿ | Chutney Powder"
-            category= "powder"
-            image={chutney}
-            price="400"
-          /></div>
+          
         </div>
       </div>
     )

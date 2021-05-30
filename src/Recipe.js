@@ -50,6 +50,7 @@ function Recipe() {
                 <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
                 {(newProduct.category === "powder") && <h5 id="price" className="price">₹ {newProduct.price} / KG</h5>}
                 {(newProduct.category === "box") && <h5 id="price" className="price">₹ {newProduct.price} / Box of 6</h5>}
+                {(newProduct.category === "pack") && <h5 id="price" className="price">₹ {newProduct.price} / 100 GRAMS</h5>}
                     <div className="recipe_left_quantity">
                         <form>
                             <label htmlFor="quantity"><h5 className="quantity font_alike">QUANTITY</h5></label>
@@ -69,6 +70,10 @@ function Recipe() {
                                 <option id={1} value={1}>1 KG</option>
                                 <option id={1/2} value={1/2}>500 GRAMS</option>
                                 <option id={1/4} value={1/4}>250 GRAMS</option>
+                            </select>}
+                            {(newProduct.category === "pack") && <select id="quantity" name="quantity">
+                                <option id="1" value={1}>100 GRAMS</option>
+                                <option id="2" value={2}>200 GRAMS</option>
                             </select>}
                         </form>
                     </div>

@@ -39,8 +39,9 @@ function Product(props) {
         <p className="product_price">
           
           ₹<strong className="unit_price">{props.price}</strong>
-          {props.category === "powder" ? <span>/KG</span> : <span>/Box</span>}
-          
+          {props.category === "powder" && <span>/KG</span>}
+          {props.category === "box" && <span>/Box of 6</span>}
+          {props.category === "pack" && <span>/100 G</span>}
         </p>
       </div>
       
