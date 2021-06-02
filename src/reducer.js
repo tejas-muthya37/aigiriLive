@@ -47,13 +47,6 @@ export const initialState = {
           ...state,
           basket: newBasket,
         };
-
-        case "REMOVE_ALL":
-          let newBasket1 = [];
-          return {
-            ...state,
-            basket: newBasket1,
-          };
   
       default:
         return state;

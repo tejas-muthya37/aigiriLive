@@ -13,6 +13,7 @@ function Recipe() {
     const {id} = useParams();
 
     let newProduct;
+    let found = false;
 
     productsArray.forEach(function(matchedProduct) {
             if(matchedProduct.id === id) {
@@ -20,26 +21,56 @@ function Recipe() {
               }
               
     });
+    
+      const addToBasket = () => {
 
-    const addToBasket = () => {
-
-        dispatch({
-          type: "ADD_TO_BASKET",
-          item: {
-            key: newProduct.id,
-            id: newProduct.id,
-            title: newProduct.title,
-            category: newProduct.category,
-            image: newProduct.image,
-            price: newProduct.price,
-            quantity: document.getElementById("quantity").value,
-            quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML,
-            height: newProduct.height,
-            weight: newProduct.weight,
-            breadth: newProduct.breadth,
-            length: newProduct.length
-          },
-        });
+        
+          basket?.forEach((item) => {
+              if(item.title === newProduct.title && item.category === "box"){
+                  found = true;
+                  dispatch({
+                      type: "REMOVE_FROM_BASKET",
+                      id: item.id,
+                  });
+                  dispatch({
+                      type: "ADD_TO_BASKET",
+                      item: {
+                        key: newProduct.id,
+                        id: newProduct.id,
+                        title: newProduct.title,
+                        category: newProduct.category,
+                        image: newProduct.image,
+                        price: newProduct.price,
+                        quantity: Number(document.getElementById("quantity").value) + Number(item.quantity),
+                        quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML,
+                        height: newProduct.height,
+                        weight: newProduct.weight,
+                        breadth: newProduct.breadth,
+                        length: newProduct.length
+                      },
+                    });
+              }
+        })
+        
+        if(found === false){
+          dispatch({
+            type: "ADD_TO_BASKET",
+            item: {
+              key: newProduct.id,
+              id: newProduct.id,
+              title: newProduct.title,
+              category: newProduct.category,
+              image: newProduct.image,
+              price: newProduct.price,
+              quantity: document.getElementById("quantity").value,
+              quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML,
+              height: newProduct.height,
+              weight: newProduct.weight,
+              breadth: newProduct.breadth,
+              length: newProduct.length
+            },
+          });
+        }
         let stringBasket = JSON.stringify(basket);
         localStorage.setItem("localBasket", stringBasket);
       };

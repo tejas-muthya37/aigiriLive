@@ -9,7 +9,6 @@ import pchutney from "./pchutney_powder.png";
 import chutney from "./chutney_powder.png";
 import bisi from "./bisi_powder.png";
 import mandakki from "./mandakki_puri.png";
-import holige from "./holige.png";
 import kayi_holige from "./kayi_holige.png";
 import sakkare_holige from "./sakkare_holige.png";
 import puliyogare from "./puliyogare_gojju.png";
