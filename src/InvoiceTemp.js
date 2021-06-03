@@ -10,7 +10,7 @@ function InvoiceTemp() {
 
     let newString = "";
     basket?.map((item) => (
-        newString += "\n\n\n\n\n" + item.title + "\t - \t" + item.quantityValue + "\t - \t" + String(item.quantity * item.price)
+        newString += "\n\n\n\n\n" + item.title + "\t - \t" + item.quantityValue + "\t - \t₹ " + String(item.quantity * item.price)
         ))
     newString += "\n\n\n\n\n------------------- END OF ORDER -------------------"
 
@@ -19,7 +19,7 @@ function InvoiceTemp() {
 
         // ********* SHIPROCKET ACCOUNT LINK *********
 
-        var raw = JSON.stringify({"email":"madhwapaaka@gmail.com","password":"Mpk@2021"});
+        var raw = JSON.stringify({"email":"foodsaigiri@gmail.com","password":"foodsaigiri"});
 
         var requestOptions = {
         method: 'POST',
@@ -162,7 +162,7 @@ function InvoiceTemp() {
     return (
         <div className="invoice_temp">
 
-            <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/madhwapaaka@gmail.com">
+            <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/tejas.muthya37@gmail.com">
             
             <div className="buttons">
                 <button onClick={genPDF} type="submit" className="generate_invoice_button">PRINT</button>
@@ -215,6 +215,7 @@ function InvoiceTemp() {
                     {basket.map((item) => (
                         <tr key={basket.indexOf(item)} className="item_data">
                         <td>{item.title}</td>
+                        {/* {item.category === "box" && <td className="quantity_table">{item.quantity}</td>} */}
                         <td className="quantity_table">{item.quantityValue}</td>
                         <td>₹ {item.price * item.quantity}</td>
                     </tr>

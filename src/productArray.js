@@ -8,7 +8,8 @@ import mandakki from "./mandakki_puri.png";
 import kayi_holige from "./kayi_holige.png";
 import sakkare_holige from "./sakkare_holige.png";
 import puliyogare from "./puliyogare_gojju.png";
-import tengol from "./tengol.jpg";
+import tengol from "./tengol.png";
+
 
 
 const productsArray = [{id:"1",

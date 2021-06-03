@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from "./Product";
 import "./bestseller.css";
-import tengol from "./tengol.jpg";
+import tengol from "./tengol.png";
 
 function BestSeller() {
     return (

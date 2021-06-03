@@ -42,7 +42,7 @@ function Recipe() {
                         image: newProduct.image,
                         price: newProduct.price,
                         quantity: Number(document.getElementById("quantity").value) + Number(item.quantity),
-                        quantityValue: document.getElementById(document.getElementById("quantity").value).innerHTML,
+                        quantityValue: Number(document.getElementById(document.getElementById("quantity").value).innerHTML) + Number(item.quantityValue),
                         height: newProduct.height,
                         weight: newProduct.weight,
                         breadth: newProduct.breadth,

@@ -2,7 +2,7 @@ import React from 'react';
 import "./products.css";
 import Product from "./Product";
 import rasam from "./rasam_powder.jpg";
-import tengol from "./tengol.jpg";
+import tengol from "./tengol.png";
 import vangi from "./vangi_powder.png";
 import methi from "./methi_powder.png";
 import pchutney from "./pchutney_powder.png";
