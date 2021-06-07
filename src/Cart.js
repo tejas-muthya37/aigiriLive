@@ -24,7 +24,7 @@ function Cart() {
                 <CartProduct
                 id={item.id}
                 key={basket.indexOf(item)}
-                title={item.title}
+                title={item.title2}
                 category={item.category}
                 price={item.price}
                 image={item.image}

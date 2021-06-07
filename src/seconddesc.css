@@ -1,0 +1,25 @@
+.second {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.second_content {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .second {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

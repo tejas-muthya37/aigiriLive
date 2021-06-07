@@ -43,6 +43,12 @@ h4 {
   margin-left: 50px;
   font-size: 24px;
   letter-spacing: 1px;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.garlic {
+  font-family: "Baloo Tamma 2", cursive;
+  letter-spacing: 1px;
 }
 
 .recipe_left_quantity {
@@ -115,10 +121,14 @@ h4 {
   .price {
     min-width: 110px;
     position: absolute;
-    top: 137px;
+    top: 157px;
     left: -25px;
     color: #505050;
     font-size: 15px;
+  }
+
+  .garlic {
+    top: 125px;
   }
 
   .recipe_p {
@@ -207,7 +217,7 @@ h4 {
   .recipe_right {
     margin-right: 0;
     width: 45%;
-    margin-left: -45px;
+    margin-left: -37px;
     margin-top: 75px;
   }
 

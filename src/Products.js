@@ -49,7 +49,7 @@ function Products() {
           /></div>
           <div id="7" className="row_product"><Product
             id="7"
-            title="ಕರ್ಜಿಕಾಯಿ | Karjikayi"
+            title="ಕಡುಬು | Kadubu"
             category= "box"
             image="https://cdn.shopify.com/s/files/1/0398/6545/0645/products/7-13-removebg-preview_1024x1024.png?v=1593120521"
             price="60"
@@ -79,14 +79,14 @@ function Products() {
             image="https://krushikendra.com/image/cache/catalog/Homemade%20food/farali-poha2-800x800.png"
             price="250"
           /></div>
-        
-        <div id="8" className="row_product"><Product
-            id="8"
-            title="ನಿಪ್ಪಟ್ಟು | Nippattu"
-            category= "box"
-            image="https://m.media-amazon.com/images/I/61IJJ+JrXXL._AC_UL480_QL65_.jpg"
-            price="36"
+        <div id="23" className="row_product"><Product
+            id="23"
+            title="ಚೂಡಾ ಅವಲಕ್ಕಿ | Chivda (With Garlic)"
+            category= "powder"
+            image="https://krushikendra.com/image/cache/catalog/Homemade%20food/farali-poha2-800x800.png"
+            price="250"
           /></div>
+        
         </div>
         <div className="products_row">
         <div id="9" className="row_product"><Product
@@ -96,13 +96,14 @@ function Products() {
             image={mandakki}
             price="50"
           /></div>
-        <div id="10" className="row_product"><Product
-            id="10"
-            title="ತೆಂಗೊಳಲು | Tengolu"
-            category= "box"
-            image={tengol}
-            price="60"
+          <div id="24" className="row_product"><Product
+            id="24"
+            title="ಮಂಡಕ್ಕಿ | Mandakki (With Garlic)"
+            category= "pack"
+            image={mandakki}
+            price="50"
           /></div>
+        
         <div id="13" className="row_product"><Product
             id="13"
             title="ಸಕ್ಕರೆ ಹೋಳಿಗೆ | Sugar Holige"
@@ -141,28 +142,28 @@ function Products() {
             image="https://m.media-amazon.com/images/I/51I4NPKCehL._AC_UL480_QL65_.jpg"
             price="600"
           /></div>
-          <div id="18" className="row_product"><Product
+          <div id="22" className="row_product"><Product
+            id="22"
+            title="ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು | Puliyogare Mix"
+            category= "powder"
+            image={puliyogare}
+            price="400"
+          /></div>
+          
+        </div>
+        <div className="products_row">
+        <div id="18" className="row_product"><Product
             id="18"
             title="ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ | Peanut Chutney Powder"
             category= "powder"
             image={pchutney}
             price="400"
           /></div>
-        </div>
-        <div className="products_row">
-        
-        <div id="16" className="row_product"><Product
-            id="16"
-            title="ಮೆಂತ್ಯದ ಹಿಟ್ಟು | Menthya Powder"
+        <div id="25" className="row_product"><Product
+            id="25"
+            title="ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ | Peanut Chutney Powder (With Garlic)"
             category= "powder"
-            image={methi}
-            price="400"
-          /></div>
-          <div id="22" className="row_product"><Product
-            id="22"
-            title="ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು | Puliyogare Mix"
-            category= "powder"
-            image={puliyogare}
+            image={pchutney}
             price="400"
           /></div>
           
@@ -190,7 +191,27 @@ function Products() {
             price="600"
           /></div>
         
-          
+        <div id="10" className="row_product"><Product
+            id="10"
+            title="ತೆಂಗೊಳಲು | Tengolu"
+            category= "box"
+            image={tengol}
+            price="60"
+          /></div>
+          <div id="8" className="row_product"><Product
+            id="8"
+            title="ನಿಪ್ಪಟ್ಟು | Nippattu"
+            category= "box"
+            image="https://m.media-amazon.com/images/I/61IJJ+JrXXL._AC_UL480_QL65_.jpg"
+            price="36"
+          /></div>
+          <div id="16" className="row_product"><Product
+            id="16"
+            title="ಮೆಂತ್ಯದ ಹಿಟ್ಟು | Menthya Powder"
+            category= "powder"
+            image={methi}
+            price="400"
+          /></div>
         </div>
       </div>
     )

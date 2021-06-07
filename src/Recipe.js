@@ -59,6 +59,7 @@ function Recipe() {
               key: newProduct.id,
               id: newProduct.id,
               title: newProduct.title,
+              title2: newProduct.title2,
               category: newProduct.category,
               image: newProduct.image,
               price: newProduct.price,
@@ -78,7 +79,8 @@ function Recipe() {
     return (
         <div className="recipe">
             <div className="recipe_left">
-                <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title}</h5>
+                <h5 id="recipe_left_header" className="recipe_left_header font_alike">{newProduct.title2}</h5>
+                {newProduct.garlic === "yes" && <h5 className="price garlic">(ಬೆಳ್ಳುಳ್ಳಿ ಸಹಿತ)</h5>}
                 {(newProduct.category === "powder") && <h5 id="price" className="price">₹ {newProduct.price} / KG</h5>}
                 {(newProduct.category === "box") && <h5 id="price" className="price">₹ {newProduct.price} / Box of 6</h5>}
                 {(newProduct.category === "pack") && <h5 id="price" className="price">₹ {newProduct.price} / 100 GRAMS</h5>}

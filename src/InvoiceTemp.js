@@ -12,6 +12,7 @@ function InvoiceTemp() {
     basket?.map((item) => (
         newString += "\n\n\n\n\n" + item.title + "\t - \t" + item.quantityValue + "\t - \t₹ " + String(item.quantity * item.price)
         ))
+        
     newString += "\n\n\n\n\n------------------- END OF ORDER -------------------"
 
     var myHeaders = new Headers();
@@ -214,7 +215,7 @@ function InvoiceTemp() {
                     <tbody>
                     {basket.map((item) => (
                         <tr key={basket.indexOf(item)} className="item_data">
-                        <td>{item.title}</td>
+                        <td>{item.title2}</td>
                         {/* {item.category === "box" && <td className="quantity_table">{item.quantity}</td>} */}
                         <td className="quantity_table">{item.quantityValue}</td>
                         <td>₹ {item.price * item.quantity}</td>
@@ -259,7 +260,7 @@ function InvoiceTemp() {
                 <p className="payable_to">PAYABLE TO</p>
                 <p className="name_phone">Madhwa Paaka</p>
                 <p className="name_phone">+91 9980284000</p>
-                <p className="address">Shimoga, Karnataka</p>
+                <p className="address">Bengaluru, Karnataka</p>
                 </div>
 
                 <div className="temp_bottom_right">
