@@ -24,4 +24,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .first_content {
+    text-align: left;
+    line-height: 24px;
+  }
 }

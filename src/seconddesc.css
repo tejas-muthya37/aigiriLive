@@ -22,4 +22,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .second_content {
+    text-align: left;
+    line-height: 24px;
+  }
 }
