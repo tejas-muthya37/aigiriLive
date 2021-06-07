@@ -19,7 +19,7 @@ function InvoiceTemp() {
 
         // ********* SHIPROCKET ACCOUNT LINK *********
 
-        var raw = JSON.stringify({"email":"foodsaigiri@gmail.com","password":"foodsaigiri"});
+        var raw = JSON.stringify({"email":"tejas.muthya38@gmail.com","password":"madhwapaaka"});
 
         var requestOptions = {
         method: 'POST',
@@ -133,7 +133,7 @@ function InvoiceTemp() {
             let srTotal = getBasketTotal(basket) + shippingCost;
 
             var raw = JSON.stringify({"order_id":srOrderId,"order_date":srDate,"pickup_location":"Primary",
-                                    "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
+                                    "address":"#181 1st A Cross 2nd Phase 4th Block","address_2":"BSK 3rd Stage Bengaluru 560085","city":"Bangalore",
                                     "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
                                     "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
                                     "billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
@@ -162,7 +162,7 @@ function InvoiceTemp() {
     return (
         <div className="invoice_temp">
 
-            <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/tejas.muthya37@gmail.com">
+            <form onSubmit={addOrder} className="invisible_form" method="POST" action="https://formsubmit.co/madhwapaaka@gmail.com">
             
             <div className="buttons">
                 <button onClick={genPDF} type="submit" className="generate_invoice_button">PRINT</button>
@@ -186,7 +186,7 @@ function InvoiceTemp() {
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
                 <input type="hidden" name="_subject" value="Your order from Madhwa Paaka" />
                 <input type="hidden" name="_autoresponse" value="Thank you for shopping with Madhwa Paaka. This is a confirmation mail that we have successfully received your order." />
-                <input type="hidden" name="_next" value="https://srihari-foods.herokuapp.com/success"/>
+                <input type="hidden" name="_next" value="http://www.madhwapaaka.in"/>
             </form>
 
             <div className="invoice_temp_top">

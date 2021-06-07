@@ -6,7 +6,7 @@ import Products from "./Products";
 // import Carousel from "./Carousel";
 import Footer from "./Footer";
 // import Feature from "./Feature";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 // import About from "./About";
 import Recipe from "./Recipe";
 import Cart from "./Cart";
@@ -30,67 +30,67 @@ function App() {
       <div className="App">
       
       <Switch>
-      <Route path="/recipe/:id">
+      <Route exact path="/recipe/:id">
         <NavBar />
         <Recipe />
         <Footer />
       </Route>
-      <Route path="/pay">
+      <Route exact path="/pay">
     
         <Payment />
 
       </Route>
-      <Route path="/about">
+      <Route exact path="/about">
         <NavBar />
         <Suspense fallback={<div className="spinner-border text-success" role="status"><span className="sr-only">Loading...</span></div>}>
         <About />
         </Suspense>
         <Footer />
       </Route>
-      <Route path="/products">
+      <Route exact path="/products">
         <NavBar />
         <Products />
         <Footer />
       </Route>
-      <Route path="/success">
+      <Route exact path="/success">
         <NavBar />
         <Success />
         <Footer />
       </Route>
       
-      {basket?.length>0 && <Route path="/checkout">
+      {basket?.length>0 && <Route exact path="/checkout">
         <NavBar />
         <Checkout />
         <Footer />
       </Route>}
-      {basket?.length===0 && <Route path="/checkout">
+      {basket?.length===0 && <Route exact path="/checkout">
         <NavBar />
         <Empty />
         <Footer />
 
       </Route>}
-      {basket?.length>0 && <Route path="/cart">
+      {basket?.length>0 && <Route exact path="/cart">
         <NavBar />
         <Cart />
         <Footer />
       </Route>}
-      {basket?.length===0 && <Route path="/cart">
+      {basket?.length===0 && <Route exact path="/cart">
         <NavBar />
         <Empty />
         <Footer />
 
       </Route>}
 
-      {basket?.length>0 && <Route path="/invoice">
+      {basket?.length>0 && <Route exact path="/invoice">
         <InvoiceTemp />
       </Route>}
-      {basket?.length===0 && <Route path="/invoice">
+      {basket?.length===0 && <Route exact path="/invoice">
       <NavBar />
         <Empty />
         <Footer />
 
       </Route>}
-      <Route path="/">
+      <Route exact path="/">
         <NavBar />
         <Suspense fallback={<div className="spinner-border text-success" role="status"><span className="sr-only">Loading...</span></div>}>
         <Carousel />
@@ -103,6 +103,7 @@ function App() {
         <Products />
         <Footer />
       </Route>
+      <Redirect to="/" />
       </Switch>
     </div>
     </Router>

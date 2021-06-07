@@ -1,7 +1,7 @@
 {
-  "homepage": "https://srihari-foods.herokuapp.com/",
   "name": "aigiri-foods",
   "version": "0.1.0",
+  "homepage": "http://www.madhwapaaka.in/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
