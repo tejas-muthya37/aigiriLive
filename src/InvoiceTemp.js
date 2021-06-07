@@ -186,7 +186,7 @@ function InvoiceTemp() {
                 <input type="hidden" name="GRAND-TOTAL" value={userTotal + shippingCost} />
                 <input type="hidden" name="_subject" value="Your order from Madhwa Paaka" />
                 <input type="hidden" name="_autoresponse" value="Thank you for shopping with Madhwa Paaka. This is a confirmation mail that we have successfully received your order." />
-                <input type="hidden" name="_next" value="http://www.madhwapaaka.in"/>
+                <input type="hidden" name="_next" value="https://madhwapaaka.herokuapp.com/success"/>
             </form>
 
             <div className="invoice_temp_top">
