@@ -6,8 +6,8 @@ function About() {
     <div className="first">
       <div className="first_content">
         <p>
-          <span className="first-bold">Madhwapaaka</span> offers the following
-          food products and cooked snacks. Usually, all of our products are made
+          <span className="first-bold">Madhwapaaka</span> offers home made food
+          products and cooked snacks. Usually, all of our products are made
           without Onion and Garlic. However, due to customer demands, we have
           added 3 items with Garlic to the menu. Please select the required
           items accordingly. Visit each products for more information and best
