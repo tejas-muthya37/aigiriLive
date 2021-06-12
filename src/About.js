@@ -13,8 +13,8 @@ function About() {
           </span>
           <br></br>
           <br></br>ಇಲ್ಲಿ ಮಾಡುವ ಪ್ರತೀ ಪಾಕವು ಮಾಧ್ವ ಬ್ರಾಹ್ಮಣರ ಮನೆಯ ಸಂಪ್ರದಾಯ ಮತ್ತು
-          ಶೈಲಿಯಲ್ಲಿ ತಯಾರಾಗುತ್ತದೆ. ನಮ್ಮ ಮಧ್ವ ಪಾಕದ ಯವುದೆ ಅಡುಗೆಯಲ್ಲಿ ಮತ್ತು
-          ತಿಂಡಿತಿನಿಸುಗಳಲ್ಲಿ ಈರುಳ್ಳಿ, ಬೆಳ್ಳುಳ್ಳಿ ಹಾಗು ರಾಸಯನಿಕ ಸಂರಕ್ಷಕಗಳನ್ನು
+          ಶೈಲಿಯಲ್ಲಿ ತಯಾರಾಗುತ್ತದೆ. ನಮ್ಮ ಮಧ್ವಪಾಕದ ಯಾವುದೇ ಅಡುಗೆಯಲ್ಲಿ ಮತ್ತು ತಿಂಡಿ
+          ತಿನಿಸುಗಳಲ್ಲಿ ಈರುಳ್ಳಿ, ಬೆಳ್ಳುಳ್ಳಿ ಹಾಗು ರಾಸಯನಿಕ ಸಂರಕ್ಷಕಗಳನ್ನು
           ಬಳಸುವುದಿಲ್ಲ. ಇಲ್ಲಿ ದೊರೆಯುವ ಮಸಾಲೆ ಪಧಾರ್ಥಗಳು, ತಿಂಡಿ ತಿನಿಸುಗಳೆಲ್ಲವು ಶುಚಿ
           ಮತ್ತು ಶುಭ್ರತೆಯಿಂದ ತಯಾರಾಗುತ್ತದೆ. ಪುಡಿಗಳಷ್ಟೆ ಅಲ್ಲದೆ ಸಿಹಿ ಮತ್ತು ಖಾರ
           ತಿನಿಸುಗಳು ಲಭ್ಯವಿರುತ್ತದೆ. ಉದಾ : ಬೆಸನ್ ಉಂಡೆ, ಕೊಬ್ಬರಿ ಮಿಠಾಯಿ, ಚಕ್ಕುಲಿ,
@@ -38,10 +38,10 @@ function About() {
           items is carried from generations and none of our products contain
           Onion, Garlic or any preservatives. Instead, Asafoetida(ಇಂಗು) plays a
           prime role in our products. Usually, all of our products are made
-          without Onion and Garlic. However, due to customer demands, we have
-          added 3 items with Garlic to the menu. All our products are prepared
-          in a hygienic and homely environment. All the products listed below
-          are "MADE TO ORDER". Therefore, our food items delivered will be 100%
+          without Onion and Garlic. However, due to customer demands, we are
+          offering three items with Garlic. All our products are prepared in a
+          hygienic and homely environment. All the products listed below are
+          "MADE TO ORDER". Therefore, our food items delivered will be 100%
           fresh! All of our family members have stood strong and tested negative
           for COVID-19 in these challenging times. We are slowly expanding our
           menu as we scale up the venture and we highly appreciate your support
