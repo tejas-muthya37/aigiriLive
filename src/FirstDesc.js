@@ -8,9 +8,9 @@ function About() {
         <p>
           <span className="first-bold">Madhwapaaka</span> offers home made food
           products and cooked snacks. Usually, all of our products are made
-          without Onion and Garlic. However, due to customer demands, we have
-          added 3 items with Garlic to the menu. Please select the required
-          items accordingly. Visit each products for more information and best
+          without Onion and Garlic. However, due to customer demands, we are
+          offering 3 items with Garlic. Please select the required items
+          accordingly. Visit each products for more information and best
           results.
           <br />
           <br />
