@@ -272,8 +272,8 @@ const productsArray = [
   },
   {
     id: "25",
-    title: "Peanut Chutney Powder",
-    title2: "Peanut Chutney Powder (With Garlic)",
+    title: "Peanut Chutney Powder (With Garlic)",
+    title2: "Peanut Chutney Powder",
     garlic: "yes",
     category: "powder",
     image: pchutney,

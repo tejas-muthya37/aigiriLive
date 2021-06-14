@@ -89,7 +89,7 @@ function Recipe() {
           {newProduct.title2}
         </h5>
         {newProduct.garlic === "yes" && (
-          <h5 className="price garlic">(ಬೆಳ್ಳುಳ್ಳಿ ಸಹಿತ)</h5>
+          <h5 className="price garlic">(With Garlic)</h5>
         )}
         {newProduct.category === "powder" && (
           <h5 id="price" className="price">
