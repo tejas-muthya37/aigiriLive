@@ -13,8 +13,8 @@ import tengol from "./tengol.png";
 const productsArray = [
   {
     id: "1",
-    title: "ಬೇಸನ್ ಉಂಡೆ",
-    title2: "ಬೇಸನ್ ಉಂಡೆ",
+    title: "Besan Laddoo",
+    title2: "Besan Laddoo",
     category: "box",
     image:
       "https://cdn.shopify.com/s/files/1/0398/6545/0645/products/69724367_2483046198423304_3890100649064398848_o-removebg-preview_1024x1024.png?v=1593273118",
@@ -27,8 +27,8 @@ const productsArray = [
   },
   {
     id: "2",
-    title: "ಪುರಿ ಉಂಡೆ",
-    title2: "ಪುರಿ ಉಂಡೆ",
+    title: "Puri Unde",
+    title2: "Puri Unde",
     category: "box",
     image:
       "https://m.media-amazon.com/images/I/41hzY651KAL._AC_UL480_QL65_.jpg",
@@ -41,8 +41,8 @@ const productsArray = [
   },
   {
     id: "3",
-    title: "ಚೂಡಾ ಅವಲಕ್ಕಿ",
-    title2: "ಚೂಡಾ ಅವಲಕ್ಕಿ",
+    title: "Chivda",
+    title2: "Chivda",
     category: "powder",
     image:
       "https://krushikendra.com/image/cache/catalog/Homemade%20food/farali-poha2-800x800.png",
@@ -55,8 +55,8 @@ const productsArray = [
   },
   {
     id: "23",
-    title: "ಚೂಡಾ ಅವಲಕ್ಕಿ (ಬೆಳ್ಳುಳ್ಳಿ ಸಹಿತ)",
-    title2: "ಚೂಡಾ ಅವಲಕ್ಕಿ",
+    title: "Chivda (With Garlic)",
+    title2: "Chivda",
     garlic: "yes",
     category: "powder",
     image:
@@ -70,8 +70,8 @@ const productsArray = [
   },
   {
     id: "4",
-    title: "ಚಕ್ಕುಲಿ",
-    title2: "ಚಕ್ಕುಲಿ",
+    title: "Chakkuli",
+    title2: "Chakkuli",
     category: "box",
     image:
       "https://m.media-amazon.com/images/I/51oJb+Kz2TS._AC_UL480_QL65_.jpg",
@@ -84,8 +84,8 @@ const productsArray = [
   },
   {
     id: "5",
-    title: "ಬೆಣ್ಣೆ ಮುರುಕ್ಕು",
-    title2: "ಬೆಣ್ಣೆ ಮುರುಕ್ಕು",
+    title: "Benne Murukku",
+    title2: "Benne Murukku",
     category: "powder",
     image:
       "https://m.media-amazon.com/images/I/61Bhr+kmuUL._AC_UL480_QL65_.jpg",
@@ -98,8 +98,8 @@ const productsArray = [
   },
   {
     id: "6",
-    title: "ಕಜ್ಜಾಯ",
-    title2: "ಕಜ್ಜಾಯ",
+    title: "Kajjaya",
+    title2: "Kajjaya",
     category: "box",
     image:
       "https://cdn.shopify.com/s/files/1/0398/6545/0645/products/4-12-removebg-preview_1024x1024.png?v=1593271672",
@@ -112,8 +112,8 @@ const productsArray = [
   },
   {
     id: "7",
-    title: "ಕಡುಬು",
-    title2: "ಕಡುಬು",
+    title: "Kadubu",
+    title2: "Kadubu",
     category: "box",
     image:
       "https://cdn.shopify.com/s/files/1/0398/6545/0645/products/7-13-removebg-preview_1024x1024.png?v=1593120521",
@@ -126,8 +126,8 @@ const productsArray = [
   },
   {
     id: "8",
-    title: "ನಿಪ್ಪಟ್ಟು",
-    title2: "ನಿಪ್ಪಟ್ಟು",
+    title: "Nippattu",
+    title2: "Nippattu",
     category: "box",
     image:
       "https://m.media-amazon.com/images/I/61IJJ+JrXXL._AC_UL480_QL65_.jpg",
@@ -140,8 +140,8 @@ const productsArray = [
   },
   {
     id: "9",
-    title: "ಮಂಡಕ್ಕಿ (ಬೆಳ್ಳುಳ್ಳಿ ಸಹಿತ)",
-    title2: "ಮಂಡಕ್ಕಿ",
+    title: "Mandakki (With Garlic)",
+    title2: "Mandakki",
     category: "pack",
     image: mandakki,
     price: "65",
@@ -153,8 +153,8 @@ const productsArray = [
   },
   {
     id: "24",
-    title: "ಮಂಡಕ್ಕಿ",
-    title2: "ಮಂಡಕ್ಕಿ",
+    title: "Mandakki",
+    title2: "Mandakki",
     garlic: "yes",
     category: "pack",
     image: mandakki,
@@ -167,8 +167,8 @@ const productsArray = [
   },
   {
     id: "10",
-    title: "ತೆಂಗೊಳಲು",
-    title2: "ತೆಂಗೊಳಲು",
+    title: "Tengolu",
+    title2: "Tengolu",
     category: "box",
     image: tengol,
     price: "72",
@@ -180,8 +180,8 @@ const productsArray = [
   },
   {
     id: "12",
-    title: "ಕಾಯಿ ಹೋಳಿಗೆ",
-    title2: "ಕಾಯಿ ಹೋಳಿಗೆ",
+    title: "Coconut Holige",
+    title2: "Coconut Holige",
     category: "box",
     image: kayi_holige,
     price: "120",
@@ -193,8 +193,8 @@ const productsArray = [
   },
   {
     id: "13",
-    title: "ಸಕ್ಕರೆ ಹೋಳಿಗೆ",
-    title2: "ಸಕ್ಕರೆ ಹೋಳಿಗೆ",
+    title: "Sugar Holige",
+    title2: "Sugar Holige",
     category: "box",
     image: sakkare_holige,
     price: "132",
@@ -206,8 +206,8 @@ const productsArray = [
   },
   {
     id: "14",
-    title: "ಸಾರಿನ ಪುಡಿ",
-    title2: "ಸಾರಿನ ಪುಡಿ",
+    title: "Rasam Powder",
+    title2: "Rasam Powder",
     category: "powder",
     image: rasam,
     price: "630",
@@ -219,8 +219,8 @@ const productsArray = [
   },
   {
     id: "15",
-    title: "ಹುಳಿ ಪುಡಿ",
-    title2: "ಹುಳಿ ಪುಡಿ",
+    title: "Sambar Powder",
+    title2: "Sambar Powder",
     category: "powder",
     image:
       "https://m.media-amazon.com/images/I/51I4NPKCehL._AC_UL480_QL65_.jpg",
@@ -233,8 +233,8 @@ const productsArray = [
   },
   {
     id: "16",
-    title: "ಮೆಂತ್ಯದ ಹಿಟ್ಟು",
-    title2: "ಮೆಂತ್ಯದ ಹಿಟ್ಟು",
+    title: "Menthya Powder",
+    title2: "Menthya Powder",
     category: "powder",
     image: methi,
     price: "430",
@@ -246,8 +246,8 @@ const productsArray = [
   },
   {
     id: "17",
-    title: "ಚಟ್ನಿ ಪುಡಿ",
-    title2: "ಚಟ್ನಿ ಪುಡಿ",
+    title: "Chutney Powder",
+    title2: "Chutney Powder",
     category: "powder",
     image: chutney,
     price: "430",
@@ -259,8 +259,8 @@ const productsArray = [
   },
   {
     id: "18",
-    title: "ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ",
-    title2: "ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ",
+    title: "Peanut Chutney Powder",
+    title2: "Peanut Chutney Powder",
     category: "powder",
     image: pchutney,
     price: "430",
@@ -272,8 +272,8 @@ const productsArray = [
   },
   {
     id: "25",
-    title: "ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ",
-    title2: "ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ (ಬೆಳ್ಳುಳ್ಳಿ ಸಹಿತ)",
+    title: "Peanut Chutney Powder",
+    title2: "Peanut Chutney Powder (With Garlic)",
     garlic: "yes",
     category: "powder",
     image: pchutney,
@@ -286,8 +286,8 @@ const productsArray = [
   },
   {
     id: "19",
-    title: "ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಪುಡಿ",
-    title2: "ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಪುಡಿ",
+    title: "Bisi Bele Bath Powder",
+    title2: "Bisi Bele Bath Powder",
     category: "powder",
     image: bisi,
     price: "630",
@@ -299,8 +299,8 @@ const productsArray = [
   },
   {
     id: "20",
-    title: "ವಾಂಗಿ ಬಾತ್ ಪುಡಿ",
-    title2: "ವಾಂಗಿ ಬಾತ್ ಪುಡಿ",
+    title: "Vangi Bath Powder",
+    title2: "Vangi Bath Powder",
     category: "powder",
     image: vangi,
     price: "630",
@@ -312,8 +312,8 @@ const productsArray = [
   },
   {
     id: "21",
-    title: "ಗೊಜ್ಜಿನ ಪುಡಿ",
-    title2: "ಗೊಜ್ಜಿನ ಪುಡಿ",
+    title: "Gojju Powder",
+    title2: "Gojju Powder",
     category: "powder",
     image: rasam,
     price: "630",
@@ -325,8 +325,8 @@ const productsArray = [
   },
   {
     id: "22",
-    title: "ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು",
-    title2: "ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು",
+    title: "Puliyogare Mix",
+    title2: "Puliyogare Mix",
     category: "powder",
     image: puliyogare,
     price: "430",
