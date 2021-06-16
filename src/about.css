@@ -18,6 +18,15 @@
   margin-top: 150px;
 }
 
+.contact-info {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.contact-info p {
+  text-align: center;
+}
+
 .bold {
   font-weight: bold;
   font-size: 20px;
@@ -32,5 +41,10 @@
     padding-right: 0;
     padding-left: 10%;
     max-width: 90%;
+  }
+
+  .contact-info {
+    width: 90%;
+    margin-left: 5%;
   }
 }
