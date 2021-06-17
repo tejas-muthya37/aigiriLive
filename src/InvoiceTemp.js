@@ -64,7 +64,7 @@ function InvoiceTemp() {
 
   // ********* SHIPPING COST FOR EACH STATE *********
 
-  if (userTotal > 1000) {
+  if (userTotal > 1000 || userCountry === "Other") {
     shippingCost = 0;
   } else {
     switch (userState) {
@@ -264,7 +264,6 @@ function InvoiceTemp() {
           <p className="invoice_no">{todayDate}</p>
         </div>
         <div className="temp_top_right">
-          {/* <img alt="" className="aigiri_logo" src={logo}></img> */}
           <h2 className="logo_text">ಮಧ್ವಪಾಕ</h2>
         </div>
       </div>
@@ -281,7 +280,6 @@ function InvoiceTemp() {
             {basket.map((item) => (
               <tr key={basket.indexOf(item)} className="item_data">
                 <td>{item.title2}</td>
-                {/* {item.category === "box" && <td className="quantity_table">{item.quantity}</td>} */}
                 <td className="quantity_table">{item.quantityValue}</td>
                 <td>₹ {item.price * item.quantity}</td>
               </tr>

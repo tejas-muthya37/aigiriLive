@@ -45,19 +45,9 @@ const Checkout = () => {
     document.getElementById("payments").classList.remove("payment_part");
   }
 
-  //   function onPageLoad() {
-  //     document.getElementById("stateSelect").selectedIndex = 0;
-  //     document.getElementById("citySelect").selectedIndex = 0;
-  //   }
-
   // -------------------------------------------------- Create Order API --------------------------------------------------------------
 
   function addVars() {
-    // var myHeaders = new Headers();
-    // let newToken = localStorage.getItem("TOKEN");
-    // myHeaders.append("Content-Type", "application/json");
-    // myHeaders.append("Authorization", "Bearer " + newToken);
-
     let srName = String(nameRef.current.value);
     let srAddress = String(addressRef.current.value);
     // let srCity = String(cityRef.current.value);
@@ -83,26 +73,6 @@ const Checkout = () => {
     localStorage.setItem("srEmail", srEmail);
     localStorage.setItem("srPhone", srPhone);
     localStorage.setItem("srPayment", payment);
-
-    // var raw = JSON.stringify({"order_id":"123-141","order_date":srDate,"pickup_location":"Primary",
-    //                         "address":"Bengaluru, Karnataka, India","address_2":"JP Nagar, 8th Phase","city":"Bangalore",
-    //                         "billing_customer_name":srName, "billing_last_name": "", "billing_address":srAddress,
-    //                         "billing_city":srCity,"billing_pincode":srPincode,"billing_state":srState,
-    //                         "billing_country":srCountry,"billing_email":srEmail,"billing_phone":srPhone,
-    //                         "shipping_is_billing":true,"order_items":[...newArray],
-    //                         "payment_method":"Prepaid","sub_total":srTotal,"length":10,"breadth":15,"height":20,"weight":2.5});
-
-    // var requestOptions = {
-    // method: 'POST',
-    // headers: myHeaders,
-    // body: raw,
-    // redirect: 'follow'
-    // };
-
-    // fetch("https://apiv2.shiprocket.in/v1/external/orders/create/adhoc", requestOptions)
-    // .then(response => response.text())
-    // .then(result => console.log(result))
-    // .catch(error => console.log('error', error));
 
     if (nameRef.current.value === "") {
       setFields(false);

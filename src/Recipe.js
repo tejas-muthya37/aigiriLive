@@ -20,7 +20,15 @@ function Recipe() {
     }
   });
 
+  function myFunc() {
+    document.getElementsByClassName("recipe_button")[0].innerText =
+      "ADD TO CART";
+  }
+
   const addToBasket = () => {
+    document.getElementsByClassName("recipe_button")[0].innerText =
+      "ADDED TO CART! ✓";
+    setTimeout(myFunc, 2000);
     basket?.forEach((item) => {
       if (item.title === newProduct.title && item.category === "box") {
         found = true;
