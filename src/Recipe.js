@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./recipe.css";
 import { useParams } from "react-router-dom";
 import productsArray from "./productArray.js";
@@ -6,6 +6,7 @@ import { useStateValue } from "./StateProvider.js";
 
 function Recipe() {
   const [{ basket }, dispatch] = useStateValue();
+  const buttonRef = useRef(null);
 
   console.log(basket);
 
@@ -21,14 +22,12 @@ function Recipe() {
   });
 
   function myFunc() {
-    document.getElementsByClassName("recipe_button")[0].innerText =
-      "ADD TO CART";
+    buttonRef.current.innerText = "ADD TO CART";
   }
 
   const addToBasket = () => {
-    document.getElementsByClassName("recipe_button")[0].innerText =
-      "ADDED TO CART! ✓";
-    setTimeout(myFunc, 2000);
+    buttonRef.current.innerText = "ADDED TO CART! ✓";
+    setTimeout(myFunc, 1000);
     basket?.forEach((item) => {
       if (item.title === newProduct.title && item.category === "box") {
         found = true;
@@ -165,7 +164,7 @@ function Recipe() {
             )}
           </form>
         </div>
-        <button onClick={addToBasket} className="recipe_button">
+        <button ref={buttonRef} onClick={addToBasket} className="recipe_button">
           ADD TO CART
         </button>
       </div>
