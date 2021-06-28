@@ -55,9 +55,9 @@ function About() {
         <div class="contact-info">
           <p>
             <br />
-            Vijay Simha : +91 99802 84000
+            Operations : +91 99802 84000
           </p>
-          <p>Nayana Vadiraj : +91 89517 52351</p>
+          <p>Kitchen : +91 89517 52351</p>
           <p>
             <a href="mailto:madhwapaaka@gmail.com">madhwapaaka@gmail.com</a>
           </p>
@@ -68,9 +68,9 @@ function About() {
           Items will be made and shipped within 3 to 4 days after the order is
           confirmed. We accept payments through any of the UPI apps, that is
           Google Pay, Phone Pe and Paytm. We also accept Cash on Delivery. Our
-          products are safely shipped by our shipping partner, ShipRocket that
-          conclude shipping costs based on the State and City. Our international
-          shipping is handled by the Govt. Post Office at a nominal fee.
+          products are safely shipped by our shipping partners that conclude
+          shipping costs based on the State and City. Our international shipping
+          is handled by our international courier service partners.
         </p>
 
         <p id="refund">
